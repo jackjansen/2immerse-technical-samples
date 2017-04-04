@@ -1,0 +1,19 @@
+<tl:document
+  xmlns:tl="http://jackjansen.nl/timelines"
+  xmlns:tim="http://jackjansen.nl/2immerse"
+  xmlns:tic="http://jackjansen.nl/2immerse/component"
+  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
+  title="Animation test">
+
+  <tl:par>
+      <tl:sleep tl:dur="30"/>
+      <tl:ref tim:class="AdobeAnimationDMAppComponent"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/adobe-animate/adobe-animate.html"
+              tim:dmappcid="anim"
+              tic:mediaUrl="../media/animations/Gfx_LBRiderPic_46_edit.js"
+              tic:animProp="Gfx_LBRiderPic"
+              title="animation"/>
+
+  </tl:par>
+
+</tl:document>

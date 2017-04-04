@@ -1,0 +1,26 @@
+{
+    "version": 3,
+    "dmapp": "300",
+    "constraints": [
+        {
+            "componentId" : "anim",
+            "personal" : {
+                "prefSize": {
+                    "width": 184,
+                    "height": 160
+                },
+                "priority": 0,
+                "audio": true
+            },
+            "communal" : {
+                "prefSize": {
+                    "width": 184,
+                    "height": 160
+                },
+                "priority": 1,
+                "audio": true
+            }
+        }
+    ],
+    "layoutModel" : "packer"
+}
