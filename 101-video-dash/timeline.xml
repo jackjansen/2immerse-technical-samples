@@ -11,7 +11,7 @@
       <tl:ref tim:class="video"
               tim:dmappcid="main_video"
               tic:syncMode="master"
-              tic:mediaUrl="http://rdmedia.bbc.co.uk/dash/ondemand/bbb/2/client_manifest-common_init.mpd"
+              tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/manifest.mpd"
               title="main video"/>
 
   </tl:par>
