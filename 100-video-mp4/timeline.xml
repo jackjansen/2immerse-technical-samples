@@ -11,7 +11,7 @@
       <tl:ref tim:class="video"
               tim:dmappcid="main_video"
               tic:syncMode="master"
-              tic:mediaUrl="../media/bigbuckbunny-30s-1080p.mp4"
+              tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
               tlcheck:dur="30"
               title="main video"/>
 
