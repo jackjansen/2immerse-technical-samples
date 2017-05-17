@@ -5,7 +5,7 @@
   xmlns:tlcheck="http://jackjansen.nl/timelines/check"
   title="Test a single MP4 video">
 
-  <tl:par end="master">
+  <tl:par tl:end="master">
 
 
       <tl:ref tim:class="video"
@@ -13,22 +13,34 @@
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
               tlcheck:dur="30"
+              tl:prio="high"
               title="main video"/>
 
-      <tl:ref tim:class="PostTimelineEventButtonComponent"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
-              tim:dmappcid="start_button"
-              tic:text="Press This Button"
-              tic:eventId="start_button_press"
-              />
+      <tl:par tl:end="master">
+          <tl:ref tim:class="PostTimelineEventButtonComponent"
+                  tim:url="https://origin.platform.2immerse.eu/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
+                  tim:dmappcid="start_button"
+                  tic:text="Press This Button"
+                  tic:eventId="start_button_press"
+                  />
+          <tl:wait tl:event="start_button_press" tl:prio="high"/>
+      </tl:par>
               
       <tl:seq>
-        <tl:wait event="start_button_press"/>
-        <tl:ref tim:class="image" 
-                tim:url="/dmapp-components/image/image.html" 
-                tim:dmappcid="img01" 
-                tic:mediaUrl="../media/switch-image.png"/>
-        <tl:sleep dur="1"/>
+        <tl:wait tl:event="start_button_press"/>
+        <tl:par>
+            <tl:ref tim:class="image" 
+                    tim:url="/dmapp-components/image/image.html" 
+                    tim:dmappcid="img01" 
+                    tic:mediaUrl="../media/switch-image.png"/>
+            <tl:wait tl:event="stop_button_press"/>
+            <tl:ref tim:class="PostTimelineEventButtonComponent"
+                    tim:url="https://origin.platform.2immerse.eu/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
+                    tim:dmappcid="stop_button"
+                    tic:text="Press to Remove"
+                    tic:eventId="stop_button_press"
+                    />
+        </tl:par>
       </tl:seq>
 
   </tl:par>
