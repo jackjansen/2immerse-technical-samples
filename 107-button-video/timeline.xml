@@ -18,7 +18,7 @@
 
       <tl:par tl:end="master">
           <tl:ref tim:class="PostTimelineEventButtonComponent"
-                  tim:url="https://origin.platform.2immerse.eu/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
+                  tim:url="/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
                   tim:dmappcid="start_button"
                   tic:text="Press This Button"
                   tic:eventId="start_button_press"
@@ -35,7 +35,7 @@
                     tic:mediaUrl="../media/switch-image.png"/>
             <tl:wait tl:event="stop_button_press"/>
             <tl:ref tim:class="PostTimelineEventButtonComponent"
-                    tim:url="https://origin.platform.2immerse.eu/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
+                    tim:url="/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
                     tim:dmappcid="stop_button"
                     tic:text="Press to Remove"
                     tic:eventId="stop_button_press"

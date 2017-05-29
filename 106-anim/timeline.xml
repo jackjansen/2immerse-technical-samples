@@ -8,7 +8,7 @@
   <tl:par>
       <tl:sleep tl:dur="30"/>
       <tl:ref tim:class="AdobeAnimationDMAppComponent"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/adobe-animate/adobe-animate.html"
+              tim:url="/dmapp-components/adobe-animate/adobe-animate.html"
               tim:dmappcid="anim"
               tic:mediaUrl="../media/animations/Gfx_LBRiderPic_46_edit.js"
               tic:animProp="Gfx_LBRiderPic"

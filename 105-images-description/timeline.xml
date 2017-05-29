@@ -8,7 +8,7 @@
   <tl:par>
 
       <tl:ref tim:class="scroll-text"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/scroll-text/scroll-text.html"
+              tim:url="/dmapp-components/scroll-text/scroll-text.html"
               tim:dmappcid="description"
               tic:scriptUrl="../media/trailer-description.json"
               tlcheck:dur="81"
