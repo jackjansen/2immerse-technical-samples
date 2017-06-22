@@ -3,29 +3,29 @@
   xmlns:tim="http://jackjansen.nl/2immerse"
   xmlns:tic="http://jackjansen.nl/2immerse/component"
   xmlns:tlcheck="http://jackjansen.nl/timelines/check"
-  title="Test a single MP4 video">
+  title="Test anchor constraints">
 
   <tl:par>
 
     <tl:seq>
         <tl:par tl:end="master">
             <tl:sleep tl:dur="40" tl:prio="high"/>
-            <tl:ref tim:class="layoutTest" tim:dmappcid="TL-01"/>
-            <tl:ref tim:class="layoutTest" tim:dmappcid="TR-01"/>
-            <tl:ref tim:class="layoutTest" tim:dmappcid="BL-01"/>
-            <tl:ref tim:class="layoutTest" tim:dmappcid="BR-01"/>
+            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="TL-01" tic:mediaUrl="../media/109-images/TL-01.png"/>
+            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="TR-01" tic:mediaUrl="../media/109-images/TR-01.png"/>
+            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="BL-01" tic:mediaUrl="../media/109-images/BL-01.png"/>
+            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="BR-01" tic:mediaUrl="../media/109-images/BR-01.png"/>
             <tl:seq tl:prio="high">
                 <tl:par tl:end="master">
                   <tl:sleep tl:dur="20" tl:prio="high"/>
                 </tl:par>
                 <tl:par tl:end="master">
                     <tl:sleep tl:dur="20" tl:prio="high"/>
-                    <tl:ref tim:class="layoutTest" tim:dmappcid="L-03"/>
-                    <tl:ref tim:class="layoutTest" tim:dmappcid="R-03"/>
-                    <tl:ref tim:class="layoutTest" tim:dmappcid="T-03"/>
-                    <tl:ref tim:class="layoutTest" tim:dmappcid="B-03"/>
-                    <tl:ref tim:class="layoutTest" tim:dmappcid="NA-01"/>
-                    <tl:ref tim:class="layoutTest" tim:dmappcid="NA-02"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="L-03" tic:mediaUrl="../media/109-images/L-03.png"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="R-03" tic:mediaUrl="../media/109-images/R-03.png"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="T-03" tic:mediaUrl="../media/109-images/T-03.png"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="B-03" tic:mediaUrl="../media/109-images/B-03.png"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="NA-01" tic:mediaUrl="../media/109-images/NA-01.png"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="NA-02" tic:mediaUrl="../media/109-images/NA-02.png"/>
                 </tl:par>
 
 
