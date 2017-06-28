@@ -1,0 +1,511 @@
+{
+    "version": 3,
+    "dmapp": "200",
+    "constraints": [
+        {
+            "componentId" : "main_video",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 1,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "description",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img01",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img02",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img03",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+		},
+        {
+            "componentId" : "img04",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img05",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img06",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img07",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img08",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img09",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img10",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img11",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img12",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img13",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img14",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img15",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img16",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img17",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img18",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img19",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img20",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img21",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "img22",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 32,
+                    "height": 18
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            }
+        }
+    ],
+    "layoutModel" : "packer"
+}
