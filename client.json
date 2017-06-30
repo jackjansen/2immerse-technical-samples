@@ -1,0 +1,199 @@
+{
+	"description": "Technical Samples",
+	"mode": "tv",
+	"serviceUrlPreset": "aws_test",
+	"controllerOptions": {
+		"deviceIdPrefix": "tv",
+		"deviceIdNamespace": "ts-tv",
+		"defaultLogLevel": "trace",
+		"networkLogLevel": "trace",
+		"longFormConsoleLogging": true,
+		"showUserErrorMessageUI": true
+	},
+	"debugOptions": {
+		"debugComponent": true,
+		"devLogging": true,
+		"failurePlaceholders": true
+	},
+	"variations": [
+		{
+			"name": "sample",
+			"description": "Select technical sample",
+			"type": "select",
+			"options": [
+				{
+					"name": "100",
+					"description": "100-video-mp4: a simple MP4 video",
+					"content": {
+						"serviceInput": {
+							"layout": "100-video-mp4/layout.json",
+							"timeline": "100-video-mp4/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "101",
+					"description": "101-video-dash: a dash video (from rdmedia.bbc.co.uk)",
+					"content": {
+						"serviceInput": {
+							"layout": "101-video-dash/layout.json",
+							"timeline": "101-video-dash/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "102",
+					"description": "102-2video-mp4: the same mp4 video twice, in parallel, on TV",
+					"content": {
+						"serviceInput": {
+							"layout": "102-2video-mp4/layout.json",
+							"timeline": "102-2video-mp4/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "103",
+					"description": "103-video-description: the same mp4 video plus a scrolling text desciption",
+					"content": {
+						"serviceInput": {
+							"layout": "103-video-description/layout.json",
+							"timeline": "103-video-description/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "104",
+					"description": "104-images: Screen shots of the video, timed",
+					"content": {
+						"serviceInput": {
+							"layout": "104-images/layout.json",
+							"timeline": "104-images/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "105",
+					"description": "105-images-description: Screen shots of the video, timed, plus a scrolling text description",
+					"content": {
+						"serviceInput": {
+							"layout": "105-images-description/layout.json",
+							"timeline": "105-images-description/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "106",
+					"description": "106-anim: Adobe animation component test showing Valentino Rossi animating in and out",
+					"content": {
+						"serviceInput": {
+							"layout": "106-anim/layout.json",
+							"timeline": "106-anim/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "107",
+					"description": "107-button-video: A video and a button that shows an additional image",
+					"content": {
+						"serviceInput": {
+							"layout": "107-button-video/layout.json",
+							"timeline": "107-button-video/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "108",
+					"description": "108-video-description-images: Video (mp4), plus screen shots (timed), plus a scrolling text description",
+					"content": {
+						"serviceInput": {
+							"layout": "108-video-description-images/layout.json",
+							"timeline": "108-video-description-images/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "109",
+					"description": "109-anchor-constraints: Examples showing how to use anchor constraints in layouts (this uses image components)",
+					"content": {
+						"serviceInput": {
+							"layout": "109-anchor-constraints/layout.json",
+							"timeline": "109-anchor-constraints/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "202",
+					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
+					"content": {
+						"serviceInput": {
+							"layout": "202-2video-mp4/layout.json",
+							"timeline": "202-2video-mp4/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "203",
+					"description": "203-6video-mp4: the same mp4 video, in parallel, twice on TV and 4 times on the handheld",
+					"content": {
+						"serviceInput": {
+							"layout": "203-6video-mp4/layout.json",
+							"timeline": "203-6video-mp4/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "204",
+					"description": "204-6video-dash: the DASH video, in parallel, twice on TV and 4 times on the handheld",
+					"content": {
+						"serviceInput": {
+							"layout": "204-6video-dash/layout.json",
+							"timeline": "204-6video-dash/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "205",
+					"description": "205-video-description-images: Video (mp4), plus, on handheld, screen shots (timed), plus a scrolling text description",
+					"content": {
+						"serviceInput": {
+							"layout": "205-video-description-images/layout.json",
+							"timeline": "205-video-description-images/timeline.xml"
+						}
+					}
+				}
+			]
+		},
+		{
+			"name": "edge",
+			"description": "Use edge services (instead of test)",
+			"type": "optional",
+			"content": {
+				"serviceUrlPreset": "aws_edge"
+			}
+		},
+		{
+			"name": "notv",
+			"description": "Disable TV emulation (run standalone)",
+			"type": "optional",
+			"content": {
+				"mode": "standalone",
+				"controllerOptions": {
+					"deviceIdPrefix": "standalone",
+					"deviceIdNamespace": "ts-standalone"
+				}
+			}
+		},
+		{
+			"name": "nodebug",
+			"description": "Disable debug",
+			"type": "optional",
+			"content": {
+				"debugOptions": {
+					"debugComponent": false,
+					"devLogging": false,
+					"failurePlaceholders": false
+				}
+			}
+		}
+	]
+}
