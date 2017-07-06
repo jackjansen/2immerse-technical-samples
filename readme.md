@@ -23,3 +23,18 @@ Then you need to enter the credentials to allow you to upload:
 aws configure
 ```
 Enter the credentials that James shared in an email from 20-Feb-2017 with subject _Uploads to new platform_.
+
+## Testing the examples
+
+To run a syntax check of all timeline documents run
+
+```
+make test
+```
+and to check the syntaxt and existence of media for installed documents run
+
+```
+make livetest
+```
+
+You can also test individual documents by using targets like ```test-100-video-mp4```.

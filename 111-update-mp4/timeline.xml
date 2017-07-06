@@ -17,112 +17,112 @@
     <tl:seq>
         <tl:par tl:end="master">
             <tl:sleep tl:dur="6" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="4" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="3" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="3" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="6" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="3" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="5" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="9" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="3" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="2" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="5" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="2" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="2" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="2" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="3" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="3" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="6" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="4" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="3" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="3" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="4" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
             <tl:sleep tl:dur="1" tl:prio="high"/>
-            <tim:update tim:target="master" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
+            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"/>
         </tl:par>
         
         <!-- Bug workaround -->
