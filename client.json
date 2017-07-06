@@ -122,6 +122,26 @@
 					}
 				},
 				{
+					"name": "110",
+					"description": "110-video-hls: A HLS video (like 100 and 101)",
+					"content": {
+						"serviceInput": {
+							"layout": "110-video-hls/layout.json",
+							"timeline": "110-video-hls/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "111",
+					"description": "111-update-mp4: An MP4 video that is replaced at every scene break (by a rotated gridded copy)",
+					"content": {
+						"serviceInput": {
+							"layout": "111-update-mp4/layout.json",
+							"timeline": "111-update-mp4/timeline.xml"
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {
@@ -158,6 +178,16 @@
 						"serviceInput": {
 							"layout": "205-video-description-images/layout.json",
 							"timeline": "205-video-description-images/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "206",
+					"description": "206-2video-dash-hls: The DASH video on TV and the same video in HLS on the handheld",
+					"content": {
+						"serviceInput": {
+							"layout": "206-2video-dash-hls/layout.json",
+							"timeline": "206-2video-dash-hls/timeline.xml"
 						}
 					}
 				}
