@@ -10,14 +10,13 @@
       <tl:ref tim:class="video"
               tim:dmappcid="main_video"
               tic:syncMode="master"
-              tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
+              tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"
               tlcheck:dur="81"
               title="main video"/>
 
     <tl:seq>
         <tl:par tl:end="master">
             <tl:sleep tl:dur="6" tl:prio="high"/>
-            <tim:update tim:target="main_video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"/>
         </tl:par>
         
         <tl:par tl:end="master">
