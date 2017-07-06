@@ -26,12 +26,12 @@ Enter the credentials that James shared in an email from 20-Feb-2017 with subjec
 
 ## Testing the examples
 
-To run a syntax check of all timeline documents run
+To run a syntax check of all layout and timeline documents run
 
 ```
 make test
 ```
-and to check the syntaxt and existence of media for installed documents run
+and to check the syntax and also existence of media _for installed documents_ run
 
 ```
 make livetest

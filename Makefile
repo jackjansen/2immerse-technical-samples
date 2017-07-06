@@ -20,7 +20,7 @@ test: $(patsubst %,test-%,$(ALLSAMPLES))
 livetest: $(patsubst %,livetest-%,$(ALLSAMPLES))
 
 test-%:
-#	$(VALIDATE_L) $*/layout.json
+	$(VALIDATE_L) $*/layout.json
 	$(VALIDATE_T) --layout $*/layout.json $*/timeline.xml
 	
 livetest-%:
