@@ -5,6 +5,16 @@ The samples are technical, i.e. they are intended to test features of the implem
 
 If you point your browser to [indexx.html]() you should be able to select the test you want to see (provided you are doing so with Chrome or another 2immerse-compatible browser). And it has a double-x in the name so you can still browser to this directory on the origin server and see the contents:-).
 
+## Creating a new example
+
+- Pick a new number, create a folder, put a _timeline.xml_ and _layout.json_ in there.
+- Add to _indexx.html_
+- Add to _indexx_edge.html_
+- Add to _client.json_
+- Check syntax on the local files (see below)
+- Upload (see below)
+- Check syntax and media items (see below)
+
 ## Modifying the examples
 After changing anything here you need to upload the changed files using 
 
