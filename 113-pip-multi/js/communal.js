@@ -1,4 +1,4 @@
-/* Technical Sample 112: Overlay Component Layout 
+/* Technical Sample 113: PiP Multi Video Layout 
  * Simplified version of Theatre at Home DMApp, with CCS on region divs to show basic overlay presentation of components
  * jawalke2@cisco.com
  */
@@ -31,17 +31,17 @@ window.setupDMApp = function() {
 	/* having an object with hardcoded region sizes in is not ideal, as these will change.
   use the largest size they can grow to*/
 
-  baseWidth = window.innerWidth,
-  baseHeight = window.innerHeight;
+baseWidth = window.innerWidth,
+baseHeight = window.innerHeight;
 
-  regionSizes = {
+regionSizes = {
     'stage' : {
       height : baseHeight,
       width : baseWidth
     },
     'overlay' : {
-      height : baseHeight * 0.25,
-      width : baseWidth * 0.25
+      height : baseHeight * 0.8,
+      width : baseWidth * 0.8
     }
   };
 
@@ -59,7 +59,8 @@ window.setupDMApp = function() {
     networkLogLevel: DMAppClientLib.Logger.levels.TRACE,
     longFormConsoleLogging: true,
 		displayWidth: baseWidth,
-		displayHeight: baseHeight
+		displayHeight: baseHeight,
+    concurrentVideo: 4
   });
 
 	const tvemusync = new DMAppTvEmuLib.DMAppTvEmuSync(controller); // jshint ignore:line
@@ -85,9 +86,9 @@ let loadDMApp = function(controller) {
   controller.devDialogLogger.enableAll();
   controller.app2appMsgBusCtl.send({}, '@self', '**create_debug_component');
 
-  var timeline = new DMAppClientLib.deps.URI("https://origin.platform.2immerse.eu/dmapps/technical-samples/112-overlay/timeline.xml", window.location.href).toString();
+  var timeline = new DMAppClientLib.deps.URI("https://origin.platform.2immerse.eu/dmapps/technical-samples/113-pip-multi/timeline.xml", window.location.href).toString();
 
-  var layout = new DMAppClientLib.deps.URI("https://origin.platform.2immerse.eu/dmapps/technical-samples/112-overlay/layout.json", window.location.href).toString();
+  var layout = new DMAppClientLib.deps.URI("https://origin.platform.2immerse.eu/dmapps/technical-samples/113-pip-multi/layout.json", window.location.href).toString();
 
   controller.layout.io.setupContextAndDmapp(timeline, layout).then(function() {
         console.log('context is',controller.layout.contextId);
