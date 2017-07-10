@@ -142,6 +142,63 @@
 					}
 				},
 				{
+					"name": "112",
+					"description": "112-overlay: Overlay Component Layout",
+					"content": {
+						"serviceInput": {
+							"layout": "112-overlay/layout.json",
+							"timeline": "112-overlay/timeline.xml"
+						},
+						"appendHtmlUrl": "112-overlay/appended.html",
+						"regions": [
+							{
+								"id": "stage",
+								"elementSelector": "#region-stage",
+								"resizable": true,
+								"width": "100%",
+								"height": "100%"
+							},
+							{
+								"id": "overlay",
+								"elementSelector": "#region-overlay",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							}
+						]
+					}
+				},
+				{
+					"name": "113",
+					"description": "113-pip-multi: PiP Multi",
+					"content": {
+						"controllerOptions": {
+							"concurrentVideo": 4
+						},
+						"serviceInput": {
+							"layout": "113-pip-multi/layout.json",
+							"timeline": "113-pip-multi/timeline.xml"
+						},
+						"appendHtmlUrl": "113-pip-multi/appended.html",
+						"regions": [
+							{
+								"id": "stage",
+								"elementSelector": "#region-stage",
+								"resizable": true,
+								"width": "100%",
+								"height": "100%"
+							},
+							{
+								"id": "overlay",
+								"elementSelector": "#region-overlay",
+								"resizable": true,
+								"width": "80%",
+								"height": "80%"
+							}
+						]
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {
