@@ -9,7 +9,7 @@
 
 
       <tl:ref tim:class="video"
-              tim:dmappcid="main_video"
+              xml:id="main_video"
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/hamlet-trailer.hls/hamlet-trailer.m3u8"
               tlcheck:dur="30"

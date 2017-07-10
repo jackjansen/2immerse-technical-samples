@@ -8,14 +8,14 @@
   <tl:par>
 
       <tl:ref tim:class="video"
-              tim:dmappcid="main_video"
+              xml:id="main_video"
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/manifest.mpd"
               title="main video"/>
 
       <tl:ref tim:class="AdobeAnimationDMAppComponent"
               tim:url="/dmapp-components/adobe-animate/adobe-animate.html"
-              tim:dmappcid="anim"
+              xml:id="anim"
               tic:mediaUrl="../media/animations/Gfx_LBRiderPic_46_edit.js"
               tic:animProp="Gfx_LBRiderPic"
               title="animation"/>

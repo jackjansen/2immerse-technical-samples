@@ -10,22 +10,22 @@
     <tl:seq>
         <tl:par tl:end="master">
             <tl:sleep tl:dur="40" tl:prio="high"/>
-            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="TL-01" tic:mediaUrl="../media/109-images/TL-01.png"/>
-            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="TR-01" tic:mediaUrl="../media/109-images/TR-01.png"/>
-            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="BL-01" tic:mediaUrl="../media/109-images/BL-01.png"/>
-            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="BR-01" tic:mediaUrl="../media/109-images/BR-01.png"/>
+            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="TL-01" tic:mediaUrl="../media/109-images/TL-01.png"/>
+            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="TR-01" tic:mediaUrl="../media/109-images/TR-01.png"/>
+            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="BL-01" tic:mediaUrl="../media/109-images/BL-01.png"/>
+            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="BR-01" tic:mediaUrl="../media/109-images/BR-01.png"/>
             <tl:seq tl:prio="high">
                 <tl:par tl:end="master">
                   <tl:sleep tl:dur="20" tl:prio="high"/>
                 </tl:par>
                 <tl:par tl:end="master">
                     <tl:sleep tl:dur="20" tl:prio="high"/>
-                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="L-03" tic:mediaUrl="../media/109-images/L-03.png"/>
-                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="R-03" tic:mediaUrl="../media/109-images/R-03.png"/>
-                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="T-03" tic:mediaUrl="../media/109-images/T-03.png"/>
-                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="B-03" tic:mediaUrl="../media/109-images/B-03.png"/>
-                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="NA-01" tic:mediaUrl="../media/109-images/NA-01.png"/>
-                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="NA-02" tic:mediaUrl="../media/109-images/NA-02.png"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="L-03" tic:mediaUrl="../media/109-images/L-03.png"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="R-03" tic:mediaUrl="../media/109-images/R-03.png"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="T-03" tic:mediaUrl="../media/109-images/T-03.png"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="B-03" tic:mediaUrl="../media/109-images/B-03.png"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="NA-01" tic:mediaUrl="../media/109-images/NA-01.png"/>
+                    <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="NA-02" tic:mediaUrl="../media/109-images/NA-02.png"/>
                 </tl:par>
 
 

@@ -9,34 +9,34 @@
 
 
       <tl:ref tim:class="video"
-              tim:dmappcid="main_video"
+              xml:id="main_video"
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/manifest.mpd"
               tlcheck:dur="30"
               title="main video"/>
 
       <tl:ref tim:class="video"
-              tim:dmappcid="aux_video1"
+              xml:id="aux_video1"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/manifest.mpd"
               tlcheck:dur="30"
               title="second video"/>
       <tl:ref tim:class="video"
-              tim:dmappcid="aux_video2"
+              xml:id="aux_video2"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/manifest.mpd"
               tlcheck:dur="30"
               title="second video"/>
       <tl:ref tim:class="video"
-              tim:dmappcid="aux_video3"
+              xml:id="aux_video3"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/manifest.mpd"
               tlcheck:dur="30"
               title="second video"/>
       <tl:ref tim:class="video"
-              tim:dmappcid="aux_video4"
+              xml:id="aux_video4"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/manifest.mpd"
               tlcheck:dur="30"
               title="second video"/>
       <tl:ref tim:class="video"
-              tim:dmappcid="aux_video5"
+              xml:id="aux_video5"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/manifest.mpd"
               tlcheck:dur="30"
               title="second video"/>

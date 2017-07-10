@@ -9,7 +9,7 @@
 
 
       <tl:ref tim:class="video"
-              tim:dmappcid="main_video"
+              xml:id="main_video"
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
               tlcheck:dur="30"
@@ -19,7 +19,7 @@
       <tl:par tl:end="master">
           <tl:ref tim:class="PostTimelineEventButtonComponent"
                   tim:url="/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
-                  tim:dmappcid="start_button"
+                  xml:id="start_button"
                   tic:text="Press This Button"
                   tic:eventId="start_button_press"
                   />
@@ -31,12 +31,12 @@
         <tl:par>
             <tl:ref tim:class="image" 
                     tim:url="/dmapp-components/image/image.html" 
-                    tim:dmappcid="img01" 
+                    xml:id="img01" 
                     tic:mediaUrl="../media/switch-image.png"/>
             <tl:wait tl:event="stop_button_press"/>
             <tl:ref tim:class="PostTimelineEventButtonComponent"
                     tim:url="/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
-                    tim:dmappcid="stop_button"
+                    xml:id="stop_button"
                     tic:text="Press to Remove"
                     tic:eventId="stop_button_press"
                     />

@@ -8,7 +8,7 @@
   <tl:par>
 
       <tl:ref tim:class="video"
-              tim:dmappcid="main_video"
+              xml:id="main_video"
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"
               tlcheck:dur="81"

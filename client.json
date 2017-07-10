@@ -190,6 +190,16 @@
 							"timeline": "206-2video-dash-hls/timeline.xml"
 						}
 					}
+				},
+				{
+					"name": "300",
+					"description": "300-events: Preliminary live editing test document",
+					"content": {
+						"serviceInput": {
+							"layout": "300-event/layout.json",
+							"timeline": "300-event/timeline.xml"
+						}
+					}
 				}
 			]
 		},
