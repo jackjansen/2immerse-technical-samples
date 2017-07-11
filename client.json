@@ -199,6 +199,16 @@
 					}
 				},
 				{
+					"name": "114",
+					"description": "114-video-dual-fallback: fallback from DASH to MP4 where DASH is not supported",
+					"content": {
+						"serviceInput": {
+							"layout": "114-video-dual-fallback/layout.json",
+							"timeline": "114-video-dual-fallback/timeline.xml"
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {
