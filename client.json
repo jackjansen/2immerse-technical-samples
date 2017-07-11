@@ -210,6 +210,72 @@
 					}
 				},
 				{
+					"name": "115",
+					"description": "Technical Sample 115: Responsive Component Overlay 32\" TV",
+					"content": {
+						"controllerOptions": {
+							"displayWidth": 1920,
+							"displayHeight": 1080,
+							"displayResolution": 68.8,
+							"concurrentVideo": 4
+						},
+						"serviceInput": {
+							"layout": "115-responsive-layout-32/layout.json",
+							"timeline": "115-responsive-layout-32/timeline.xml"
+						},
+						"appendHtmlUrl": "115-responsive-layout-32/appended.html",
+						"regions": [
+							{
+								"id": "stage",
+								"elementSelector": "#region-stage",
+								"resizable": true,
+								"width": "100%",
+								"height": "100%"
+							},
+							{
+								"id": "overlay",
+								"elementSelector": "#region-overlay",
+								"resizable": true,
+								"width": "80%",
+								"height": "80%"
+							}
+						]
+					}
+				},
+				{
+					"name": "116",
+					"description": "Technical Sample 116: Responsive Component Overlay 55\" TV",
+					"content": {
+						"controllerOptions": {
+							"displayWidth": 1920,
+							"displayHeight": 1080,
+							"displayResolution": 40.1,
+							"concurrentVideo": 4
+						},
+						"serviceInput": {
+							"layout": "116-responsive-layout-32/layout.json",
+							"timeline": "116-responsive-layout-32/timeline.xml"
+						},
+						"appendHtmlUrl": "116-responsive-layout-32/appended.html",
+						"regions": [
+							{
+								"id": "stage",
+								"elementSelector": "#region-stage",
+								"resizable": true,
+								"width": "100%",
+								"height": "100%"
+							},
+							{
+								"id": "overlay",
+								"elementSelector": "#region-overlay",
+								"resizable": true,
+								"width": "80%",
+								"height": "80%"
+							}
+						]
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {
