@@ -20,6 +20,7 @@
 			"name": "sample",
 			"description": "Select technical sample",
 			"type": "select",
+			"required": true,
 			"options": [
 				{
 					"name": "100",
