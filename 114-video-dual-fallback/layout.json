@@ -1,0 +1,28 @@
+{
+    "version": 3,
+    "dmapp": "200",
+    "constraints": [
+        {
+            "componentId" : "main_video",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 320,
+                    "height": 180
+                },
+                "priority": 1,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 320,
+                    "height": 180
+                },
+                "priority": 1,
+                "audio": true
+            }
+        }
+    ],
+    "layoutModel" : "packer"
+}

@@ -1,0 +1,24 @@
+<tl:document
+  xmlns:tl="http://jackjansen.nl/timelines"
+  xmlns:tim="http://jackjansen.nl/2immerse"
+  xmlns:tic="http://jackjansen.nl/2immerse/component"
+  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
+  title="PiP Multi">
+
+  <tl:par>
+
+      <tl:ref tim:class="video"
+              tim:dmappcid="main_video"
+              tic:syncMode="master"
+              tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
+              tlcheck:dur="30"
+              title="main video"/>
+
+     <tl:par tl:end="master">
+            <tl:sleep tl:dur="30" tl:prio="high"/>
+            <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" tim:dmappcid="img06" tic:mediaUrl="../media/trailer-images/img06.png"/>
+        </tl:par>
+
+  </tl:par>
+
+</tl:document>
