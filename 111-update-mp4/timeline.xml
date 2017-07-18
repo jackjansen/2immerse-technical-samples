@@ -11,6 +11,7 @@
               xml:id="main_video"
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"
+              tic:preserveMediaTime="true"
               tlcheck:dur="81"
               title="main video"/>
 
