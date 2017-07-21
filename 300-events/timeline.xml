@@ -6,19 +6,19 @@
         xmlns:au="http://jackjansen.nl/2immerse/authoring" 
         title="Test the live triggering tool">
     <tl:par tl:end="master">
-        <tl:ref title="main video" tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/manifest.mpd" tic:syncMode="master" tim:class="video" tl:prio="high" xml:id="main_video" />
+        <tl:ref title="main video" tic:mediaUrl="https://origin.platform.2immerse.eu/media/rsc/hamlet/videos/hamlet-trailer/manifest.mpd" tic:syncMode="master" tim:class="video" tl:prio="high" xml:id="main_video" />
         <tl:par xml:id="eventPlayback">
             <tt:events>
                 <tl:par tt:name="5 second splash" xml:id="event1">
                     <tl:sleep tl:dur="5" tl:prio="high" />
-                    <tl:ref tic:mediaUrl="../media/300-images/fivesecondsplash.png" tim:class="image" tim:url="/dmapp-components/image/image.html" />
+                    <tl:ref tic:mediaUrl="https://origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/fivesecondsplash.png" tim:class="image" tim:url="https://origin.platform.2immerse.eu/dmapp-components/image/image.html" />
                 </tl:par>
                 <tl:par tt:name="Adjustable duration splash" xml:id="event2">
                     <tt:parameters>
                         <tt:parameter tt:name="duration" tt:parameter="sleep/@tl:dur" tt:type="duration" />
                     </tt:parameters>
                     <tl:sleep tl:dur="5" tl:prio="high" />
-                    <tl:ref tic:mediaUrl="../media/300-images/nsecondsplash.png" tim:class="image" tim:url="/dmapp-components/image/image.html" />
+                    <tl:ref tic:mediaUrl="https://origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/nsecondsplash.png" tim:class="image" tim:url="https://origin.platform.2immerse.eu/dmapp-components/image/image.html" />
                 </tl:par>
                 <tl:par tt:name="Stoppable duration splash" xml:id="event3">
                     <tt:parameters>
@@ -28,7 +28,7 @@
                         <tt:parameter tt:name="end now" tt:parameter="sleep/@tl:dur" tt:type="set" tt:value="0" />
                     </tt:modparameters>
                     <tl:sleep tl:dur="999999" tl:prio="high" />
-                    <tl:ref tic:mediaUrl="../media/300-images/stoppablesplash.png" tim:class="image" tim:url="/dmapp-components/image/image.html" />
+                    <tl:ref tic:mediaUrl="https://origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/stoppablesplash.png" tim:class="image" tim:url="https://origin.platform.2immerse.eu/dmapp-components/image/image.html" />
                 </tl:par>
             </tt:events>
         </tl:par>
@@ -38,7 +38,7 @@
                 <tl:sleep tl:dur="5" />
                 <tl:par tl:end="master">
                     <tl:sleep tl:dur="5" tl:prio="high" />
-                    <tl:ref tic:mediaUrl="../media/300-images/fivesecondsplash.png" tim:class="image" tim:url="/dmapp-components/image/image.html" />
+                    <tl:ref tic:mediaUrl="https://origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/fivesecondsplash.png" tim:class="image" tim:url="https://origin.platform.2immerse.eu/dmapp-components/image/image.html" />
                 </tl:par>
             </tl:seq>
         </tl:par>
