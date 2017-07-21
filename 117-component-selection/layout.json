@@ -1,0 +1,112 @@
+{
+    "version": 3,
+    "dmapp": "200",
+    "constraints": [
+        {
+            "componentId" : "main_video",
+            "personal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 0,
+                "audio": true
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 10,
+                "targetRegions": [ "stage" ]
+            }
+        },
+        {
+            "componentId" : "img01",
+            "personal" : {
+                "aspect": "16:9",
+                "prefSize": {
+                    "width": 25,
+                    "height": 25,
+                    "mode": "percent"
+                },
+                "priority": 1
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "prefSize": {
+                    "width": 25,
+                    "height": 25,
+                    "mode": "percent"
+                },
+                "priority": 1,
+                "targetRegions": [ "overlay" ]
+            }
+        },
+        {
+            "componentId" : "img02",
+            "personal" : {
+                "aspect": "16:9",
+                "prefSize": {
+                    "width": 25,
+                    "height": 25,
+                    "mode": "percent"
+                },
+                "priority": 2
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "prefSize": {
+                    "width": 25,
+                    "height": 25,
+                    "mode": "percent"
+                },
+                "priority": 2,
+                "targetRegions": [ "overlay" ]
+            }
+        },
+        {
+            "componentId" : "control-img01",
+            "personal" : {
+                "prefSize": {
+                    "width": 150,
+                    "height": 150,
+                    "mode": "px"
+                },
+                "priority": 3
+            },
+            "communal" : {
+                "prefSize": {
+                    "width": 150,
+                    "height": 150,
+                    "mode": "px"
+                },
+                "priority": 3,
+                "targetRegions": [ "overlay" ]
+            }
+        },
+        {
+            "componentId" : "control-img02",
+            "personal" : {
+                "prefSize": {
+                    "width": 150,
+                    "height": 150,
+                    "mode": "px"
+                },
+                "priority": 4
+            },
+            "communal" : {
+                "prefSize": {
+                    "width": 150,
+                    "height": 150,
+                    "mode": "px"
+                },
+                "priority": 4,
+                "targetRegions": [ "overlay" ]
+            }
+        }
+    ],
+    "layoutModel" : "packer"
+}
