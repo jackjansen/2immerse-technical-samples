@@ -276,6 +276,28 @@
 					}
 				},
 				{
+					"name": "118",
+					"description": "118-video-dash-cenc: a DASH CENC video",
+					"content": {
+						"serviceInput": {
+							"layout": "118-video-dash-cenc/layout.json",
+							"timeline": "118-video-dash-cenc/timeline.xml"
+						},
+						"setupComponent": {
+							"componentId": "auth-setup",
+							"config": {
+								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
+								"class": "TestUtilAuthService"
+							},
+							"parameters": {
+								"authServiceKeyId": "59a7df02fa54ec0001d2c348",
+								"cencKeyIdBase64": "8YX2sbLUSi2KMdIjmtcGFw",
+								"username": "user@2immerse.eu"
+							}
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {
