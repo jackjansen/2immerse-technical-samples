@@ -18,8 +18,7 @@
 			"class": "TestUtilAuthService"
 		},
 		"parameters": {
-			"authServiceKeyId": "59a7df02fa54ec0001d2c348",
-			"cencKeyIdBase64": "8YX2sbLUSi2KMdIjmtcGFw",
+			"authServiceKeyId": "59afcf3c119da300018a3b4b",
 			"username": "user@2immerse.eu"
 		}
 	},
