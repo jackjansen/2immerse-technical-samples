@@ -297,6 +297,16 @@
 					}
 				},
 				{
+					"name": "119",
+					"description": "119-video-dash-360: a DASH 360° video",
+					"content": {
+						"serviceInput": {
+							"layout": "119-video-dash-360/layout.json",
+							"timeline": "119-video-dash-360/timeline.xml"
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {

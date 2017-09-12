@@ -1,0 +1,19 @@
+<tl:document
+  xmlns:tl="http://jackjansen.nl/timelines"
+  xmlns:tim="http://jackjansen.nl/2immerse"
+  xmlns:tic="http://jackjansen.nl/2immerse/component"
+  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
+  title="Test a single DASH 360° video">
+
+  <tl:par>
+
+
+      <tl:ref tim:class="VideoPanoramaDMAppComponent"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/video-panorama/video-panorama.html"
+              xml:id="main_video"
+              tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/videos/2017_05_FRA_MGP_RACE_VR1_racestart/manifest.mpd"
+              title="main video"/>
+
+  </tl:par>
+
+</tl:document>
