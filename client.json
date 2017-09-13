@@ -307,6 +307,16 @@
 					}
 				},
 				{
+					"name": "120",
+					"description": "120-anim-2: Adobe animation component test showing Battle For animation",
+					"content": {
+						"serviceInput": {
+							"layout": "120-anim-2/layout.json",
+							"timeline": "120-anim-2/timeline.xml"
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {
