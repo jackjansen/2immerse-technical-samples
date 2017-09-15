@@ -20,7 +20,7 @@
                     <tl:sleep tl:dur="5" tl:prio="high" />
                     <tl:ref tic:mediaUrl="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/nsecondsplash.png" tim:class="image" tim:url="//origin.platform.2immerse.eu/dmapp-components/image/image.html" />
                 </tl:par>
-                <tl:par tt:name="Stoppable duration splash" xml:id="event3" tt:previewUrl="previews/stoppable-splash.jpg" tt:longdesc="Shows paint splat with adjustable duration which can be stopped prematurely by the operator">
+                <tl:par tt:name="Stoppable duration splash" xml:id="event3" tt:previewUrl="previews/stoppable-splash.jpg" tt:longdesc="Shows paint splat with adjustable duration which can be stopped prematurely by the operator" tt:modVerb="Remove splat">
                     <tt:parameters>
                         <tt:parameter tt:name="duration" tt:parameter="tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
                     </tt:parameters>
@@ -31,16 +31,6 @@
                     <tl:ref tic:mediaUrl="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/stoppablesplash.png" tim:class="image" tim:url="//origin.platform.2immerse.eu/dmapp-components/image/image.html" />
                 </tl:par>
             </tt:events>
-        </tl:par>
-        <tl:par tt:name="test 5 second splash after 5 seconds" xml:id="event4" tt:wantstatus="true">
-            <tl:sleep tl:dur="10" />
-            <tl:seq>
-                <tl:sleep tl:dur="5" />
-                <tl:par tl:end="master">
-                    <tl:sleep tl:dur="5" tl:prio="high" />
-                    <tl:ref tic:mediaUrl="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/fivesecondsplash.png" tim:class="image" tim:url="//origin.platform.2immerse.eu/dmapp-components/image/image.html" />
-                </tl:par>
-            </tl:seq>
         </tl:par>
 		<au:rawLayout>{
 		"version": 3,
