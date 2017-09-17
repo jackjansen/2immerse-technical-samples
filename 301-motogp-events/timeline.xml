@@ -373,17 +373,46 @@
 }
     </au:rawLayout>
     <au:rawClient>{
+		"appendHtmlUrl": "https://origin.platform.2immerse.eu/dmapps/motogp/tv-appended.html",
+		"rootLayoutRegionElementSelector": "#screen",
+		"regions": [
+			{
+				"id": "video",
+				"elementSelector": "#region-video"
+			},
+			{
+				"id": "leaderboard",
+				"elementSelector": "#region-leaderboard"
+			},
+			{
+				"id": "pip",
+				"elementSelector": "#region-pip"
+			},
+			{
+				"id": "race-type-info",
+				"elementSelector": "#region-race-type-info"
+			},
+			{
+				"id": "race-laps-remaining",
+				"elementSelector": "#region-race-laps-remaining"
+			},
+			{
+				"id": "dummy",
+				"elementSelector": "#region-dummy",
+				"suppressElementlessComponentWarning": true
+			}
+		],
     	"setupComponent": {
-		"componentId": "dmapp-control",
-		"config": {
-			"url": "https://origin.platform.2immerse.eu/dmapp-components/motogp-dmapp-control/motogp-dmapp-control.html",
-			"class": "MotoGpDMAppControl"
-		},
-		"parameters": {
-			"pipConfigUrl": "https://origin.platform.2immerse.eu/dmapps/motogp/pipCfg.json"
+			"componentId": "dmapp-control",
+			"config": {
+				"url": "https://origin.platform.2immerse.eu/dmapp-components/motogp-dmapp-control/motogp-dmapp-control.html",
+				"class": "MotoGpDMAppControl"
+			},
+			"parameters": {
+				"pipConfigUrl": "https://origin.platform.2immerse.eu/dmapps/motogp/pipCfg.json"
+			}
 		}
 	}
-}
     </au:rawClient>
 
   </tl:par>
