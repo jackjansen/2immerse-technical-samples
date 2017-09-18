@@ -1,5 +1,5 @@
 {
-	"description": "118-video-dash-cenc: a DASH CENC video",
+	"description": "121-video-hls-enc: an encrypted HLS video",
 	"mode": "tv",
 	"serviceUrlPreset": "aws_test",
 	"controllerOptions": {
@@ -18,7 +18,7 @@
 			"class": "TestUtilAuthService"
 		},
 		"parameters": {
-			"localStorageKey": "tech-sample-118-video-dash-cenc",
+			"localStorageKey": "tech-sample-121-video-hls-enc",
 			"authServiceKeyId": "59afcf3c119da300018a3b4b",
 			"username": "user@2immerse.eu"
 		}
