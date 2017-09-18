@@ -1,0 +1,23 @@
+{
+	"name": "100",
+	"description": "100-video-mp4: a simple MP4 video",
+	"mode": "tv",
+	"serviceUrlPreset": "aws_test",
+	"controllerOptions": {
+		"deviceIdPrefix": "tv",
+		"deviceIdNamespace": "ts-tv",
+		"defaultLogLevel": "trace",
+		"networkLogLevel": "trace",
+		"longFormConsoleLogging": true,
+		"showUserErrorMessageUI": true
+	},
+	"debugOptions": {
+		"debugComponent": true,
+		"devLogging": true,
+		"failurePlaceholders": true
+	},
+	"serviceInput": {
+		"layout": "layout.json",
+		"timeline": "timeline.xml"
+	}
+}
