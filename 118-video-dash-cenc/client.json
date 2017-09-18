@@ -18,6 +18,7 @@
 			"class": "TestUtilAuthService"
 		},
 		"parameters": {
+			"localStorageKey": "tech-sample-118-video-dash-cenc",
 			"authServiceKeyId": "59afcf3c119da300018a3b4b",
 			"username": "user@2immerse.eu"
 		}
