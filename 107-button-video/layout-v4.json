@@ -1,0 +1,91 @@
+{
+  "version": 4,
+  "dmapp": "200",
+  "constraints": [
+    {
+      "constraintId": "main_video",
+      "personal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
+        },
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
+        },
+        "priority": 1,
+        "audio": true
+      }
+    },
+    {
+      "constraintId": "start_button",
+      "personal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
+        },
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
+        },
+        "priority": 2,
+        "audio": true
+      }
+    },
+    {
+      "constraintId": "stop_button",
+      "personal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
+        },
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
+        },
+        "priority": 3,
+        "audio": true
+      }
+    },
+    {
+      "constraintId": "img01",
+      "personal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
+        },
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
+        },
+        "priority": 4,
+        "audio": true
+      }
+    }
+  ],
+  "layoutModel": "packer"
+}
