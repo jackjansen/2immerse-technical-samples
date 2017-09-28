@@ -1,0 +1,7 @@
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Split animation test">
+  <tl:par>
+    <tl:sleep tl:dur="1000"/>
+    <tl:ref tim:class="MotoGPRadarDMAppComponent"
+    tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-radar/motogp-radar.html" xml:id="radar" title="radar"/>
+  </tl:par>
+</tl:document>
