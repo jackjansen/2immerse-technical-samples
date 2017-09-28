@@ -1,6 +1,6 @@
 <tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Split animation test">
   <tl:par>
-    <tl:sleep tl:dur="75"/>
+    <tl:sleep tl:dur="1200"/>
     <tl:ref tim:class="MotoGPSplitDMAppComponent"
     tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-split/motogp-split.html" xml:id="anim" tic:rider1='{"id":"7444", "surName": "Marquez"}' tic:rider2='{"id":"158", "surName": "Rossi"}' title="animation"/>
   </tl:par>
