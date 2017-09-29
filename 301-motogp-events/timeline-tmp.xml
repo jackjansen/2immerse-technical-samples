@@ -1,0 +1,567 @@
+<tl:document
+  xmlns:tl="http://jackjansen.nl/timelines"
+  xmlns:tim="http://jackjansen.nl/2immerse"
+  xmlns:tic="http://jackjansen.nl/2immerse/component"
+  xmlns:tt="http://jackjansen.nl/2immerse/livetrigger" 
+  xmlns:au="http://jackjansen.nl/2immerse/authoring" 
+  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
+  title="PiP Multi">
+
+  <tl:par>
+
+    <tl:par  tt:wantstatus="true">
+      <tl:ref tim:class="video"
+              xml:id="main_video"
+              tic:syncMode="master"
+              tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/videos/2017_03_AME_MGP_RACE_CF/manifest.mpd"
+              tic:startMediaTime="41:20"
+              title="main video"/> <!-- race starts at 41:27, 1493046616052 in data -->
+    <tt:events>
+        <tl:seq tt:name="PIP 0" tt:verb="Enable" tt:modVerb="Disable">
+            <tt:parameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+            </tt:parameters>
+            <tt:modparameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+            </tt:modparameters>
+            <tl:sleep tl:dur="0" />
+            <tl:par>
+                <tl:sleep tl:dur="999999" />
+              <tl:ref tim:class="MotoGpPictureInPicture"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
+                      xml:id="pip0"
+                      tic:localConfig="motogp-pip-cfg"
+                      tic:spoolerComponent="spooler"
+                      title="picture-in-picture 0"/>
+
+            </tl:par>
+        </tl:seq>
+        <tl:seq tt:name="PIP 1" tt:verb="Enable" tt:modVerb="Disable">
+            <tt:parameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+            </tt:parameters>
+            <tt:modparameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+            </tt:modparameters>
+            <tl:sleep tl:dur="0" />
+            <tl:par>
+                <tl:sleep tl:dur="999999" />
+              <tl:ref tim:class="MotoGpPictureInPicture"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
+                      xml:id="pip1"
+                      tic:localConfig="motogp-pip-cfg"
+                      tic:spoolerComponent="spooler"
+                      title="picture-in-picture 1"/>
+
+            </tl:par>
+        </tl:seq>
+        <tl:seq tt:name="PIP 2" tt:verb="Enable" tt:modVerb="Disable">
+            <tt:parameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+            </tt:parameters>
+            <tt:modparameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+            </tt:modparameters>
+            <tl:sleep tl:dur="0" />
+            <tl:par>
+                <tl:sleep tl:dur="999999" />
+              <tl:ref tim:class="MotoGpPictureInPicture"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
+                      xml:id="pip2"
+                      tic:localConfig="motogp-pip-cfg"
+                      tic:spoolerComponent="spooler"
+                      title="picture-in-picture 2"/>
+
+            </tl:par>
+        </tl:seq>
+        <tl:seq tt:name="PIP 3" tt:verb="Enable" tt:modVerb="Disable">
+            <tt:parameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+            </tt:parameters>
+            <tt:modparameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+            </tt:modparameters>
+            <tl:sleep tl:dur="0" />
+            <tl:par>
+                <tl:sleep tl:dur="999999" />
+              <tl:ref tim:class="MotoGpPictureInPicture"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
+                      xml:id="pip3"
+                      tic:localConfig="motogp-pip-cfg"
+                      tic:spoolerComponent="spooler"
+                      title="picture-in-picture 3"/>
+
+            </tl:par>
+        </tl:seq>
+        <tl:seq tt:name="PIP 4" tt:verb="Enable" tt:modVerb="Disable">
+            <tt:parameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+            </tt:parameters>
+            <tt:modparameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+            </tt:modparameters>
+            <tl:sleep tl:dur="0" />
+            <tl:par>
+                <tl:sleep tl:dur="999999" />
+              <tl:ref tim:class="MotoGpPictureInPicture"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
+                      xml:id="pip4"
+                      tic:localConfig="motogp-pip-cfg"
+                      tic:spoolerComponent="spooler"
+                      title="picture-in-picture 4"/>
+
+            </tl:par>
+        </tl:seq>
+    </tt:events>
+
+      <tl:ref tim:class="GoogleAnalyticsDMAppComponent"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/google-analytics/google-analytics.html"
+              xml:id="google-analytics"
+              title="google-analytics"/>
+
+    </tl:par>
+    <tl:par  tt:wantstatus="true">
+       <tl:ref tim:class="MotoGpSpooler"
+              xml:id="spooler"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-spooler/motogp-spooler.html"
+              tic:xmlManifestDir="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/2017_MotoGP_AME_RAC"
+              tic:dataOffsetMs="1493046609052"
+              title="spooler"/>
+
+       <!-- begin TV -->
+       <tt:events>
+            <tl:seq tt:name="Leaderboard" tt:verb="show" tt:modeVerb="remove">
+                <tt:parameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                    <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+                </tt:parameters>
+                <tt:modparameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+                </tt:modparameters>
+                <tl:sleep tl:dur="0" />
+                <tl:par>
+                    <tl:sleep tl:dur="999999" />
+                   <tl:ref tim:class="MotoGpLeaderboard"
+                          xml:id="leaderboard"
+                          tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-leaderboard/motogp-leaderboard.html"
+                          tic:spoolerComponent="spooler"
+                          title="leaderboard"/>
+
+                </tl:par>
+            </tl:seq>
+            <tl:seq tt:name="html snippet" tt:longdesc="Jack really wonders what this thing does..." tt:verb="show" tt:modeVerb="remove">
+                <tt:parameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                    <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+                </tt:parameters>
+                <tt:modparameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+                </tt:modparameters>
+                <tl:sleep tl:dur="0" />
+                <tl:par>
+                    <tl:sleep tl:dur="999999" />
+                   <tl:ref tim:class="HtmlSnippetDMAppComponent"
+                          xml:id="race-type-info"
+                          tim:url="https://origin.platform.2immerse.eu/dmapp-components/html-snippet/html-snippet.html"
+                          tic:html="MotoGP"
+                          tic:className="race-type-info"
+                          title="race-type-info"/>
+
+                </tl:par>
+            </tl:seq>
+            <tl:seq tt:name="Laps Remaining" tt:verb="show" tt:modeVerb="remove">
+                <tt:parameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                    <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+                </tt:parameters>
+                <tt:modparameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+                </tt:modparameters>
+                <tl:sleep tl:dur="0" />
+                <tl:par>
+                    <tl:sleep tl:dur="999999" />
+                   <tl:ref tim:class="MotoGpLapsRemaining"
+                          xml:id="race-laps-remaining"
+                          tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-laps-remaining/motogp-laps-remaining.html"
+                          tic:spoolerComponent="spooler"
+                          title="race-laps-remaining"/>
+
+                </tl:par>
+            </tl:seq>
+        </tt:events>
+
+       <!-- begin companion -->
+
+       <tl:ref tim:class="MotoGpCompanionControlPanel"
+              xml:id="companion-control-panel"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-companion-control-panel/motogp-companion-control-panel.html"
+              tic:spoolerComponent="spooler"
+              tic:localPipConfig="motogp-pip-cfg"
+              tic:localTyreConfig="motogp-tyre-cfg"
+              tic:eventsUrl="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/2017_motogp_ame_points_of_interest.xml"
+              title="companion-control-panel"/>
+
+       <tl:ref tim:class="MotoGpCompanionPanelSwitcher"
+              xml:id="companion-panel-switcher"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-companion-panel-switcher/motogp-companion-panel-switcher.html"
+              title="companion-panel-switcher"/>
+
+       <tl:ref tim:class="MotoGpCompanionTopBar"
+              xml:id="companion-top-bar"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-companion-top-bar/motogp-companion-top-bar.html"
+              tic:spoolerComponent="spooler"
+              title="companion-top-bar"/>
+
+       <tl:wait />
+    </tl:par>
+    <au:rawLayout>{
+    "version": 4,
+    "dmapp": "MotoGP",
+    "constraints": [
+        {
+            "constraintId" : "main_video",
+            "personal": {
+                "priority": 0
+            },
+            "communal" : {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 640,
+                    "height": 360
+                },
+                "priority": 10,
+                "targetRegions": [ "video" ]
+            }
+        },
+        {
+            "constraintId" : "pip0",
+            "personal": {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 50,
+                    "height": 33,
+                    "mode": "percent"
+                },
+                "priority": 0,
+                "targetRegions": [ "comp-right-section" ]
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 386,
+                    "height": 283
+                },
+                "prefSize": {
+                    "width": 386,
+                    "height": 283
+                },
+                "priority": 0,
+                "targetRegions": [ "pip" ]
+            }
+        },
+        {
+            "constraintId" : "pip1",
+            "personal": {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 50,
+                    "height": 33,
+                    "mode": "percent"
+                },
+                "priority": 0,
+                "targetRegions": [ "comp-right-section" ]
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 386,
+                    "height": 283
+                },
+                "prefSize": {
+                    "width": 386,
+                    "height": 283
+                },
+                "priority": 0,
+                "targetRegions": [ "pip" ]
+            }
+        },
+        {
+            "constraintId" : "pip2",
+            "personal": {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 50,
+                    "height": 33,
+                    "mode": "percent"
+                },
+                "priority": 0,
+                "targetRegions": [ "comp-right-section" ]
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 386,
+                    "height": 283
+                },
+                "prefSize": {
+                    "width": 386,
+                    "height": 283
+                },
+                "priority": 0,
+                "targetRegions": [ "pip" ]
+            }
+        },
+        {
+            "constraintId" : "pip3",
+            "personal": {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 50,
+                    "height": 33,
+                    "mode": "percent"
+                },
+                "priority": 0,
+                "targetRegions": [ "comp-right-section" ]
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 386,
+                    "height": 283
+                },
+                "prefSize": {
+                    "width": 386,
+                    "height": 283
+                },
+                "priority": 0,
+                "targetRegions": [ "pip" ]
+            }
+        },
+        {
+            "constraintId" : "pip4",
+            "personal": {
+                "aspect": "16:9",
+                "minSize": {
+                    "width": 50,
+                    "height": 33,
+                    "mode": "percent"
+                },
+                "priority": 0,
+                "targetRegions": [ "comp-right-section" ]
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 386,
+                    "height": 283
+                },
+                "prefSize": {
+                    "width": 386,
+                    "height": 283
+                },
+                "priority": 0,
+                "targetRegions": [ "pip" ]
+            }
+        },
+        {
+            "constraintId" : "spooler",
+            "personal": {
+                "minSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "prefSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "dummy" ]
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "prefSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "dummy" ]
+            }
+        },
+        {
+            "constraintId" : "google-analytics",
+            "personal": {
+                "minSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "prefSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "dummy" ]
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "prefSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "dummy" ]
+            }
+        },
+        {
+            "constraintId" : "leaderboard",
+            "personal": {
+                "priority": 0
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 100,
+                    "height": 100,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "leaderboard" ]
+            }
+        },
+        {
+            "constraintId" : "race-type-info",
+            "personal": {
+                "priority": 0
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 100,
+                    "height": 100,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "race-type-info" ]
+            }
+        },
+        {
+            "constraintId" : "race-laps-remaining",
+            "personal": {
+                "priority": 0
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 100,
+                    "height": 100,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "race-laps-remaining" ]
+            }
+        },
+        {
+            "constraintId" : "companion-control-panel",
+            "personal": {
+                "minSize": {
+                    "width": 100,
+                    "height": 100,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "comp-control-panel" ]
+            },
+            "communal" : {
+                "priority": 0
+            }
+        },
+        {
+            "constraintId" : "companion-panel-switcher",
+            "personal": {
+                "minSize": {
+                    "width": 100,
+                    "height": 100,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "comp-panel-switcher" ]
+            },
+            "communal" : {
+                "priority": 0
+            }
+        },
+        {
+            "constraintId" : "companion-top-bar",
+            "personal": {
+                "minSize": {
+                    "width": 100,
+                    "height": 100,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "comp-top-bar" ]
+            },
+            "communal" : {
+                "priority": 0
+            }
+        }
+    ],
+    "layoutModel" : "packer"
+}
+    </au:rawLayout>
+    <au:rawClient>{
+		"appendHtmlUrl": "https://origin.platform.2immerse.eu/dmapps/motogp/tv-appended.html",
+		"rootLayoutRegionElementSelector": "#screen",
+		"regions": [
+			{
+				"id": "video",
+				"elementSelector": "#region-video"
+			},
+			{
+				"id": "leaderboard",
+				"elementSelector": "#region-leaderboard"
+			},
+			{
+				"id": "pip",
+				"elementSelector": "#region-pip"
+			},
+			{
+				"id": "race-type-info",
+				"elementSelector": "#region-race-type-info"
+			},
+			{
+				"id": "race-laps-remaining",
+				"elementSelector": "#region-race-laps-remaining"
+			},
+			{
+				"id": "dummy",
+				"elementSelector": "#region-dummy",
+				"suppressElementlessComponentWarning": true
+			}
+		],
+    	"setupComponent": {
+			"componentId": "dmapp-control",
+			"config": {
+				"url": "https://origin.platform.2immerse.eu/dmapp-components/motogp-dmapp-control/motogp-dmapp-control.html",
+				"class": "MotoGpDMAppControl"
+			},
+			"parameters": {
+				"pipConfigUrl": "https://origin.platform.2immerse.eu/dmapps/motogp/pipCfg.json"
+			}
+		}
+	}
+    </au:rawClient>
+
+  </tl:par>
+
+</tl:document>
