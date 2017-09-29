@@ -112,11 +112,11 @@
        <tl:wait />
     </tl:par>
     <au:rawLayout>{
-    "version": 3,
+    "version": 4,
     "dmapp": "MotoGP",
     "constraints": [
         {
-            "componentId" : "main_video",
+            "constraintId" : "main_video",
             "personal": {
                 "priority": 0
             },
@@ -131,7 +131,7 @@
             }
         },
         {
-            "componentId" : "pip0",
+            "constraintId" : "pip0",
             "personal": {
                 "aspect": "16:9",
                 "minSize": {
@@ -156,7 +156,7 @@
             }
         },
         {
-            "componentId" : "pip1",
+            "constraintId" : "pip1",
             "personal": {
                 "aspect": "16:9",
                 "minSize": {
@@ -181,7 +181,7 @@
             }
         },
         {
-            "componentId" : "pip2",
+            "constraintId" : "pip2",
             "personal": {
                 "aspect": "16:9",
                 "minSize": {
@@ -206,7 +206,7 @@
             }
         },
         {
-            "componentId" : "pip3",
+            "constraintId" : "pip3",
             "personal": {
                 "aspect": "16:9",
                 "minSize": {
@@ -231,7 +231,7 @@
             }
         },
         {
-            "componentId" : "pip4",
+            "constraintId" : "pip4",
             "personal": {
                 "aspect": "16:9",
                 "minSize": {
@@ -256,7 +256,7 @@
             }
         },
         {
-            "componentId" : "spooler",
+            "constraintId" : "spooler",
             "personal": {
                 "minSize": {
                     "width": 0,
@@ -287,7 +287,38 @@
             }
         },
         {
-            "componentId" : "leaderboard",
+            "constraintId" : "google-analytics",
+            "personal": {
+                "minSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "prefSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "dummy" ]
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "prefSize": {
+                    "width": 0,
+                    "height": 0,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "dummy" ]
+            }
+        },
+        {
+            "constraintId" : "leaderboard",
             "personal": {
                 "priority": 0
             },
@@ -302,7 +333,7 @@
             }
         },
         {
-            "componentId" : "race-type-info",
+            "constraintId" : "race-type-info",
             "personal": {
                 "priority": 0
             },
@@ -317,7 +348,7 @@
             }
         },
         {
-            "componentId" : "race-laps-remaining",
+            "constraintId" : "race-laps-remaining",
             "personal": {
                 "priority": 0
             },
@@ -332,7 +363,7 @@
             }
         },
         {
-            "componentId" : "companion-control-panel",
+            "constraintId" : "companion-control-panel",
             "personal": {
                 "minSize": {
                     "width": 100,
@@ -347,7 +378,7 @@
             }
         },
         {
-            "componentId" : "companion-panel-switcher",
+            "constraintId" : "companion-panel-switcher",
             "personal": {
                 "minSize": {
                     "width": 100,
@@ -362,7 +393,7 @@
             }
         },
         {
-            "componentId" : "companion-top-bar",
+            "constraintId" : "companion-top-bar",
             "personal": {
                 "minSize": {
                     "width": 100,
