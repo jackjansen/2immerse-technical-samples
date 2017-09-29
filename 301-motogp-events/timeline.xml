@@ -14,7 +14,8 @@
               xml:id="main_video"
               tic:syncMode="master"
               tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/videos/2017_03_AME_MGP_RACE_CF/manifest.mpd"
-              title="main video"/>
+              tic:startMediaTime="41:20"
+              title="main video"/> <!-- race starts at 41:27, 1493046616052 in data -->
 
       <tl:ref tim:class="MotoGpPictureInPicture"
               tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
@@ -51,12 +52,18 @@
               tic:spoolerComponent="spooler"
               title="picture-in-picture 4"/>
 
+      <tl:ref tim:class="GoogleAnalyticsDMAppComponent"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/google-analytics/google-analytics.html"
+              xml:id="google-analytics"
+              title="google-analytics"/>
+
     </tl:par>
     <tl:par>
        <tl:ref tim:class="MotoGpSpooler"
               xml:id="spooler"
               tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-spooler/motogp-spooler.html"
               tic:xmlManifestDir="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/2017_MotoGP_AME_RAC"
+              tic:dataOffsetMs="1493046609052"
               title="spooler"/>
 
        <!-- begin TV -->
@@ -87,6 +94,7 @@
               tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-companion-control-panel/motogp-companion-control-panel.html"
               tic:spoolerComponent="spooler"
               tic:localPipConfig="motogp-pip-cfg"
+              tic:localTyreConfig="motogp-tyre-cfg"
               tic:eventsUrl="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/2017_motogp_ame_points_of_interest.xml"
               title="companion-control-panel"/>
 
