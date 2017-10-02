@@ -340,6 +340,78 @@
 					}
 				},
 				{
+					"name": "122",
+					"description": "122-data-playback-split-timing: Adobe animation component test showing Split data animation",
+					"content": {
+						"serviceInput": {
+							"layout": "122-data-playback-split-timing/layout.json",
+							"timeline": "122-data-playback-split-timing/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "123",
+					"description": "123-data-playback-radar: A component that shows the riders position on the track. (One lap behind 'real-time')",
+					"content": {
+						"serviceInput": {
+							"layout": "123-data-playback-radar/layout.json",
+							"timeline": "123-data-playback-radar/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "124",
+					"description": "124-update-layout: Play script in the background, video in PIP window on top. Video moves to another corner every 5 seconds",
+					"content": {
+						"serviceUrlPreset": "aws_edge",
+						"serviceUrls" : {
+							"layoutService" : "https://layout-service-v4.platform.2immerse.eu/layout/v4"
+						},
+						"appendHtmlUrl": "124-update-layout/appended.html",
+						"regions": [
+							{
+								"id": "stage",
+								"elementSelector": "#region-stage",
+								"resizable": true,
+								"width": "100%",
+								"height": "100%"
+							},
+							{
+								"id": "overlayTL",
+								"elementSelector": "#region-overlay-topleft",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							},
+							{
+								"id": "overlayTR",
+								"elementSelector": "#region-overlay-topright",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							},
+							{
+								"id": "overlayBL",
+								"elementSelector": "#region-overlay-botleft",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							},
+							{
+								"id": "overlayBR",
+								"elementSelector": "#region-overlay-botright",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							}
+						],
+						"serviceInput": {
+							"layout": "124-update-layout/layout.json",
+							"timeline": "124-update-layout/timeline.xml"
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {
