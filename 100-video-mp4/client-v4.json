@@ -1,7 +1,7 @@
 {
 	"description": "100-video-mp4: a simple MP4 video",
 	"mode": "standalone",
-	"serviceUrlPreset": "aws_test",
+	"serviceUrlPreset": "aws_edge",
 	"serviceUrls" : {
 		"layoutService" : "https://layout-service-v4.platform.2immerse.eu/layout/v4"
 	},

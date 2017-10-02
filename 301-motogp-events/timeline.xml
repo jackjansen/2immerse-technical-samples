@@ -9,48 +9,115 @@
 
   <tl:par>
 
-    <tl:par>
+    <tl:par  tt:wantstatus="true">
       <tl:ref tim:class="video"
               xml:id="main_video"
               tic:syncMode="master"
               tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/videos/2017_03_AME_MGP_RACE_CF/manifest.mpd"
               tic:startMediaTime="41:20"
               title="main video"/> <!-- race starts at 41:27, 1493046616052 in data -->
+    <tt:events>
+        <tl:seq tt:name="PIP 0" tt:verb="Enable" tt:modVerb="Disable">
+            <tt:parameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+            </tt:parameters>
+            <tt:modparameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+            </tt:modparameters>
+            <tl:sleep tl:dur="0" />
+            <tl:par>
+                <tl:sleep tl:dur="999999" />
+              <tl:ref tim:class="MotoGpPictureInPicture"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
+                      xml:id="pip0"
+                      tic:localConfig="motogp-pip-cfg"
+                      tic:spoolerComponent="spooler"
+                      title="picture-in-picture 0"/>
 
-      <tl:ref tim:class="MotoGpPictureInPicture"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
-              xml:id="pip0"
-              tic:localConfig="motogp-pip-cfg"
-              tic:spoolerComponent="spooler"
-              title="picture-in-picture 0"/>
+            </tl:par>
+        </tl:seq>
+        <tl:seq tt:name="PIP 1" tt:verb="Enable" tt:modVerb="Disable">
+            <tt:parameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+            </tt:parameters>
+            <tt:modparameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+            </tt:modparameters>
+            <tl:sleep tl:dur="0" />
+            <tl:par>
+                <tl:sleep tl:dur="999999" />
+              <tl:ref tim:class="MotoGpPictureInPicture"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
+                      xml:id="pip1"
+                      tic:localConfig="motogp-pip-cfg"
+                      tic:spoolerComponent="spooler"
+                      title="picture-in-picture 1"/>
 
-      <tl:ref tim:class="MotoGpPictureInPicture"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
-              xml:id="pip1"
-              tic:localConfig="motogp-pip-cfg"
-              tic:spoolerComponent="spooler"
-              title="picture-in-picture 1"/>
+            </tl:par>
+        </tl:seq>
+        <tl:seq tt:name="PIP 2" tt:verb="Enable" tt:modVerb="Disable">
+            <tt:parameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+            </tt:parameters>
+            <tt:modparameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+            </tt:modparameters>
+            <tl:sleep tl:dur="0" />
+            <tl:par>
+                <tl:sleep tl:dur="999999" />
+              <tl:ref tim:class="MotoGpPictureInPicture"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
+                      xml:id="pip2"
+                      tic:localConfig="motogp-pip-cfg"
+                      tic:spoolerComponent="spooler"
+                      title="picture-in-picture 2"/>
 
-      <tl:ref tim:class="MotoGpPictureInPicture"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
-              xml:id="pip2"
-              tic:localConfig="motogp-pip-cfg"
-              tic:spoolerComponent="spooler"
-              title="picture-in-picture 2"/>
+            </tl:par>
+        </tl:seq>
+        <tl:seq tt:name="PIP 3" tt:verb="Enable" tt:modVerb="Disable">
+            <tt:parameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+            </tt:parameters>
+            <tt:modparameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+            </tt:modparameters>
+            <tl:sleep tl:dur="0" />
+            <tl:par>
+                <tl:sleep tl:dur="999999" />
+              <tl:ref tim:class="MotoGpPictureInPicture"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
+                      xml:id="pip3"
+                      tic:localConfig="motogp-pip-cfg"
+                      tic:spoolerComponent="spooler"
+                      title="picture-in-picture 3"/>
 
-      <tl:ref tim:class="MotoGpPictureInPicture"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
-              xml:id="pip3"
-              tic:localConfig="motogp-pip-cfg"
-              tic:spoolerComponent="spooler"
-              title="picture-in-picture 3"/>
+            </tl:par>
+        </tl:seq>
+        <tl:seq tt:name="PIP 4" tt:verb="Enable" tt:modVerb="Disable">
+            <tt:parameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+            </tt:parameters>
+            <tt:modparameters>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+            </tt:modparameters>
+            <tl:sleep tl:dur="0" />
+            <tl:par>
+                <tl:sleep tl:dur="999999" />
+              <tl:ref tim:class="MotoGpPictureInPicture"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
+                      xml:id="pip4"
+                      tic:localConfig="motogp-pip-cfg"
+                      tic:spoolerComponent="spooler"
+                      title="picture-in-picture 4"/>
 
-      <tl:ref tim:class="MotoGpPictureInPicture"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
-              xml:id="pip4"
-              tic:localConfig="motogp-pip-cfg"
-              tic:spoolerComponent="spooler"
-              title="picture-in-picture 4"/>
+            </tl:par>
+        </tl:seq>
+    </tt:events>
 
       <tl:ref tim:class="GoogleAnalyticsDMAppComponent"
               tim:url="https://origin.platform.2immerse.eu/dmapp-components/google-analytics/google-analytics.html"
@@ -58,7 +125,7 @@
               title="google-analytics"/>
 
     </tl:par>
-    <tl:par>
+    <tl:par  tt:wantstatus="true">
        <tl:ref tim:class="MotoGpSpooler"
               xml:id="spooler"
               tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-spooler/motogp-spooler.html"
@@ -67,25 +134,66 @@
               title="spooler"/>
 
        <!-- begin TV -->
+       <tt:events>
+            <tl:seq tt:name="Leaderboard" tt:verb="show" tt:modeVerb="remove">
+                <tt:parameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                    <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+                </tt:parameters>
+                <tt:modparameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+                </tt:modparameters>
+                <tl:sleep tl:dur="0" />
+                <tl:par>
+                    <tl:sleep tl:dur="999999" />
+                   <tl:ref tim:class="MotoGpLeaderboard"
+                          xml:id="leaderboard"
+                          tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-leaderboard/motogp-leaderboard.html"
+                          tic:spoolerComponent="spooler"
+                          title="leaderboard"/>
 
-       <tl:ref tim:class="MotoGpLeaderboard"
-              xml:id="leaderboard"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-leaderboard/motogp-leaderboard.html"
-              tic:spoolerComponent="spooler"
-              title="leaderboard"/>
+                </tl:par>
+            </tl:seq>
+            <tl:seq tt:name="html snippet" tt:longdesc="Jack really wonders what this thing does..." tt:verb="show" tt:modeVerb="remove">
+                <tt:parameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                    <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+                </tt:parameters>
+                <tt:modparameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+                </tt:modparameters>
+                <tl:sleep tl:dur="0" />
+                <tl:par>
+                    <tl:sleep tl:dur="999999" />
+                   <tl:ref tim:class="HtmlSnippetDMAppComponent"
+                          xml:id="race-type-info"
+                          tim:url="https://origin.platform.2immerse.eu/dmapp-components/html-snippet/html-snippet.html"
+                          tic:html="MotoGP"
+                          tic:className="race-type-info"
+                          title="race-type-info"/>
 
-       <tl:ref tim:class="HtmlSnippetDMAppComponent"
-              xml:id="race-type-info"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/html-snippet/html-snippet.html"
-              tic:html="MotoGP"
-              tic:className="race-type-info"
-              title="race-type-info"/>
+                </tl:par>
+            </tl:seq>
+            <tl:seq tt:name="Laps Remaining" tt:verb="show" tt:modeVerb="remove">
+                <tt:parameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                    <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+                </tt:parameters>
+                <tt:modparameters>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="{tt:clock(.)}" />
+                </tt:modparameters>
+                <tl:sleep tl:dur="0" />
+                <tl:par>
+                    <tl:sleep tl:dur="999999" />
+                   <tl:ref tim:class="MotoGpLapsRemaining"
+                          xml:id="race-laps-remaining"
+                          tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-laps-remaining/motogp-laps-remaining.html"
+                          tic:spoolerComponent="spooler"
+                          title="race-laps-remaining"/>
 
-       <tl:ref tim:class="MotoGpLapsRemaining"
-              xml:id="race-laps-remaining"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-laps-remaining/motogp-laps-remaining.html"
-              tic:spoolerComponent="spooler"
-              title="race-laps-remaining"/>
+                </tl:par>
+            </tl:seq>
+        </tt:events>
 
        <!-- begin companion -->
 

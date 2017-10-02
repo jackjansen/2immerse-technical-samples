@@ -2,7 +2,7 @@
 	"name": "100",
 	"description": "100-video-mp4: a simple MP4 video",
 	"mode": "tv",
-	"serviceUrlPreset": "aws_test",
+	"serviceUrlPreset": "aws_edge",
 	"controllerOptions": {
 		"deviceIdPrefix": "tv",
 		"deviceIdNamespace": "ts-tv",
