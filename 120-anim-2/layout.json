@@ -30,6 +30,64 @@
                 "priority": 1,
                 "audio": true
             }
+        },
+        {
+            "componentId" : "exit",
+            "personal" : {
+                "prefSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "minSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "aspect": "228:46",
+                "priority": 0,
+                "audio": true
+            },
+            "communal" : {
+                "prefSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "minSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "aspect": "228:46",
+                "priority": 3,
+                "audio": true
+            }
+        },
+        {
+            "componentId" : "control-anim",
+            "personal" : {
+                "prefSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "minSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "aspect": "228:46",
+                "priority": 0,
+                "audio": true
+            },
+            "communal" : {
+                "prefSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "minSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "aspect": "228:46",
+                "priority": 2,
+                "audio": true
+            }
         }
     ],
     "layoutModel" : "packer"
