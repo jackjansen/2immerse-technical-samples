@@ -9,7 +9,7 @@
 
   <tl:par>
 
-    <tl:par  tt:wantstatus="true">
+    <tl:par  xml:id="pip-par-container" tt:wantstatus="true">
       <tl:ref tim:class="video"
               xml:id="main_video"
               tic:syncMode="master"
@@ -17,9 +17,9 @@
               tic:startMediaTime="41:20"
               title="main video"/> <!-- race starts at 41:27, 1493046616052 in data -->
     <tt:events>
-        <tl:seq tt:name="PIP 0" tt:verb="Enable" tt:modVerb="Disable">
+        <tl:seq xml:id="event_pip0" tt:name="PIP 0" tt:verb="Enable" tt:modVerb="Disable">
             <tt:parameters>
-                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="999999" tt:required="true"/>
                 <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
             </tt:parameters>
             <tt:modparameters>
@@ -37,9 +37,9 @@
 
             </tl:par>
         </tl:seq>
-        <tl:seq tt:name="PIP 1" tt:verb="Enable" tt:modVerb="Disable">
+        <tl:seq xml:id="event_pip1" tt:name="PIP 1" tt:verb="Enable" tt:modVerb="Disable">
             <tt:parameters>
-                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="999999" tt:required="true"/>
                 <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
             </tt:parameters>
             <tt:modparameters>
@@ -57,9 +57,9 @@
 
             </tl:par>
         </tl:seq>
-        <tl:seq tt:name="PIP 2" tt:verb="Enable" tt:modVerb="Disable">
+        <tl:seq xml:id="event_pip2" tt:name="PIP 2" tt:verb="Enable" tt:modVerb="Disable">
             <tt:parameters>
-                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="999999" tt:required="true"/>
                 <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
             </tt:parameters>
             <tt:modparameters>
@@ -77,9 +77,9 @@
 
             </tl:par>
         </tl:seq>
-        <tl:seq tt:name="PIP 3" tt:verb="Enable" tt:modVerb="Disable">
+        <tl:seq xml:id="event_pip3" tt:name="PIP 3" tt:verb="Enable" tt:modVerb="Disable">
             <tt:parameters>
-                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="999999" tt:required="true"/>
                 <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
             </tt:parameters>
             <tt:modparameters>
@@ -97,9 +97,9 @@
 
             </tl:par>
         </tl:seq>
-        <tl:seq tt:name="PIP 4" tt:verb="Enable" tt:modVerb="Disable">
+        <tl:seq xml:id="event_pip4" tt:name="PIP 4" tt:verb="Enable" tt:modVerb="Disable">
             <tt:parameters>
-                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="999999" tt:required="true"/>
                 <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
             </tt:parameters>
             <tt:modparameters>
@@ -125,7 +125,7 @@
               title="google-analytics"/>
 
     </tl:par>
-    <tl:par  tt:wantstatus="true">
+    <tl:par  xml:id="tv-par-container" tt:wantstatus="true">
        <tl:ref tim:class="MotoGpSpooler"
               xml:id="spooler"
               tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-spooler/motogp-spooler.html"
@@ -135,9 +135,9 @@
 
        <!-- begin TV -->
        <tt:events>
-            <tl:seq tt:name="Leaderboard" tt:verb="show" tt:modeVerb="remove">
+            <tl:seq xml:id="event_leaderboard" tt:name="Leaderboard" tt:verb="show" tt:modVerb="remove">
                 <tt:parameters>
-                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="999999" tt:required="true"/>
                     <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
                 </tt:parameters>
                 <tt:modparameters>
@@ -154,9 +154,9 @@
 
                 </tl:par>
             </tl:seq>
-            <tl:seq tt:name="html snippet" tt:longdesc="Jack really wonders what this thing does..." tt:verb="show" tt:modeVerb="remove">
+            <tl:seq xml:id="event_race_type_info" tt:name="html snippet" tt:longdesc="Jack really wonders what this thing does..." tt:verb="show" tt:modVerb="remove">
                 <tt:parameters>
-                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="999999" tt:required="true"/>
                     <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
                 </tt:parameters>
                 <tt:modparameters>
@@ -174,9 +174,9 @@
 
                 </tl:par>
             </tl:seq>
-            <tl:seq tt:name="Laps Remaining" tt:verb="show" tt:modeVerb="remove">
+            <tl:seq xml:id="event_race_laps_remaining" tt:name="Laps Remaining" tt:verb="show" tt:modVerb="remove">
                 <tt:parameters>
-                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:required="true"/>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="999999" tt:required="true"/>
                     <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
                 </tt:parameters>
                 <tt:modparameters>
