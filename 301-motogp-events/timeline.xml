@@ -31,6 +31,7 @@
               <tl:ref tim:class="MotoGpPictureInPicture"
                       tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
                       xml:id="pip0"
+                      tim:constraintId="pip0"
                       tic:localConfig="motogp-pip-cfg"
                       tic:spoolerComponent="spooler"
                       title="picture-in-picture 0"/>
@@ -51,6 +52,7 @@
               <tl:ref tim:class="MotoGpPictureInPicture"
                       tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
                       xml:id="pip1"
+                      tim:constraintId="pip1"
                       tic:localConfig="motogp-pip-cfg"
                       tic:spoolerComponent="spooler"
                       title="picture-in-picture 1"/>
@@ -71,6 +73,7 @@
               <tl:ref tim:class="MotoGpPictureInPicture"
                       tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
                       xml:id="pip2"
+                      tim:constraintId="pip2"
                       tic:localConfig="motogp-pip-cfg"
                       tic:spoolerComponent="spooler"
                       title="picture-in-picture 2"/>
@@ -91,6 +94,7 @@
               <tl:ref tim:class="MotoGpPictureInPicture"
                       tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
                       xml:id="pip3"
+                      tim:constraintId="pip3"
                       tic:localConfig="motogp-pip-cfg"
                       tic:spoolerComponent="spooler"
                       title="picture-in-picture 3"/>
@@ -111,6 +115,7 @@
               <tl:ref tim:class="MotoGpPictureInPicture"
                       tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-pip/motogp-pip.html"
                       xml:id="pip4"
+                      tim:constraintId="pip4"
                       tic:localConfig="motogp-pip-cfg"
                       tic:spoolerComponent="spooler"
                       title="picture-in-picture 4"/>
@@ -148,6 +153,7 @@
                     <tl:sleep tl:dur="999999" />
                    <tl:ref tim:class="MotoGpLeaderboard"
                           xml:id="leaderboard"
+                          tim:constraintId="leaderboard"
                           tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-leaderboard/motogp-leaderboard.html"
                           tic:spoolerComponent="spooler"
                           title="leaderboard"/>
@@ -167,6 +173,7 @@
                     <tl:sleep tl:dur="999999" />
                    <tl:ref tim:class="HtmlSnippetDMAppComponent"
                           xml:id="race-type-info"
+                          tim:constraintId="race-type-info"
                           tim:url="https://origin.platform.2immerse.eu/dmapp-components/html-snippet/html-snippet.html"
                           tic:html="MotoGP"
                           tic:className="race-type-info"
@@ -187,6 +194,7 @@
                     <tl:sleep tl:dur="999999" />
                    <tl:ref tim:class="MotoGpLapsRemaining"
                           xml:id="race-laps-remaining"
+                          tim:constraintId="race-laps-remaining"
                           tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-laps-remaining/motogp-laps-remaining.html"
                           tic:spoolerComponent="spooler"
                           title="race-laps-remaining"/>
