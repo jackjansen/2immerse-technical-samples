@@ -140,7 +140,7 @@
 
        <!-- begin TV -->
        <tt:events>
-            <tl:seq xml:id="event_leaderboard" tt:name="Leaderboard" tt:verb="show" tt:modVerb="remove">
+            <tl:seq xml:id="event_leaderboard" tt:name="Leaderboard" tt:verb="show" tt:longDesc="Show active leaderboard on main screen" tt:modVerb="remove" tt:previewUrl="previews/leaderboard.jpg">
                 <tt:parameters>
                     <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="999999" tt:required="true"/>
                     <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
@@ -160,7 +160,7 @@
 
                 </tl:par>
             </tl:seq>
-            <tl:seq xml:id="event_race_type_info" tt:name="html snippet" tt:longdesc="Jack really wonders what this thing does..." tt:verb="show" tt:modVerb="remove">
+            <tl:seq xml:id="event_race_type_info" tt:name="html snippet" tt:longdesc="MotoGP text" tt:verb="show" tt:modVerb="remove" tt:previewUrl="previews/html-snippet.jpg">
                 <tt:parameters>
                     <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="999999" tt:required="true"/>
                     <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
@@ -181,7 +181,7 @@
 
                 </tl:par>
             </tl:seq>
-            <tl:seq xml:id="event_race_laps_remaining" tt:name="Laps Remaining" tt:verb="show" tt:modVerb="remove">
+            <tl:seq xml:id="event_race_laps_remaining" tt:name="Laps Remaining" tt:verb="show" tt:modVerb="remove" tt:previewUrl="previews/laps.jpg">
                 <tt:parameters>
                     <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="999999" tt:required="true"/>
                     <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
