@@ -33,7 +33,6 @@
               tic:text="Timeline stop animation component"
               tic:eventId="exitSignal"
               />
-      </tl:par>
-    </tl:par>
+  </tl:par>
 
 </tl:document>

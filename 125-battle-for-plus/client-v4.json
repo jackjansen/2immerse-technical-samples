@@ -1,5 +1,5 @@
 {
-	"description": "MotoGP DMApp",
+	"description": "125-battle-for-plus: a demo of the Battle For animation",
 	"mode": "tv",
 	"serviceUrlPreset": "aws_edge",
 	"serviceUrls": {
@@ -7,7 +7,7 @@
 	},
 	"controllerOptions": {
 		"deviceIdPrefix": "tv",
-		"deviceIdNamespace": "mgp-tv",
+		"deviceIdNamespace": "ts-tv",
 		"defaultLogLevel": "trace",
 		"networkLogLevel": "trace",
 		"longFormConsoleLogging": true,
@@ -79,11 +79,11 @@
 	},
 	"variations": [
 		{
-			"name": "test",
-			"description": "Use test services (instead of edge)",
+			"name": "edge",
+			"description": "Use edge services (instead of test)",
 			"type": "optional",
 			"content": {
-				"serviceUrlPreset": "aws_test"
+				"serviceUrlPreset": "aws_edge"
 			}
 		},
 		{
@@ -106,7 +106,7 @@
 				"mode": "standalone",
 				"controllerOptions": {
 					"deviceIdPrefix": "standalone",
-					"deviceIdNamespace": "mgp-standalone"
+					"deviceIdNamespace": "ts-standalone"
 				}
 			}
 		},
