@@ -1,0 +1,115 @@
+{
+  "version": 4,
+  "dmapp": "300",
+  "constraints": [
+      {
+        "constraintId": "main_video",
+        "personal": {
+          "aspect": "16:9",
+          "minSize": {
+            "width": 640,
+            "height": 360
+          },
+          "priority": 0,
+          "audio": true
+        },
+        "communal": {
+          "aspect": "16:9",
+          "minSize": {
+            "width": 640,
+            "height": 360
+          },
+          "priority": 1,
+          "audio": true
+        }
+      },
+      {
+      "constraintId": "anim",
+      "personal": {
+        "prefSize": {
+          "width": 228,
+          "height": 46
+        },
+        "minSize": {
+          "width": 228,
+          "height": 46
+        },
+        "aspect": "228:46",
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "prefSize": {
+          "width": 228,
+          "height": 46
+        },
+        "minSize": {
+          "width": 228,
+          "height": 46
+        },
+        "aspect": "228:46",
+        "priority": 1,
+        "audio": true
+      }
+    },
+    {
+      "constraintId": "exit",
+      "personal": {
+        "prefSize": {
+          "width": 228,
+          "height": 46
+        },
+        "minSize": {
+          "width": 228,
+          "height": 46
+        },
+        "aspect": "228:46",
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "prefSize": {
+          "width": 228,
+          "height": 46
+        },
+        "minSize": {
+          "width": 228,
+          "height": 46
+        },
+        "aspect": "228:46",
+        "priority": 1,
+        "audio": true
+      }
+    },
+    {
+      "constraintId": "control-anim",
+      "personal": {
+        "prefSize": {
+          "width": 228,
+          "height": 46
+        },
+        "minSize": {
+          "width": 228,
+          "height": 46
+        },
+        "aspect": "228:46",
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "prefSize": {
+          "width": 228,
+          "height": 46
+        },
+        "minSize": {
+          "width": 228,
+          "height": 46
+        },
+        "aspect": "228:46",
+        "priority": 1,
+        "audio": true
+      }
+    }
+  ],
+  "layoutModel": "packer"
+}

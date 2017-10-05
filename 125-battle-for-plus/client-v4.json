@@ -1,0 +1,153 @@
+{
+	"description": "MotoGP DMApp",
+	"mode": "tv",
+	"serviceUrlPreset": "aws_edge",
+	"serviceUrls": {
+		"layoutService": "https://layout-service-v4.platform.2immerse.eu/layout/v4"
+	},
+	"controllerOptions": {
+		"deviceIdPrefix": "tv",
+		"deviceIdNamespace": "mgp-tv",
+		"defaultLogLevel": "trace",
+		"networkLogLevel": "trace",
+		"longFormConsoleLogging": true,
+		"showUserErrorMessageUI": true,
+		"concurrentVideo": 4,
+		"enableAnalytics": true
+	},
+	"appendHtmlUrl": "tv-appended.html",
+	"rootLayoutRegionElementSelector": "#screen",
+	"regions": [
+		{
+			"id": "video",
+			"elementSelector": "#region-video"
+		},
+		{
+			"id": "leaderboard",
+			"elementSelector": "#region-leaderboard"
+		},
+		{
+			"id": "pip",
+			"elementSelector": "#region-pip"
+		},
+		{
+			"id": "race-type-info",
+			"elementSelector": "#region-race-type-info"
+		},
+		{
+			"id": "race-laps-remaining",
+			"elementSelector": "#region-race-laps-remaining"
+		},
+		{
+			"id": "dummy",
+			"elementSelector": "#region-dummy",
+			"suppressElementlessComponentWarning": true
+		}
+	],
+	"setupComponent": {
+		"componentId": "dmapp-control",
+		"config": {
+			"url": "https://origin.platform.2immerse.eu/dmapp-components/motogp-dmapp-control/motogp-dmapp-control.html",
+			"class": "MotoGpDMAppControl"
+		},
+		"parameters": {
+			"leaderboardComponentId": "leaderboard",
+			"leaderboardOptions": {
+				"novice": {
+					"long_name": true,
+					"num_icon": true,
+					"team_colour": true
+				},
+				"fan": {
+					"num_icon": true
+				},
+				"experienced": {
+				}
+			},
+			"pipConfigUrl": "pipCfg.json",
+			"tyreConfigUrl": "tyreCfg.json"
+		}
+	},
+	"serviceInput": {
+		"layout": "layout-v4.json",
+		"timeline": "timeline.xml"
+	},
+	"debugOptions": {
+		"debugComponent": true,
+		"devLogging": true,
+		"failurePlaceholders": true
+	},
+	"variations": [
+		{
+			"name": "test",
+			"description": "Use test services (instead of edge)",
+			"type": "optional",
+			"content": {
+				"serviceUrlPreset": "aws_test"
+			}
+		},
+		{
+			"name": "local",
+			"description": "Use local URL to control component",
+			"type": "optional",
+			"content": {
+				"setupComponent": {
+					"config": {
+						"url": "./control-component/motogp-dmapp-control.html"
+					}
+				}
+			}
+		},
+		{
+			"name": "notv",
+			"description": "Disable TV emulation (run standalone)",
+			"type": "optional",
+			"content": {
+				"mode": "standalone",
+				"controllerOptions": {
+					"deviceIdPrefix": "standalone",
+					"deviceIdNamespace": "mgp-standalone"
+				}
+			}
+		},
+		{
+			"name": "nodebug",
+			"description": "Disable debug",
+			"type": "optional",
+			"content": {
+				"debugOptions": {
+					"debugComponent": false,
+					"devLogging": false,
+					"failurePlaceholders": false
+				}
+			}
+		},
+		{
+			"name": "noanalytics",
+			"description": "Disable analytics",
+			"type": "optional",
+			"content": {
+				"controllerOptions": {
+					"enableAnalytics": false
+				}
+			}
+		},
+		{
+			"name": "dataplayback",
+			"description": "Use data playback service",
+			"type": "optional",
+			"content": {
+				"setupComponent": {
+					"parameters": {
+						"localSignals": {
+							"motogp-spooler-param-override": {
+								"xmlManifestDir": null,
+								"iotRaceId": "8000"
+							}
+						}
+					}
+				}
+			}
+		}
+	]
+}

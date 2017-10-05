@@ -1,0 +1,39 @@
+<tl:document
+  xmlns:tl="http://jackjansen.nl/timelines"
+  xmlns:tim="http://jackjansen.nl/2immerse"
+  xmlns:tic="http://jackjansen.nl/2immerse/component"
+  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
+  title="Battle For ... test">
+
+  <tl:par>
+
+    <tl:ref tim:class="video"
+            xml:id="main_video"
+            tic:syncMode="master"
+            tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/videos/2017_03_AME_MGP_RACE_CF/manifest.mpd"
+            tic:startMediaTime="41:25"
+            title="main video"/>
+
+      <tl:wait tl:event="exitSignal"/>
+      <tl:ref tim:class="MotoGPBattleForDMAppComponent"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for/motogp-battle-for.html"
+              xml:id="anim"
+              tic:number="1"
+              title="animation"/>
+      <tl:ref tim:class="DmappcHideShowControlsComponent"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/dmappc-hide-show-controls/dmappc-hide-show-controls.html"
+              tim:dmappcid="control-anim"
+              tic:dmappcId="anim"
+              tic:fixedPersonal="0"
+              tic:activeCommunal="1"
+              />
+      <tl:ref tim:class="PostTimelineEventButtonComponent"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
+              xml:id="exit"
+              tic:text="Timeline stop animation component"
+              tic:eventId="exitSignal"
+              />
+      </tl:par>
+    </tl:par>
+
+</tl:document>
