@@ -15,7 +15,7 @@
 		"concurrentVideo": 4,
 		"enableAnalytics": true
 	},
-	"appendHtmlUrl": "tv-appended.html",
+	"appendHtmlUrl": "appended.html",
 	"rootLayoutRegionElementSelector": "#screen",
 	"regions": [
 		{

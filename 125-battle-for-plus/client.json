@@ -21,11 +21,18 @@
 			"height": "100%"
 		},
 		{
-			"id": "overlay",
-			"elementSelector": "#region-overlay",
+			"id": "info",
+			"elementSelector": "#region-info",
 			"resizable": true,
-			"width": "25%",
-			"height": "25%"
+			"width": "20%",
+			"height": "10%"
+		},
+		{
+			"id": "leaderboard",
+			"elementSelector": "#region-leaderboard",
+			"resizable": true,
+			"width": "20%",
+			"height": "90%"
 		}
 	],
 	"setupComponent": {

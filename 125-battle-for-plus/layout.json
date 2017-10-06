@@ -25,7 +25,7 @@
         }
       },
       {
-          "componentId" : "anim",
+          "componentId" : "anim-1",
           "personal" : {
               "prefSize": {
                   "width": 228,
@@ -51,11 +51,11 @@
               "aspect": "228:46",
               "priority": 1,
               "audio": true,
-              "targetRegions": [ "overlay" ]
+              "targetRegions": [ "info" ]
           }
       },
       {
-          "componentId" : "exit",
+          "componentId" : "anim-6",
           "personal" : {
               "prefSize": {
                   "width": 228,
@@ -79,40 +79,71 @@
                   "height": 46
               },
               "aspect": "228:46",
-              "priority": 3,
-              "audio": true
-          }
-      },
-      {
-          "componentId" : "control-anim",
-          "personal" : {
-              "prefSize": {
-                  "width": 228,
-                  "height": 46
-              },
-              "minSize": {
-                  "width": 228,
-                  "height": 46
-              },
-              "aspect": "228:46",
-              "priority": 0,
-              "audio": true
-          },
-          "communal" : {
-              "prefSize": {
-                  "width": 228,
-                  "height": 46
-              },
-              "minSize": {
-                  "width": 228,
-                  "height": 46
-              },
-              "aspect": "228:46",
-              "priority": 2,
+              "priority": 1,
               "audio": true,
-              "targetRegions": [ "overlay" ]
+              "targetRegions": [ "info" ]
           }
-      }
+        },
+        {
+            "componentId" : "anim-12",
+            "personal" : {
+                "prefSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "minSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "aspect": "228:46",
+                "priority": 0,
+                "audio": true
+            },
+            "communal" : {
+                "prefSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "minSize": {
+                    "width": 228,
+                    "height": 46
+                },
+                "aspect": "228:46",
+                "priority": 1,
+                "audio": true,
+                "targetRegions": [ "info" ]
+            }
+          },
+          {
+              "componentId" : "leaderboard",
+              "personal" : {
+                  "prefSize": {
+                      "width": 228,
+                      "height": 46
+                  },
+                  "minSize": {
+                      "width": 228,
+                      "height": 46
+                  },
+                  "aspect": "228:46",
+                  "priority": 0,
+                  "audio": true
+              },
+              "communal" : {
+                  "prefSize": {
+                      "width": 228,
+                      "height": 46
+                  },
+                  "minSize": {
+                      "width": 228,
+                      "height": 46
+                  },
+                  "aspect": "228:46",
+                  "priority": 1,
+                  "audio": true,
+                  "targetRegions": [ "leaderboard" ]
+              }
+            }
   ],
   "layoutModel" : "packer"
 }

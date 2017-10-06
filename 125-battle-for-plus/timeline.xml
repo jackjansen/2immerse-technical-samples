@@ -11,28 +11,58 @@
             xml:id="main_video"
             tic:syncMode="master"
             tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/videos/2017_03_AME_MGP_RACE_CF/manifest.mpd"
-            tic:startMediaTime="41:25"
+            tic:startMediaTime="41:20"
             title="main video"/>
 
-      <tl:wait tl:event="exitSignal"/>
-      <tl:ref tim:class="MotoGPBattleForDMAppComponent"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for/motogp-battle-for.html"
-              xml:id="anim"
-              tic:number="1"
-              title="animation"/>
-      <tl:ref tim:class="DmappcHideShowControlsComponent"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/dmappc-hide-show-controls/dmappc-hide-show-controls.html"
-              tim:dmappcid="control-anim"
-              tic:dmappcId="anim"
-              tic:fixedPersonal="0"
-              tic:activeCommunal="1"
-              />
-      <tl:ref tim:class="PostTimelineEventButtonComponent"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
-              xml:id="exit"
-              tic:text="Timeline stop animation component"
-              tic:eventId="exitSignal"
-              />
+    <tl:ref tim:class="MotoGpSpooler"
+           xml:id="spooler"
+           tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-spooler/motogp-spooler.html"
+           tic:xmlManifestDir="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/2017_MotoGP_AME_RAC"
+           tic:dataOffsetMs="1493046609052"
+           title="spooler"/>
+
+    <tl:ref tim:class="MotoGpLeaderboard"
+           xml:id="leaderboard"
+           tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-leaderboard/motogp-leaderboard.html"
+           tic:spoolerComponent="spooler"
+           title="leaderboard"/>
+
+    <tl:seq>
+
+      <tl:sleep tl:dur="3" tl:prio="high"/>
+
+      <tl:par>
+        <tl:sleep tl:dur="5" tl:prio="high"/>
+        <tl:ref tim:class="MotoGPBattleForDMAppComponent"
+                tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for/motogp-battle-for.html"
+                xml:id="anim-1"
+                tic:number="1"
+                title="animation"/>
+      </tl:par>
+
+      <tl:sleep tl:dur="3" tl:prio="high"/>
+
+      <tl:par>
+        <tl:sleep tl:dur="5" tl:prio="high"/>
+        <tl:ref tim:class="MotoGPBattleForDMAppComponent"
+                tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for/motogp-battle-for.html"
+                xml:id="anim-12"
+                tic:number="12"
+                title="animation"/>
+      </tl:par>
+
+      <tl:sleep tl:dur="3" tl:prio="high"/>
+
+      <tl:par>
+        <tl:sleep tl:dur="5" tl:prio="high"/>
+        <tl:ref tim:class="MotoGPBattleForDMAppComponent"
+                tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for/motogp-battle-for.html"
+                xml:id="anim-6"
+                tic:number="6"
+                title="animation"/>
+      </tl:par>
+
+    </tl:seq>
   </tl:par>
 
 </tl:document>
