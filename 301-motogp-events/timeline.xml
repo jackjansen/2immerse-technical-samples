@@ -87,6 +87,24 @@
 
                 </tl:par>
             </tl:seq>
+            <tl:seq xml:id="event_battle_for" tt:name="Battle For" tt:verb="show" tt:modVerb="remove" tt:previewUrl="previews/battle.jpg">
+                <tt:parameters>
+                    <tt:parameter tt:name="position" tt:parameter="tl:par/tl:ref/@tic:number" tt:type="string" tt:required="true"/>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="5" tt:required="true"/>
+                    <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+                </tt:parameters>
+                <tl:sleep tl:dur="0" />
+                <tl:par>
+                    <tl:sleep tl:dur="5" />
+                    <tl:ref tim:class="MotoGPBattleForDMAppComponent"
+                            tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for/motogp-battle-for.html"
+                            xml:id="battle-for-position"
+                            tim:constraintId="battle-for-position"
+                            tic:number="1"
+                            title="animation"/>
+
+                </tl:par>
+            </tl:seq>
         </tt:events>
 		<tt:completeEvents>
             <tl:seq xml:id="event_leaderboard" tt:name="Leaderboard" tt:verb="show" tt:longDesc="Show active leaderboard on main screen" tt:modVerb="remove" tt:previewUrl="previews/leaderboard.jpg">
@@ -393,6 +411,21 @@
         },
         {
             "constraintId" : "race-laps-remaining",
+            "personal": {
+                "priority": 0
+            },
+            "communal" : {
+                "minSize": {
+                    "width": 100,
+                    "height": 100,
+                    "mode": "percent"
+                },
+                "priority": 3,
+                "targetRegions": [ "race-laps-remaining" ]
+            }
+        },
+        {
+            "constraintId" : "battle-for-position",
             "personal": {
                 "priority": 0
             },
