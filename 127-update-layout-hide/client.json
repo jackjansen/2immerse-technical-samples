@@ -1,0 +1,108 @@
+{
+	"description": "Technical Sample 127: Update Layout Hide",
+	"mode": "tv",
+    "serviceUrlPreset": "aws_edge",
+    "serviceUrls" : {
+        "layoutService" : "https://layout-service-v4.platform.2immerse.eu/layout/v4"
+    },
+	"controllerOptions": {
+		"deviceIdPrefix": "tv",
+		"deviceIdNamespace": "ts-tv",
+		"defaultLogLevel": "trace",
+		"networkLogLevel": "trace",
+		"longFormConsoleLogging": true,
+		"showUserErrorMessageUI": true
+	},
+	"appendHtmlUrl": "appended.html",
+	"regions": [
+		{
+			"id": "stage",
+			"elementSelector": "#region-stage",
+			"resizable": true,
+			"width": "100%",
+			"height": "100%"
+		},
+		{
+			"id": "overlayTL",
+			"elementSelector": "#region-overlay-topleft",
+			"resizable": true,
+			"width": "25%",
+			"height": "25%"
+		},
+		{
+			"id": "overlayTR",
+			"elementSelector": "#region-overlay-topright",
+			"resizable": true,
+			"width": "25%",
+			"height": "25%"
+		},
+		{
+			"id": "overlayBL",
+			"elementSelector": "#region-overlay-botleft",
+			"resizable": true,
+			"width": "25%",
+			"height": "25%"
+		},
+		{
+			"id": "overlayBR",
+			"elementSelector": "#region-overlay-botright",
+			"resizable": true,
+			"width": "25%",
+			"height": "25%"
+		}
+	],
+	"serviceInput": {
+		"layout": "layout.json",
+		"timeline": "timeline.xml"
+	},
+	"debugOptions": {
+		"debugComponent": true,
+		"devLogging": true,
+		"failurePlaceholders": true
+	},
+	"variations": [
+		{
+			"name": "edge",
+			"description": "Use edge services (instead of test)",
+			"type": "optional",
+			"content": {
+				"serviceUrlPreset": "aws_edge"
+			}
+		},
+		{
+			"name": "v4",
+			"description": "Use edge services and v4 layout (instead of test)",
+			"type": "optional",
+			"content": {
+				"serviceUrlPreset": "aws_edge",
+				"serviceUrls" : {
+				    "layoutService" : "https://layout-service-v4.platform.2immerse.eu/layout/v4"
+				}
+			}
+		},
+		{
+			"name": "notv",
+			"description": "Disable TV emulation (run standalone)",
+			"type": "optional",
+			"content": {
+				"mode": "standalone",
+				"controllerOptions": {
+					"deviceIdPrefix": "standalone",
+					"deviceIdNamespace": "ts-standalone"
+				}
+			}
+		},
+		{
+			"name": "nodebug",
+			"description": "Disable debug",
+			"type": "optional",
+			"content": {
+				"debugOptions": {
+					"debugComponent": false,
+					"devLogging": false,
+					"failurePlaceholders": false
+				}
+			}
+		}
+	]
+}

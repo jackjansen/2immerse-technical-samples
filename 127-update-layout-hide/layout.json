@@ -1,0 +1,68 @@
+{
+  "version": 4,
+  "dmapp": "200",
+  "constraints": [
+    {
+      "constraintId": "stage",
+      "personal": {
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "priority": 1,
+        "audio": true,
+        "targetRegions": [ "stage" ]
+      }
+    },
+    {
+        "constraintId" : "overlayTL",
+        "personal" : {
+            "priority" : 0
+        },
+        "communal" : {
+            "priority" : 1,
+            "targetRegions" : ["overlayTL"]
+        }
+    },
+    {
+        "constraintId" : "overlayTR",
+        "personal" : {
+            "priority" : 0
+        },
+        "communal" : {
+            "priority" : 1,
+            "targetRegions" : ["overlayTR"]
+        }
+    },
+    {
+        "constraintId" : "overlayBL",
+        "personal" : {
+            "priority" : 0
+        },
+        "communal" : {
+            "priority" : 1,
+            "targetRegions" : ["overlayBL"]
+        }
+    },
+    {
+        "constraintId" : "overlayBR",
+        "personal" : {
+            "priority" : 0
+        },
+        "communal" : {
+            "priority" : 1,
+            "targetRegions" : ["overlayBR"]
+        }
+    },
+    {
+        "constraintId" : "hidden",
+        "personal" : {
+            "priority" : 0
+        },
+        "communal" : {
+            "priority" : 0
+        }
+    }
+  ],
+  "layoutModel": "packer"
+}
