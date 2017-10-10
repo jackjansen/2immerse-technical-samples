@@ -5,13 +5,7 @@
       {
         "componentId": "main_video",
         "personal": {
-          "aspect": "16:9",
-          "minSize": {
-            "width": 640,
-            "height": 360
-          },
-          "priority": 0,
-          "audio": true
+          "priority": 0
         },
         "communal": {
           "aspect": "16:9",
@@ -27,17 +21,7 @@
       {
           "componentId" : "anim-1",
           "personal" : {
-              "prefSize": {
-                  "width": 228,
-                  "height": 46
-              },
-              "minSize": {
-                  "width": 228,
-                  "height": 46
-              },
-              "aspect": "228:46",
-              "priority": 0,
-              "audio": true
+              "priority": 0
           },
           "communal" : {
               "prefSize": {
@@ -50,24 +34,13 @@
               },
               "aspect": "228:46",
               "priority": 1,
-              "audio": true,
               "targetRegions": [ "info" ]
           }
       },
       {
           "componentId" : "anim-6",
           "personal" : {
-              "prefSize": {
-                  "width": 228,
-                  "height": 46
-              },
-              "minSize": {
-                  "width": 228,
-                  "height": 46
-              },
-              "aspect": "228:46",
-              "priority": 0,
-              "audio": true
+              "priority": 0
           },
           "communal" : {
               "prefSize": {
@@ -80,24 +53,13 @@
               },
               "aspect": "228:46",
               "priority": 1,
-              "audio": true,
               "targetRegions": [ "info" ]
           }
         },
         {
             "componentId" : "anim-12",
             "personal" : {
-                "prefSize": {
-                    "width": 228,
-                    "height": 46
-                },
-                "minSize": {
-                    "width": 228,
-                    "height": 46
-                },
-                "aspect": "228:46",
-                "priority": 0,
-                "audio": true
+                "priority": 0
             },
             "communal" : {
                 "prefSize": {
@@ -110,37 +72,26 @@
                 },
                 "aspect": "228:46",
                 "priority": 1,
-                "audio": true,
                 "targetRegions": [ "info" ]
             }
           },
           {
               "componentId" : "leaderboard",
               "personal" : {
-                  "prefSize": {
-                      "width": 228,
-                      "height": 46
-                  },
-                  "minSize": {
-                      "width": 228,
-                      "height": 46
-                  },
-                  "aspect": "228:46",
-                  "priority": 0,
-                  "audio": true
+                  "priority": 0
               },
               "communal" : {
                   "prefSize": {
-                      "width": 228,
-                      "height": 46
+                      "width": 100,
+                      "height": 100,
+                      "mode": "percent"
                   },
                   "minSize": {
-                      "width": 228,
-                      "height": 46
+                      "width": 100,
+                      "height": 100,
+                      "mode": "percent"
                   },
-                  "aspect": "228:46",
                   "priority": 1,
-                  "audio": true,
                   "targetRegions": [ "leaderboard" ]
               }
             }
