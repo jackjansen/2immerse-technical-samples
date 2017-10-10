@@ -412,6 +412,52 @@
 					}
 				},
 				{
+					"name": "125",
+					"description": "125-battle-for-plus: a demo of the Battle For animation",
+					"content": {
+						"serviceInput": {
+							"layout": "125-battle-for-plus/layout.json",
+							"timeline": "125-battle-for-plus/timeline.xml"
+						},
+						"appendHtmlUrl": "125-battle-for-plus/appended.html",
+						"regions": [
+							{
+								"id": "tv",
+								"elementSelector": "#region-tv",
+								"resizable": true,
+								"width": "100%",
+								"height": "100%"
+							},
+							{
+								"id": "info",
+								"elementSelector": "#region-info",
+								"resizable": true,
+								"width": "20%",
+								"height": "10%"
+							},
+							{
+								"id": "leaderboard",
+								"elementSelector": "#region-leaderboard",
+								"resizable": true,
+								"width": "20%",
+								"height": "90%"
+							}
+						],
+						"setupComponent": {
+							"componentId": "auth-setup",
+							"config": {
+								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
+								"class": "TestUtilAuthService"
+							},
+							"parameters": {
+								"localStorageKey": "tech-sample-125-battle-for-plus",
+								"authServiceKeyId": "59afcf3c119da300018a3b4b",
+								"username": "user@2immerse.eu"
+							}
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {
