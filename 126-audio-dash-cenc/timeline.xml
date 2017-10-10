@@ -1,0 +1,20 @@
+<tl:document
+  xmlns:tl="http://jackjansen.nl/timelines"
+  xmlns:tim="http://jackjansen.nl/2immerse"
+  xmlns:tic="http://jackjansen.nl/2immerse/component"
+  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
+  title="Test a single DASH CENC audio stream">
+
+  <tl:par>
+
+
+      <tl:ref tim:class="audio"
+              xml:id="main_audio"
+              tic:syncMode="master"
+              tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/videos/2017_03_AME_MGP_RACE_CF/audio_manifest.mpd"
+              tic:showControls="true"
+              title="main video"/>
+
+  </tl:par>
+
+</tl:document>

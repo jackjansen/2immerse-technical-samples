@@ -458,6 +458,28 @@
 					}
 				},
 				{
+					"name": "126",
+					"description": "126-audio-dash-cenc: a DASH CENC audio stream",
+					"content": {
+						"serviceInput": {
+							"layout": "126-audio-dash-cenc/layout.json",
+							"timeline": "126-audio-dash-cenc/timeline.xml"
+						},
+						"setupComponent": {
+							"componentId": "auth-setup",
+							"config": {
+								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
+								"class": "TestUtilAuthService"
+							},
+							"parameters": {
+								"localStorageKey": "tech-sample-126-audio-dash-cenc",
+								"authServiceKeyId": "59afcf3c119da300018a3b4b",
+								"username": "user@2immerse.eu"
+							}
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {

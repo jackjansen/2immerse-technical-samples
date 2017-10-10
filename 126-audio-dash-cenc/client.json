@@ -1,0 +1,69 @@
+{
+	"description": "126-audio-dash-cenc: a DASH CENC audio stream",
+	"mode": "tv",
+	"serviceUrlPreset": "aws_test",
+	"controllerOptions": {
+		"deviceIdPrefix": "tv",
+		"deviceIdNamespace": "ts-tv",
+		"defaultLogLevel": "trace",
+		"networkLogLevel": "trace",
+		"longFormConsoleLogging": true,
+		"showUserErrorMessageUI": true,
+		"concurrentVideo": 4
+	},
+	"setupComponent": {
+		"componentId": "auth-setup",
+		"config": {
+			"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
+			"class": "TestUtilAuthService"
+		},
+		"parameters": {
+			"localStorageKey": "tech-sample-126-audio-dash-cenc",
+			"authServiceKeyId": "59afcf3c119da300018a3b4b",
+			"username": "user@2immerse.eu"
+		}
+	},
+	"serviceInput": {
+		"layout": "layout.json",
+		"timeline": "timeline.xml"
+	},
+	"debugOptions": {
+		"debugComponent": true,
+		"devLogging": true,
+		"failurePlaceholders": true
+	},
+	"variations": [
+		{
+			"name": "edge",
+			"description": "Use edge services (instead of test)",
+			"type": "optional",
+			"content": {
+				"serviceUrlPreset": "aws_edge"
+			}
+		},
+		{
+			"name": "notv",
+			"description": "Disable TV emulation (run standalone)",
+			"type": "optional",
+			"content": {
+				"mode": "standalone",
+				"controllerOptions": {
+					"deviceIdPrefix": "standalone",
+					"deviceIdNamespace": "ts-standalone"
+				}
+			}
+		},
+		{
+			"name": "nodebug",
+			"description": "Disable debug",
+			"type": "optional",
+			"content": {
+				"debugOptions": {
+					"debugComponent": false,
+					"devLogging": false,
+					"failurePlaceholders": false
+				}
+			}
+		}
+	]
+}

@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "dmapp": "200",
+    "constraints": [
+        {
+            "componentId" : "main_audio",
+            "personal" : {
+                "priority": 0,
+                "audio": true
+            },
+            "communal" : {
+                "priority": 1,
+                "audio": true
+            }
+        }
+    ],
+    "layoutModel" : "packer"
+}
