@@ -3,7 +3,7 @@
   xmlns:tim="http://jackjansen.nl/2immerse"
   xmlns:tic="http://jackjansen.nl/2immerse/component"
   xmlns:tlcheck="http://jackjansen.nl/timelines/check"
-  title="Test showing / hiding components using constraint updates">
+  title="Test showing / hiding components from timeline using constraint updates">
 
   <tl:par>
 
@@ -16,6 +16,13 @@
               tlcheck:dur="81"
               title="main video"/>
 
+      <tl:ref tim:class="video"
+              xml:id="aux_video"
+              tim:constraintId="overlayTR"
+              tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"
+              tlcheck:dur="81"
+              title="second video"/>
+
       <tl:ref tim:class="scroll-text"
               tim:url="/dmapp-components/scroll-text/scroll-text.html"
               tim:constraintId="stage"
@@ -25,31 +32,29 @@
               title="description of the video"/>
       <tl:seq>
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="overlayTR" />
+        <tim:update tim:target="aux_video" tim:constraintId="hidden" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="hidden" />
+        <tim:update tim:target="aux_video" tim:constraintId="overlayTR" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="overlayBR" />
+        <tim:update tim:target="aux_video" tim:constraintId="hidden" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="hidden" />
+        <tim:update tim:target="aux_video" tim:constraintId="overlayTR" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="overlayTR" />
+        <tim:update tim:target="aux_video" tim:constraintId="hidden" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="hidden" />
+        <tim:update tim:target="aux_video" tim:constraintId="overlayTR" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="overlayBR" />
+        <tim:update tim:target="aux_video" tim:constraintId="hidden" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="hidden" />
+        <tim:update tim:target="aux_video" tim:constraintId="overlayTR" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="overlayTR" />
+        <tim:update tim:target="aux_video" tim:constraintId="hidden" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="hidden" />
+        <tim:update tim:target="aux_video" tim:constraintId="overlayTR" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="overlayBR" />
+        <tim:update tim:target="aux_video" tim:constraintId="hidden" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="hidden" />
-        <tl:sleep tl:dur="5" />
-        <tim:update tim:target="main_video" tim:constraintId="overlayTR" />
+        <tim:update tim:target="aux_video" tim:constraintId="overlayTR" />
       </tl:seq>
 
   </tl:par>
