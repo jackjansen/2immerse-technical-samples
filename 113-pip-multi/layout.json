@@ -1,97 +1,105 @@
 {
-    "version": 3,
-    "dmapp": "200",
-    "constraints": [
-        {
-            "componentId" : "main_video",
-            "personal" : {
-                "aspect": "16:9",
-                "minSize": {
-                    "width": 640,
-                    "height": 360
-                },
-                "priority": 0,
-                "audio": true
-            },
-            "communal" : {
-                "aspect": "16:9",
-                "minSize": {
-                    "width": 640,
-                    "height": 360
-                },
-                "priority": 10,
-                "targetRegions": [ "stage" ]
-            }
+  "version": 4,
+  "dmapp": "200",
+  "constraints": [
+    {
+      "constraintId": "main_video",
+      "personal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
         },
-        {
-            "componentId" : "pip1",
-            "personal" : {
-                "aspect": "16:9",
-                "minSize": {
-                    "width": 30,
-                    "height": 30,
-                    "mode": "percent"
-                },
-                "priority": 0,
-                "audio": true
-            },
-            "communal" : {
-                "aspect": "16:9",
-                "minSize": {
-                    "width": 30,
-                    "height": 30,
-                    "mode": "percent"
-                },
-                "priority": 1,
-                "targetRegions": [ "overlay" ]
-            }
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
         },
-        {
-            "componentId" : "pip2",
-            "personal" : {
-                "aspect": "16:9",
-                "minSize": {
-                    "width": 30,
-                    "height": 30,
-                    "mode": "percent"
-                },
-                "priority": 0,
-                "audio": true
-            },
-            "communal" : {
-                "aspect": "16:9",
-                "minSize": {
-                    "width": 30,
-                    "height": 30,
-                    "mode": "percent"
-                },
-                "priority": 2,
-                "targetRegions": [ "overlay" ]
-            }
+        "priority": 10,
+        "targetRegions": [
+          "stage"
+        ]
+      }
+    },
+    {
+      "constraintId": "pip1",
+      "personal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 30,
+          "height": 30,
+          "mode": "percent"
         },
-        {
-            "componentId" : "pip3",
-            "personal" : {
-                "aspect": "16:9",
-                "minSize": {
-                    "width": 30,
-                    "height": 30,
-                    "mode": "percent"
-                },
-                "priority": 0,
-                "audio": true
-            },
-            "communal" : {
-                "aspect": "16:9",
-                "minSize": {
-                    "width": 30,
-                    "height": 30,
-                    "mode": "percent"
-                },
-                "priority": 3,
-                "targetRegions": [ "overlay" ]
-            }
-        }
-    ],
-    "layoutModel" : "packer"
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 30,
+          "height": 30,
+          "mode": "percent"
+        },
+        "priority": 1,
+        "targetRegions": [
+          "overlay"
+        ]
+      }
+    },
+    {
+      "constraintId": "pip2",
+      "personal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 30,
+          "height": 30,
+          "mode": "percent"
+        },
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 30,
+          "height": 30,
+          "mode": "percent"
+        },
+        "priority": 2,
+        "targetRegions": [
+          "overlay"
+        ]
+      }
+    },
+    {
+      "constraintId": "pip3",
+      "personal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 30,
+          "height": 30,
+          "mode": "percent"
+        },
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 30,
+          "height": 30,
+          "mode": "percent"
+        },
+        "priority": 3,
+        "targetRegions": [
+          "overlay"
+        ]
+      }
+    }
+  ],
+  "layoutModel": "packer"
 }

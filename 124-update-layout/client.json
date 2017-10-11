@@ -2,9 +2,6 @@
 	"description": "Technical Sample 112: Overlay Component Layout",
 	"mode": "tv",
     "serviceUrlPreset": "aws_edge",
-    "serviceUrls" : {
-        "layoutService" : "https://layout-service-v4.platform.2immerse.eu/layout/v4"
-    },
 	"controllerOptions": {
 		"deviceIdPrefix": "tv",
 		"deviceIdNamespace": "ts-tv",
@@ -61,25 +58,6 @@
 		"failurePlaceholders": true
 	},
 	"variations": [
-		{
-			"name": "edge",
-			"description": "Use edge services (instead of test)",
-			"type": "optional",
-			"content": {
-				"serviceUrlPreset": "aws_edge"
-			}
-		},
-		{
-			"name": "v4",
-			"description": "Use edge services and v4 layout (instead of test)",
-			"type": "optional",
-			"content": {
-				"serviceUrlPreset": "aws_edge",
-				"serviceUrls" : {
-				    "layoutService" : "https://layout-service-v4.platform.2immerse.eu/layout/v4"
-				}
-			}
-		},
 		{
 			"name": "notv",
 			"description": "Disable TV emulation (run standalone)",

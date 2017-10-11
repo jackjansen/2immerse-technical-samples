@@ -1,7 +1,7 @@
 {
 	"description": "Technical Sample 116: Responsive Component Overlay 55\" TV",
 	"mode": "tv",
-	"serviceUrlPreset": "aws_test",
+	"serviceUrlPreset": "aws_edge",
 	"controllerOptions": {
 		"deviceIdPrefix": "tv",
 		"deviceIdNamespace": "ts-tv",

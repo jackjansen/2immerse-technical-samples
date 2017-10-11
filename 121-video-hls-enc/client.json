@@ -1,7 +1,7 @@
 {
 	"description": "121-video-hls-enc: an encrypted HLS video",
 	"mode": "tv",
-	"serviceUrlPreset": "aws_test",
+	"serviceUrlPreset": "aws_edge",
 	"controllerOptions": {
 		"deviceIdPrefix": "tv",
 		"deviceIdNamespace": "ts-tv",
@@ -33,14 +33,6 @@
 		"failurePlaceholders": true
 	},
 	"variations": [
-		{
-			"name": "edge",
-			"description": "Use edge services (instead of test)",
-			"type": "optional",
-			"content": {
-				"serviceUrlPreset": "aws_edge"
-			}
-		},
 		{
 			"name": "notv",
 			"description": "Disable TV emulation (run standalone)",

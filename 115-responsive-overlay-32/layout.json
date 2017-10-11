@@ -1,48 +1,50 @@
 {
-    "version": 3,
-    "dmapp": "200",
-    "constraints": [
-        {
-            "componentId" : "main_video",
-            "personal" : {
-                "aspect": "16:9",
-                "minSize": {
-                    "width": 640,
-                    "height": 360
-                },
-                "priority": 0,
-                "audio": true
-            },
-            "communal" : {
-                "aspect": "16:9",
-                "minSize": {
-                    "width": 640,
-                    "height": 360
-                },
-                "priority": 10,
-                "targetRegions": [ "stage" ]
-            }
+  "version": 4,
+  "dmapp": "200",
+  "constraints": [
+    {
+      "constraintId": "main_video",
+      "personal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
         },
-         {
-            "componentId" : "img06",
-            "personal" : {
-                "prefSize": {
-                    "width": 6,
-                    "height": 6,
-                    "mode": "inches"
-                },
-                "priority": 0,
-                "audio": true
-            },
-            "communal" : {
-                "prefSize": {
-                    "width": 6,
-                    "height": 6,
-                    "mode": "inches"
-                },
-                "priority": 1
-            }
-        }
-    ],
-    "layoutModel" : "packer"
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "aspect": "16:9",
+        "minSize": {
+          "width": 640,
+          "height": 360
+        },
+        "priority": 10,
+        "targetRegions": [
+          "stage"
+        ]
+      }
+    },
+    {
+      "constraintId": "img06",
+      "personal": {
+        "prefSize": {
+          "width": 6,
+          "height": 6,
+          "mode": "inches"
+        },
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "prefSize": {
+          "width": 6,
+          "height": 6,
+          "mode": "inches"
+        },
+        "priority": 1
+      }
+    }
+  ],
+  "layoutModel": "packer"
 }

@@ -1,9 +1,9 @@
 {
-  "version": 3,
+  "version": 4,
   "dmapp": "300",
   "constraints": [
       {
-          "componentId" : "radar",
+          "constraintId" : "radar",
           "personal" : {
               "prefSize": {
                   "width": 1000,

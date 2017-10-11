@@ -2,9 +2,6 @@
 	"description": "Technical Sample 127: Update Layout Hide",
 	"mode": "tv",
     "serviceUrlPreset": "aws_edge",
-    "serviceUrls" : {
-        "layoutService" : "https://layout-service-v4.platform.2immerse.eu/layout/v4"
-    },
 	"controllerOptions": {
 		"deviceIdPrefix": "tv",
 		"deviceIdNamespace": "ts-tv",
