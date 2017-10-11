@@ -56,7 +56,7 @@
           "height": 46
         },
         "aspect": "228:46",
-        "priority": 1,
+        "priority": 3,
         "audio": true
       }
     },
@@ -85,7 +85,7 @@
           "height": 46
         },
         "aspect": "228:46",
-        "priority": 1,
+        "priority": 2,
         "audio": true
       }
     }
