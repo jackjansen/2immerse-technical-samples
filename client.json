@@ -1,7 +1,7 @@
 {
 	"description": "Technical Samples",
 	"mode": "tv",
-	"serviceUrlPreset": "aws_test",
+	"serviceUrlPreset": "aws_edge",
 	"controllerOptions": {
 		"deviceIdPrefix": "tv",
 		"deviceIdNamespace": "ts-tv",
@@ -542,11 +542,11 @@
 			]
 		},
 		{
-			"name": "edge",
-			"description": "Use edge services (instead of test)",
+			"name": "test",
+			"description": "Use test services (instead of edge)",
 			"type": "optional",
 			"content": {
-				"serviceUrlPreset": "aws_edge"
+				"serviceUrlPreset": "aws_test"
 			}
 		},
 		{
