@@ -1,0 +1,29 @@
+{
+  "version": 4,
+  "dmapp": "200",
+  "constraints": [
+    {
+      "constraintId": "stage",
+      "personal": {
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "priority": 1,
+        "audio": true,
+        "targetRegions": [ "stage" ]
+      }
+    },
+    {
+        "constraintId" : "overlay",
+        "personal" : {
+            "priority" : 0
+        },
+        "communal" : {
+            "priority" : 1,
+            "targetRegions" : ["overlay"]
+        }
+    }
+  ],
+  "layoutModel": "packer"
+}
