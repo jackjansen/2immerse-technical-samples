@@ -10,6 +10,18 @@
 		"longFormConsoleLogging": true,
 		"showUserErrorMessageUI": true
 	},
+	"setupComponent": {
+		"componentId": "auth-setup",
+		"config": {
+			"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
+			"class": "TestUtilAuthService"
+		},
+		"parameters": {
+			"localStorageKey": "tech-sample-131-replay-transition",
+			"authServiceKeyId": "59afcf3c119da300018a3b4b",
+			"username": "user@2immerse.eu"
+		}
+	},
 	"appendHtmlUrl": "appended.html",
 	"regions": [
 		{
