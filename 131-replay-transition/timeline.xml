@@ -18,20 +18,22 @@
 
       <tl:seq>
         <tl:sleep tl:dur="30" />
-        <tl:par tl:end="master">
-            <tl:sleep tl:dur="10" tl:prio="high"/>
+        <tl:par>
             <tl:seq>
                 <tl:ref tim:class="video"
                       xml:id="replay_video_in"
                       tim:constraintId="stage"
                       tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/TransitionIN-3s-16mbps/manifest.mpd"
                       title="replay video"/>
-                <tl:ref tim:class="video"
-                      xml:id="replay_video"
-                      tim:constraintId="stage"
-                      tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-                      tic:offset="6"
-                      title="replay video"/>
+                <tl:par  tl:end="master">
+                    <tl:sleep tl:dur="10" tl:prio="high"/>
+                    <tl:ref tim:class="video"
+                          xml:id="replay_video"
+                          tim:constraintId="stage"
+                          tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
+                          tic:offset="6"
+                          title="replay video"/>
+                </tl:par>
                 <tl:ref tim:class="video"
                       xml:id="replay_video_out"
                       tim:constraintId="stage"
