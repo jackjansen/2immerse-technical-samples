@@ -23,6 +23,15 @@
             "priority" : 1,
             "targetRegions" : ["overlay"]
         }
+    },
+    {
+        "constraintId" : "hidden",
+        "personal" : {
+            "priority" : 0
+        },
+        "communal" : {
+            "priority" : 0
+        }
     }
   ],
   "layoutModel": "packer"
