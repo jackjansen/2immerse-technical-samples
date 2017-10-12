@@ -25,19 +25,16 @@
                       xml:id="replay_video_in"
                       tim:constraintId="stage"
                       tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/TransitionIN-3s-16mbps/manifest.mpd"
-                      tic:offset="6"
                       title="replay video"/>
                 <tl:ref tim:class="video"
                       xml:id="replay_video"
                       tim:constraintId="stage"
                       tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-                      tic:offset="6"
                       title="replay video"/>
                 <tl:ref tim:class="video"
                       xml:id="replay_video_out"
                       tim:constraintId="stage"
                       tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/TransitionOUT-3s-4mbps.mp4/manifest.mpd"
-                      tic:offset="6"
                       title="replay video"/>
             </tl:seq>
             <tim:update tim:target="main_video" tic:muted="true" tim:constraintId="overlay"/>
