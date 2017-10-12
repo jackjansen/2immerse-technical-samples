@@ -1,0 +1,12 @@
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Fastest lap">
+  <tl:par>
+    <tl:sleep tl:dur="10"/>
+    <tl:ref tim:class="MotoGPFastestLapDMAppComponent"   
+            tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-fastest-lap/motogp-fastest-lap.html" 
+            tic:name="Rossi"
+            tic:lapTime="1:21:537"
+            tic:isRecord="true"
+            xml:id="anim" 
+            title="animation"/>
+  </tl:par>
+</tl:document>
