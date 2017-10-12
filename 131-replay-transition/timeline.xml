@@ -1,0 +1,51 @@
+<tl:document
+  xmlns:tl="http://jackjansen.nl/timelines"
+  xmlns:tim="http://jackjansen.nl/2immerse"
+  xmlns:tic="http://jackjansen.nl/2immerse/component"
+  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
+  title="Show a replay">
+
+  <tl:par>
+
+
+      <tl:ref tim:class="video"
+              xml:id="main_video"
+              tim:constraintId="stage"
+              tic:syncMode="master"
+              tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
+              tlcheck:dur="81"
+              title="main video"/>
+
+      <tl:seq>
+        <tl:sleep tl:dur="30" />
+        <tl:par tl:end="master">
+            <tl:sleep tl:dur="10" tl:prio="high"/>
+            <tl:seq>
+                <tl:ref tim:class="video"
+                      xml:id="replay_video_in"
+                      tim:constraintId="stage"
+                      tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/TransitionIN-3s-16mbps/manifest.mpd"
+                      tic:offset="6"
+                      title="replay video"/>
+                <tl:ref tim:class="video"
+                      xml:id="replay_video"
+                      tim:constraintId="stage"
+                      tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
+                      tic:offset="6"
+                      title="replay video"/>
+                <tl:ref tim:class="video"
+                      xml:id="replay_video_out"
+                      tim:constraintId="stage"
+                      tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/TransitionOUT-3s-4mbps.mp4/manifest.mpd"
+                      tic:offset="6"
+                      title="replay video"/>
+            </tl:seq>
+            <tim:update tim:target="main_video" tic:muted="true" tim:constraintId="overlay"/>
+        </tl:par>
+        <tim:update tim:target="main_video" tic:muted="false" tim:constraintId="stage"/>
+
+      </tl:seq>
+
+  </tl:par>
+
+</tl:document>
