@@ -30,6 +30,7 @@
                       xml:id="replay_video"
                       tim:constraintId="stage"
                       tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
+                      tic:offset="6"
                       title="replay video"/>
                 <tl:ref tim:class="video"
                       xml:id="replay_video_out"
