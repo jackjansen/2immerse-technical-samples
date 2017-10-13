@@ -3,10 +3,9 @@
   xmlns:tim="http://jackjansen.nl/2immerse"
   xmlns:tic="http://jackjansen.nl/2immerse/component"
   xmlns:tlcheck="http://jackjansen.nl/timelines/check"
-  title="Show a replay MGP action">
+  title="Show a replay action with graphics on/off switching">
 
   <tl:par>
-
 
       <tl:ref tim:class="video"
               xml:id="main_video"
@@ -15,6 +14,20 @@
               tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/CleanFeed-sampleREPLAYwithCUTS-60s-BGaudio-16mbps.mp4/manifest.mpd"
               tlcheck:dur="60"
               title="main video"/>
+
+      <tl:ref tim:class="HtmlSnippetDMAppComponent"
+             xml:id="race-type-info"
+             tim:url="https://origin.platform.2immerse.eu/dmapp-components/html-snippet/html-snippet.html"
+             tic:html="MotoGP"
+             tic:className="race-type-info"
+             title="race-type-info"/>
+
+     <tl:ref tim:class="MotoGPBattleForDMAppComponent"
+             tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for/motogp-battle-for.html"
+             tim:constraintId="race-laps-remaining"
+             xml:id="race-laps-remaining"
+             tic:number="4"
+             title="animation"/>
 
       <tl:seq>
         <tl:sleep tl:dur="15"/>
@@ -33,16 +46,24 @@
                         tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/CleanFeed-sampleREPLAYwithCUTS-60s-BGaudio-16mbps.mp4/manifest.mpd"
                         tic:offset="16"
                         title="replay video"/>
+                  <tim:update tim:target="race-type-info" tim:constraintId="race-type-info"/>
                 </tl:par>
-                <tl:ref tim:class="video"
-                      xml:id="replay_video_out"
-                      tim:constraintId="stage"
-                      tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/TransitionOUT-3s-4mbps.mp4/manifest.mpd"
-                      title="replay video"/>
+                <tl:par>
+                  <tl:ref tim:class="video"
+                        xml:id="replay_video_out"
+                        tim:constraintId="stage"
+                        tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/TransitionOUT-3s-4mbps.mp4/manifest.mpd"
+                        title="replay video"/>
+                  <tim:update tim:target="race-type-info" tim:constraintId="hidden"/>
+                </tl:par>
             </tl:seq>
             <tim:update tim:target="main_video" tic:muted="true" tim:constraintId="hidden"/>
+            <tim:update tim:target="race-type-info" tim:constraintId="hidden"/>
+            <tim:update tim:target="race-laps-remaining" tim:constraintId="hidden"/>
         </tl:par>
         <tim:update tim:target="main_video" tic:muted="false" tim:constraintId="stage"/>
+        <tim:update tim:target="race-type-info" tim:constraintId="race-type-info"/>
+        <tim:update tim:target="race-laps-remaining" tim:constraintId="race-laps-remaining"/>
 
       </tl:seq>
 

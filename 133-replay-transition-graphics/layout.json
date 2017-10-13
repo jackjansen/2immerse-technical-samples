@@ -1,0 +1,58 @@
+{
+  "version": 4,
+  "dmapp": "133",
+  "constraints": [
+    {
+      "constraintId": "stage",
+      "personal": {
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "priority": 1,
+        "audio": true,
+        "targetRegions": [ "stage" ]
+      }
+    },
+    {
+        "constraintId" : "leaderboard",
+        "personal" : {
+            "priority" : 0
+        },
+        "communal" : {
+            "priority" : 1,
+            "targetRegions" : ["leaderboard"]
+        }
+    },
+    {
+        "constraintId" : "race-type-info",
+        "personal" : {
+            "priority" : 0
+        },
+        "communal" : {
+            "priority" : 1,
+            "targetRegions" : ["race-type-info"]
+        }
+    },
+    {
+        "constraintId" : "race-laps-remaining",
+        "personal" : {
+            "priority" : 0
+        },
+        "communal" : {
+            "priority" : 1,
+            "targetRegions" : ["race-laps-remaining"]
+        }
+    },
+    {
+        "constraintId" : "hidden",
+        "personal" : {
+            "priority" : 0
+        },
+        "communal" : {
+            "priority" : 0
+        }
+    }
+  ],
+  "layoutModel": "packer"
+}
