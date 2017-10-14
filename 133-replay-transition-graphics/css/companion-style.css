@@ -1,0 +1,70 @@
+:root {
+	--motogp-panel-width: 240px;
+	--motogp-bottom-bar-height: 50px;
+	--motogp-top-bar-height: 50px;
+}
+
+body {
+	background-color: black;
+}
+
+.main-section {
+	position: absolute;
+	top: var(--motogp-top-bar-height);
+	left: 0px;
+	right: 0px;
+	bottom: var(--motogp-bottom-bar-height);
+}
+
+#region-top-bar {
+	position: absolute;
+	top: 0px;
+	height: var(--motogp-top-bar-height);
+	left: 0px;
+	right: 0px;
+	background-color: #404040;
+}
+
+#region-control-panel {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+}
+
+#region-panel-switcher {
+	position: absolute;
+	height: var(--motogp-bottom-bar-height);
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	background-color: #404040;
+}
+
+#region-right-section {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+}
+
+@media (min-width: 800px) {
+	#region-control-panel {
+		width: var(--motogp-panel-width);
+	}
+
+	#region-right-section {
+		left: var(--motogp-panel-width);
+	}
+}
+
+@media not all and (min-width: 800px) {
+	#region-control-panel {
+		right: 0px;
+	}
+
+	#region-right-section {
+		width: 0px;
+		display: none;
+	}
+}

@@ -1,0 +1,57 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'boxedregular';
+}
+
+.region:empty {
+	visibility: hidden;
+}
+
+@font-face {
+	font-family: 'boxedregular';
+	src: url('../font/Boxed-Regular-webfont.eot');
+	src: url('../font/Boxed-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../font/Boxed-Regular-webfont.woff2') format('woff2'),
+		 url('../font/Boxed-Regular-webfont.woff') format('woff'),
+		 url('../font/Boxed-Regular-webfont.ttf') format('truetype'),
+		 url('../font/Boxed-Regular-webfont.svg#boxedregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'boxedbook';
+	src: url('../font/Boxed-Book-webfont.eot');
+	src: url('../font/Boxed-Book-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../font/Boxed-Book-webfont.woff2') format('woff2'),
+		 url('../font/Boxed-Book-webfont.woff') format('woff'),
+		 url('../font/Boxed-Book-webfont.ttf') format('truetype'),
+		 url('../font/Boxed-Book-webfont.svg#boxedbook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'boxed regular';
+	src: url('../font/Boxed-Regular-webfont.eot');
+	src: url('../font/Boxed-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../font/Boxed-Regular-webfont.woff2') format('woff2'),
+		 url('../font/Boxed-Regular-webfont.woff') format('woff'),
+		 url('../font/Boxed-Regular-webfont.ttf') format('truetype'),
+		 url('../font/Boxed-Regular-webfont.svg#boxedregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'boxed book';
+	src: url('../font/Boxed-Book-webfont.eot');
+	src: url('../font/Boxed-Book-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../font/Boxed-Book-webfont.woff2') format('woff2'),
+		 url('../font/Boxed-Book-webfont.woff') format('woff'),
+		 url('../font/Boxed-Book-webfont.ttf') format('truetype'),
+		 url('../font/Boxed-Book-webfont.svg#boxedbook') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

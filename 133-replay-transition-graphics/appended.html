@@ -5,18 +5,18 @@
 	<!-- Disable double tap to zoom detection to eliminate 300ms delays on touch events -->
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 	<title>Technical Sample 133: replay transition graphics</title>
-	<style>
-		body {
-			margin: 0px;
-			padding: 0px;
-		}
-	</style>
+	<link rel="stylesheet" href="css/common-style.css" type="text/css" />
+	<link rel="stylesheet" href="css/tv-style.css" type="text/css" />
 </head>
 <body>
-	<div id="region-video" style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px"></div>
-	<div id="region-pip" 	style="position: absolute; right: 85px; top: 140px; width: 386px; height: 849px; z-index: 1"></div>
-	<div id="region-leaderboard" style="position: absolute; top: 112px; left: 86px; width: 50%; bottom: 100px; z-index: 1"></div>
-	<div id="region-race-type-info" style="position: absolute; top: 56px; left: 86px; height: 32px; width: 136px; z-index: 1"></div>
-	<div id="region-race-laps-remaining" style="position: absolute; top: 56px; left: 230px; height: 32px; width: 176px; z-index: 1"></div>
+	<div id="screen" class="region">
+		<div id="region-video" class="region"></div>
+		<div id="region-leaderboard" class="region"></div>
+		<div id="region-pip" class="region"></div>
+		<div id="region-race-type-info" class="region"></div>
+		<div id="region-race-laps-remaining" class="region"></div>
+		<div id="region-channel-bug" class="region"></div>
+	</div>
+	<div id="region-dummy"></div>
 </body>
 </html>

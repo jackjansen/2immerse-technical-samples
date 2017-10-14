@@ -45,6 +45,17 @@
         }
     },
     {
+        "constraintId" : "spooler",
+        "personal": {
+            "priority": 3,
+            "targetRegions": [ "dummy" ]
+        },
+        "communal" : {
+            "priority": 3,
+            "targetRegions": [ "dummy" ]
+        }
+    },
+        {
         "constraintId" : "hidden",
         "personal" : {
             "priority" : 0

@@ -60,6 +60,11 @@
 			"resizable": true,
 			"width": "25%",
 			"height": "5%"
+		},
+		{
+			"id": "dummy",
+			"elementSelector": "#region-dummy",
+			"suppressElementlessComponentWarning": true
 		}
 	],
 	"serviceInput": {
