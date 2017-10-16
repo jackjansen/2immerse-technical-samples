@@ -480,6 +480,266 @@
 					}
 				},
 				{
+					"name": "127",
+					"description": "127-update-layout-hide: Update Layout Hide",
+					"content": {
+						"serviceInput": {
+							"layout": "127-update-layout-hide/layout.json",
+							"timeline": "127-update-layout-hide/timeline.xml"
+						},
+						"appendHtmlUrl": "127-update-layout-hide/appended.html",
+						"regions": [
+							{
+								"id": "stage",
+								"elementSelector": "#region-stage",
+								"resizable": true,
+								"width": "100%",
+								"height": "100%"
+							},
+							{
+								"id": "overlayTL",
+								"elementSelector": "#region-overlay-topleft",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							},
+							{
+								"id": "overlayTR",
+								"elementSelector": "#region-overlay-topright",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							},
+							{
+								"id": "overlayBL",
+								"elementSelector": "#region-overlay-botleft",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							},
+							{
+								"id": "overlayBR",
+								"elementSelector": "#region-overlay-botright",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							}
+						]
+					}
+				},
+				{
+					"name": "128",
+					"description": "128-replay: Update Layout Hide",
+					"content": {
+						"serviceInput": {
+							"layout": "128-replay/layout.json",
+							"timeline": "128-replay/timeline.xml"
+						},
+						"appendHtmlUrl": "128-replay/appended.html",
+						"regions": [
+							{
+								"id": "stage",
+								"elementSelector": "#region-stage",
+								"resizable": true,
+								"width": "100%",
+								"height": "100%"
+							},
+							{
+								"id": "overlay",
+								"elementSelector": "#region-overlay",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							}
+						]
+					}
+				},
+				{
+					"name": "129",
+					"description": "129-battle-for-multi: battle for multi animation",
+					"content": {
+						"serviceInput": {
+							"layout": "129-battle-for-multi/layout.json",
+							"timeline": "129-battle-for-multi/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "129A",
+					"description": "129-battle-for-multi: battle for multi animation with rider info",
+					"content": {
+						"serviceInput": {
+							"layout": "129-battle-for-multi/layout.json",
+							"timeline": "129-battle-for-multi/timeline-riders.xml"
+						}
+					}
+				},
+				{
+					"name": "129B",
+					"description": "129-battle-for-multi: battle for multi animation with rider info and tyres",
+					"content": {
+						"serviceInput": {
+							"layout": "129-battle-for-multi/layout.json",
+							"timeline": "129-battle-for-multi/timeline-riders-tyres.xml"
+						}
+					}
+				},
+				{
+					"name": "130",
+					"description": "130-fastest-lap: fastest lap animation",
+					"content": {
+						"serviceInput": {
+							"layout": "130-fastest-lap/layout.json",
+							"timeline": "130-fastest-lap/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "131",
+					"description": "131-replay-transition: Replay transition",
+					"content": {
+						"serviceInput": {
+							"layout": "131-replay-transition/layout.json",
+							"timeline": "131-replay-transition/timeline.xml"
+						},
+						"appendHtmlUrl": "131-replay-transition/appended.html",
+						"regions": [
+							{
+								"id": "stage",
+								"elementSelector": "#region-stage",
+								"resizable": true,
+								"width": "100%",
+								"height": "100%"
+							},
+							{
+								"id": "overlay",
+								"elementSelector": "#region-overlay",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							}
+						],
+						"setupComponent": {
+							"componentId": "auth-setup",
+							"config": {
+								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
+								"class": "TestUtilAuthService"
+							},
+							"parameters": {
+								"localStorageKey": "tech-sample-131-replay-transition",
+								"authServiceKeyId": "59afcf3c119da300018a3b4b",
+								"username": "user@2immerse.eu"
+							}
+						}
+					}
+				},
+				{
+					"name": "132",
+					"description": "132-replay-transition-MGP: Replay transition MGP",
+					"content": {
+						"serviceInput": {
+							"layout": "132-replay-transition-MGP/layout.json",
+							"timeline": "132-replay-transition-MGP/timeline.xml"
+						},
+						"appendHtmlUrl": "132-replay-transition-MGP/appended.html",
+						"regions": [
+							{
+								"id": "stage",
+								"elementSelector": "#region-stage",
+								"resizable": true,
+								"width": "100%",
+								"height": "100%"
+							},
+							{
+								"id": "overlay",
+								"elementSelector": "#region-overlay",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							}
+						],
+						"setupComponent": {
+							"componentId": "auth-setup",
+							"config": {
+								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
+								"class": "TestUtilAuthService"
+							},
+							"parameters": {
+								"localStorageKey": "tech-sample-132-replay-transition-MGP",
+								"authServiceKeyId": "59afcf3c119da300018a3b4b",
+								"username": "user@2immerse.eu"
+							}
+						}
+					}
+				},
+				{
+					"name": "133",
+					"description": "133-replay-transition-graphics: Replay transition graphics",
+					"content": {
+						"serviceInput": {
+							"layout": "133-replay-transition-graphics/layout.json",
+							"timeline": "133-replay-transition-graphics/timeline.xml"
+						},
+						"appendHtmlUrl": "133-replay-transition-graphics/appended.html",
+						"regions": [
+							{
+								"id": "stage",
+								"elementSelector": "#region-video",
+								"resizable": true,
+								"width": "100%",
+								"height": "100%"
+							},
+							{
+								"id": "pip",
+								"elementSelector": "#region-pip",
+								"columnMode": true,
+								"adjustHeight": "floor(h / 270)",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							},
+							{
+								"id": "leaderboard",
+								"elementSelector": "#region-leaderboard",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							},
+							{
+								"id": "race-type-info",
+								"elementSelector": "#region-race-type-info",
+								"resizable": true,
+								"width": "25%",
+								"height": "25%"
+							},
+							{
+								"id": "race-laps-remaining",
+								"elementSelector": "#region-race-laps-remaining",
+								"resizable": true,
+								"width": "25%",
+								"height": "5%"
+							},
+							{
+								"id": "dummy",
+								"elementSelector": "#region-dummy",
+								"suppressElementlessComponentWarning": true
+							}
+						],
+						"setupComponent": {
+							"componentId": "auth-setup",
+							"config": {
+								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
+								"class": "TestUtilAuthService"
+							},
+							"parameters": {
+								"localStorageKey": "tech-sample-133-replay-transition-graphics",
+								"authServiceKeyId": "59afcf3c119da300018a3b4b",
+								"username": "user@2immerse.eu"
+							}
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {
