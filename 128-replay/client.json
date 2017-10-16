@@ -1,5 +1,5 @@
 {
-	"description": "Technical Sample 112: Overlay Component Layout",
+	"description": "Technical Sample 128: Replay",
 	"mode": "tv",
     "serviceUrlPreset": "aws_edge",
 	"controllerOptions": {
