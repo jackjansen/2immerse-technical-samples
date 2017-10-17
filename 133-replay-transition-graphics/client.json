@@ -26,40 +26,25 @@
 	"regions": [
 		{
 			"id": "stage",
-			"elementSelector": "#region-video",
-			"resizable": true,
-			"width": "100%",
-			"height": "100%"
+			"elementSelector": "#region-video"
 		},
 		{
 			"id": "pip",
 			"elementSelector": "#region-pip",
 			"columnMode": true,
-			"adjustHeight": "floor(h / 270)",
-			"resizable": true,
-			"width": "25%",
-			"height": "25%"
+			"adjustHeight": "floor(h / 270)"
 		},
 		{
 			"id": "leaderboard",
-			"elementSelector": "#region-leaderboard",
-			"resizable": true,
-			"width": "25%",
-			"height": "25%"
+			"elementSelector": "#region-leaderboard"
 		},
 		{
 			"id": "race-type-info",
-			"elementSelector": "#region-race-type-info",
-			"resizable": true,
-			"width": "25%",
-			"height": "25%"
+			"elementSelector": "#region-race-type-info"
 		},
 		{
 			"id": "race-laps-remaining",
-			"elementSelector": "#region-race-laps-remaining",
-			"resizable": true,
-			"width": "25%",
-			"height": "5%"
+			"elementSelector": "#region-race-laps-remaining"
 		},
 		{
 			"id": "dummy",
