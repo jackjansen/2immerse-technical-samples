@@ -63,7 +63,6 @@
                         tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/CleanFeed-sampleREPLAYwithCUTS-60s-BGaudio-16mbps.mp4/manifest.mpd"
                         tic:offset="16"
                         title="replay video"/>
-                  <tim:update tim:target="race-type-info" tim:constraintId="race-type-info"/>
                 </tl:par>
                 <!-- 3. Show outtransition -->
                 <tl:ref tim:class="video"
