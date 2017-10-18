@@ -67,7 +67,7 @@
 
        <!-- begin TV -->
        <tt:events>
-            <tl:seq xml:id="event_race_laps_remaining" tt:name="Laps Remaining" tt:verb="show" tt:modVerb="remove" tt:previewUrl="previews/laps.jpg">
+            <tl:seq xml:id="event_race_laps_remaining" tt:name="Laps Remaining" tt:verb="show" tt:modVerb="remove" tt:previewUrl="previews/laps.jpg" tt:longdesc="(Minimal duration can be set, but event can be stopped manually too)">
                 <tt:parameters>
                     <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="5" tt:required="true"/>
                     <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
@@ -87,7 +87,7 @@
 
                 </tl:par>
             </tl:seq>
-            <tl:seq xml:id="event_battle_for" tt:name="Battle For" tt:verb="show" tt:modVerb="remove" tt:previewUrl="previews/battle.jpg">
+            <tl:seq xml:id="event_battle_for" tt:name="Battle For" tt:verb="show" tt:modVerb="remove" tt:previewUrl="previews/battle.jpg" tt:longdesc="(Duration should be set, will stop automatically)">
                 <tt:parameters>
                     <tt:parameter tt:name="position" tt:parameter="tl:par/tl:ref/@tic:number" tt:type="string" tt:required="true"/>
                     <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="duration" tt:value="5" tt:required="true"/>
@@ -105,9 +105,54 @@
 
                 </tl:par>
             </tl:seq>
+            <tl:seq xml:id="replay" tt:name="Replay" tt:verb="show" tt:modVerb="remove" tt:previewUrl="previews/replay.jpg" tt:longdesc="(Set in-point and duration of replay section. in/out-transitions bracket it, and graphics are hidden. NOTE: add 2480 to in-point for now)">
+                <tt:parameters>
+                    <tt:parameter tt:name="in-point" tt:parameter="tl:par/tl:seq/tl:par[2]/tl:ref/@tic:offset" tt:type="duration" tt:required="true"/>
+                    <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:seq/tl:par[2]/tl:sleep/@tl:dur" tt:type="duration" tt:value="5" tt:required="true"/>
+                    <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
+                </tt:parameters>
+                <!-- 1. Wait 15 seconds (so we are at the point where the replay should start) -->
+                <tl:sleep tl:dur="15"/>
+                <!-- 2. Do the whole replay action (hiding stuff, show intransition, show replay, show outtransition, show stuff -->
+                <tl:par>
+                    <tl:seq>
+                        <!-- 1. show in-transition -->
+                        <tl:par>
+                            <tim:update tim:target="main_video" tic:muted="true" tim:constraintId="hidden"/>
+                            <tim:update tim:target="race-type-info" tim:constraintId="hidden"/>
+                            <tim:update tim:target="MotoGpLeaderboard" tim:constraintId="hidden"/>
+                            <tl:ref tim:class="video"
+                                  xml:id="replay_video_in"
+                                  tim:constraintId="stage"
+                                  tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/TransitionIN-3s-16mbps/manifest.mpd"
+                                  title="replay video"/>
+                        </tl:par>
+                        <!-- 2. show 23 seconds with in-point 15 seconds. -->
+                        <tl:par tl:end="master">
+                          <tl:sleep tl:dur="23" tl:prio="high"/>
+                          <tl:ref tim:class="video"
+                                xml:id="replay_video"
+                                tim:constraintId="stage"
+                                tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/CleanFeed-sampleREPLAYwithCUTS-60s-BGaudio-16mbps.mp4/manifest.mpd"
+                                tic:offset="16"
+                                title="replay video"/>
+                        </tl:par>
+                        <!-- 3. Show outtransition -->
+                        <tl:ref tim:class="video"
+                                xml:id="replay_video_out"
+                                tim:constraintId="stage"
+                                tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/TransitionOUT-3s-4mbps.mp4/manifest.mpd"
+                                title="replay video"/>
+                        <!-- 4. Show stuff -->
+                        <tim:update tim:target="main_video" tic:muted="false" tim:constraintId="stage"/>
+                        <tim:update tim:target="race-type-info" tim:constraintId="race-type-info"/>
+                        <tim:update tim:target="MotoGpLeaderboard" tim:constraintId="leaderboard"/>
+                    </tl:seq>
+                </tl:par>
+            </tl:seq>
         </tt:events>
 		<tt:completeEvents>
-            <tl:seq xml:id="event_leaderboard" tt:name="Leaderboard" tt:verb="show" tt:longDesc="Show active leaderboard on main screen" tt:modVerb="remove" tt:previewUrl="previews/leaderboard.jpg">
+            <tl:seq xml:id="event_leaderboard" tt:name="Leaderboard" tt:verb="show" tt:modVerb="remove" tt:previewUrl="previews/leaderboard.jpg" tt:longdesc="(Event must be stopped manually)">
                 <tt:parameters>
                     <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="999999" />
                     <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
@@ -127,7 +172,7 @@
 
                 </tl:par>
             </tl:seq>
-            <tl:seq xml:id="event_race_type_info" tt:name="html snippet" tt:longdesc="MotoGP text" tt:verb="show" tt:modVerb="remove" tt:previewUrl="previews/html-snippet.jpg">
+            <tl:seq xml:id="event_race_type_info" tt:name="MotoGP sticker" tt:verb="show" tt:modVerb="remove" tt:previewUrl="previews/html-snippet.jpg" tt:longdesc="(Event must be stopped manually)">
                 <tt:parameters>
                     <tt:parameter tt:name="duration" tt:parameter="tl:par/tl:sleep/@tl:dur" tt:type="set" tt:value="999999" />
                     <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
