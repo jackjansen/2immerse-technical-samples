@@ -113,7 +113,7 @@
                     <tt:parameter tt:name="begin time" tt:parameter="tl:sleep/@tt:_realDur" tt:type="set" tt:value="{tt:clock(..)}" />
                 </tt:parameters>
                 <!-- 1. Wait 15 seconds (so we are at the point where the replay should start) -->
-                <tl:sleep tl:dur="15"/>
+                <tl:sleep tl:dur="0"/>
                 <!-- 2. Do the whole replay action (hiding stuff, show intransition, show replay, show outtransition, show stuff -->
                 <tl:par>
                     <tl:seq>
@@ -133,8 +133,9 @@
                           <tl:ref tim:class="video"
                                 xml:id="replay_video"
                                 tim:constraintId="stage"
-                                tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/CleanFeed-sampleREPLAYwithCUTS-60s-BGaudio-16mbps.mp4/manifest.mpd"
-                                tic:offset="16"/>
+                                tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/videos/2017_03_AME_MGP_RACE_CF/manifest.mpd"
+                                tic:startMediaTime="41:20"
+                                tic:offset="3.1415926"/>
                         </tl:par>
                         <!-- 3. Show outtransition -->
                         <tl:ref tim:class="video"
