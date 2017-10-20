@@ -2,8 +2,8 @@
   xmlns:tl="http://jackjansen.nl/timelines"
   xmlns:tim="http://jackjansen.nl/2immerse"
   xmlns:tic="http://jackjansen.nl/2immerse/component"
-  xmlns:tt="http://jackjansen.nl/2immerse/livetrigger" 
-  xmlns:au="http://jackjansen.nl/2immerse/authoring" 
+  xmlns:tt="http://jackjansen.nl/2immerse/livetrigger"
+  xmlns:au="http://jackjansen.nl/2immerse/authoring"
   xmlns:tlcheck="http://jackjansen.nl/timelines/check"
   title="PiP Multi">
 
@@ -505,7 +505,7 @@
                     "mode": "percent"
                 },
                 "priority": 3,
-                "targetRegions": [ "race-laps-remaining" ]
+                "targetRegions": [ "battle-for-position" ]
             }
         },
         {
@@ -580,6 +580,10 @@
 			{
 				"id": "race-laps-remaining",
 				"elementSelector": "#region-race-laps-remaining"
+			},
+			{
+				"id": "battle-for-position",
+				"elementSelector": "#region-battle-for-position"
 			},
 			{
 				"id": "dummy",
