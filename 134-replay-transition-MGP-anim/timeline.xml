@@ -1,0 +1,57 @@
+<tl:document
+  xmlns:tl="http://jackjansen.nl/timelines"
+  xmlns:tim="http://jackjansen.nl/2immerse"
+  xmlns:tic="http://jackjansen.nl/2immerse/component"
+  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
+  title="Show a replay MGP action with transition animation">
+
+  <tl:par>
+
+
+      <tl:ref tim:class="video"
+              xml:id="main_video"
+              tim:constraintId="stage"
+              tic:syncMode="master"
+              tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/CleanFeed-sampleREPLAYwithCUTS-60s-BGaudio-16mbps.mp4/manifest.mpd"
+              tlcheck:dur="60"
+              title="main video"/>
+
+      <tl:seq>
+        <tl:sleep tl:dur="15"/>
+        <tl:par>
+            <tl:seq>
+                <tl:ref tim:class="AdobeAnimationDMAppComponent"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/adobe-animate/adobe-animate.html"
+                      xml:id="replay_anim_in"
+                      tim:constraintId="stage"
+                      tic:mediaUrl="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/transition-anim/Transition_D.js"
+                      tic:animProp="Transition_D"
+                      tic:reportAnimDuration="true"
+                      title="replay anim"/>
+                <tl:par tl:end="master">
+                  <tl:sleep tl:dur="23" tl:prio="high"/>
+                  <tl:ref tim:class="video"
+                        xml:id="replay_video"
+                        tim:constraintId="stage"
+                        tic:mediaUrl="https://origin.platform.2immerse.eu/media/motogp/silverstone-replays/CleanFeed-sampleREPLAYwithCUTS-60s-BGaudio-16mbps.mp4/manifest.mpd"
+                        tic:offset="16"
+                        title="replay video"/>
+                </tl:par>
+                <tl:ref tim:class="AdobeAnimationDMAppComponent"
+                      tim:url="https://origin.platform.2immerse.eu/dmapp-components/adobe-animate/adobe-animate.html"
+                      xml:id="replay_anim_out"
+                      tim:constraintId="stage"
+                      tic:mediaUrl="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/transition-anim/Transition_D.js"
+                      tic:animProp="Transition_D"
+                      tic:reportAnimDuration="true"
+                      title="replay anim"/>
+            </tl:seq>
+            <tim:update tim:target="main_video" tic:muted="true" tim:constraintId="hidden"/>
+        </tl:par>
+        <tim:update tim:target="main_video" tic:muted="false" tim:constraintId="stage"/>
+
+      </tl:seq>
+
+  </tl:par>
+
+</tl:document>
