@@ -1,7 +1,15 @@
 <tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Split animation test">
   <tl:par>
+  <tl:ref tim:class="MotoGpSpooler"
+          xml:id="spooler"
+          tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-spooler/motogp-spooler.html"
+          tic:xmlManifestDir="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/MotoGP_GBR_RAC"
+          tic:dataOffsetMs="1503844269030"
+          title="spooler"/>
+
     <tl:sleep tl:dur="1000"/>
     <tl:ref tim:class="MotoGPRadarDMAppComponent"
-    tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-radar/motogp-radar.html" xml:id="radar" title="radar"/>
+            tic:spoolerComponent="spooler"
+            tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-radar/motogp-radar.html" xml:id="radar" title="radar"/>
   </tl:par>
 </tl:document>
