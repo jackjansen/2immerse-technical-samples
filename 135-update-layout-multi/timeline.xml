@@ -27,29 +27,29 @@
               title="description of the video"/>
       <tl:seq>
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayTR" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayTR" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayBL" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayBL" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayBR" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayBR" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayTL" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayTL" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayTR" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayTR" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayBL" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayBL" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayBR" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayBR" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayTL" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayTL" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayTR" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayTR" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayBL" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayBL" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayBR" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayBR" />
         <tl:sleep tl:dur="5" />
-        <tim:update tim:targetXPath=".//[@au:updateGroup='mygroup']" tim:constraintId="overlayTL" />
+        <tim:update tim:targetXPath=".//*[@au:updateGroup='mygroup']" tim:constraintId="overlayTL" />
       </tl:seq>
 
   </tl:par>
