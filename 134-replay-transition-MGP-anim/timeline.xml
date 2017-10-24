@@ -24,9 +24,10 @@
                       tim:url="https://origin.platform.2immerse.eu/dmapp-components/adobe-animate/adobe-animate.html"
                       xml:id="replay_anim_in"
                       tim:constraintId="stage"
-                      tic:mediaUrl="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/transition-anim/Transition_D.js"
-                      tic:animProp="Transition_D"
+                      tic:mediaUrl="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/transition-anim/Transition_F.js"
+                      tic:animProp="Transition_F"
                       tic:reportAnimDuration="true"
+                      tic:onRunning="gotoAndPlay(animstart);play"
                       title="replay anim"/>
                 <tl:par tl:end="master">
                   <tl:sleep tl:dur="23" tl:prio="high"/>
@@ -41,9 +42,10 @@
                       tim:url="https://origin.platform.2immerse.eu/dmapp-components/adobe-animate/adobe-animate.html"
                       xml:id="replay_anim_out"
                       tim:constraintId="stage"
-                      tic:mediaUrl="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/transition-anim/Transition_D.js"
-                      tic:animProp="Transition_D"
+                      tic:mediaUrl="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/transition-anim/Transition_F.js"
+                      tic:animProp="Transition_F"
                       tic:reportAnimDuration="true"
+                      tic:onRunning="gotoAndPlay(animstart);play"
                       title="replay anim"/>
             </tl:seq>
             <tim:update tim:target="main_video" tic:muted="true" tim:constraintId="hidden"/>
