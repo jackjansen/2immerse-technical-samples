@@ -11,7 +11,7 @@
     <tl:ref tim:class="MotoGPInfoOnboardDMAppComponent"   
             tic:spoolerComponent="spooler"
             tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-info-onboard/motogp-info-onboard.html" 
-            tic:num="49"
+            tic:num="46"
             xml:id="anim" 
             title="animation"/>
   </tl:par>
