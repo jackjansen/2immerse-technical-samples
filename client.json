@@ -145,59 +145,12 @@
 				{
 					"name": "112",
 					"description": "112-overlay: Overlay Component Layout",
-					"content": {
-						"serviceInput": {
-							"layout": "112-overlay/layout.json",
-							"timeline": "112-overlay/timeline.xml"
-						},
-						"appendHtmlUrl": "112-overlay/appended.html",
-						"regions": [
-							{
-								"id": "stage",
-								"elementSelector": "#region-stage",
-								"resizable": true,
-								"width": "100%",
-								"height": "100%"
-							},
-							{
-								"id": "overlay",
-								"elementSelector": "#region-overlay",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							}
-						]
-					}
+					"inputDocumentUrl": "112-overlay/client.json"
 				},
 				{
 					"name": "113",
 					"description": "113-pip-multi: PiP Multi",
-					"content": {
-						"controllerOptions": {
-							"concurrentVideo": 4
-						},
-						"serviceInput": {
-							"layout": "113-pip-multi/layout.json",
-							"timeline": "113-pip-multi/timeline.xml"
-						},
-						"appendHtmlUrl": "113-pip-multi/appended.html",
-						"regions": [
-							{
-								"id": "stage",
-								"elementSelector": "#region-stage",
-								"resizable": true,
-								"width": "100%",
-								"height": "100%"
-							},
-							{
-								"id": "overlay",
-								"elementSelector": "#region-overlay",
-								"resizable": true,
-								"width": "80%",
-								"height": "80%"
-							}
-						]
-					}
+					"inputDocumentUrl": "113-pip-multi/client.json"
 				},
 				{
 					"name": "114",
@@ -211,91 +164,18 @@
 				},
 				{
 					"name": "115",
-					"description": "Technical Sample 115: Responsive Component Overlay 32\" TV",
-					"content": {
-						"controllerOptions": {
-							"displayWidth": 1920,
-							"displayHeight": 1080,
-							"displayResolution": 68.8,
-							"concurrentVideo": 4
-						},
-						"serviceInput": {
-							"layout": "115-responsive-layout-32/layout.json",
-							"timeline": "115-responsive-layout-32/timeline.xml"
-						},
-						"appendHtmlUrl": "115-responsive-layout-32/appended.html",
-						"regions": [
-							{
-								"id": "stage",
-								"elementSelector": "#region-stage",
-								"resizable": true,
-								"width": "100%",
-								"height": "100%"
-							},
-							{
-								"id": "overlay",
-								"elementSelector": "#region-overlay",
-								"resizable": true,
-								"width": "80%",
-								"height": "80%"
-							}
-						]
-					}
+					"description": "115-responsive-layout-32: Responsive Component Overlay 32\" TV",
+					"inputDocumentUrl": "115-responsive-layout-32/client.json"
 				},
 				{
 					"name": "116",
-					"description": "Technical Sample 116: Responsive Component Overlay 55\" TV",
-					"content": {
-						"controllerOptions": {
-							"displayWidth": 1920,
-							"displayHeight": 1080,
-							"displayResolution": 40.1,
-							"concurrentVideo": 4
-						},
-						"serviceInput": {
-							"layout": "116-responsive-layout-32/layout.json",
-							"timeline": "116-responsive-layout-32/timeline.xml"
-						},
-						"appendHtmlUrl": "116-responsive-layout-32/appended.html",
-						"regions": [
-							{
-								"id": "stage",
-								"elementSelector": "#region-stage",
-								"resizable": true,
-								"width": "100%",
-								"height": "100%"
-							},
-							{
-								"id": "overlay",
-								"elementSelector": "#region-overlay",
-								"resizable": true,
-								"width": "80%",
-								"height": "80%"
-							}
-						]
-					}
+					"description": "116-responsive-layout-55: Responsive Component Overlay 55\" TV",
+					"inputDocumentUrl": "116-responsive-layout-55/client.json"
 				},
 				{
 					"name": "118",
 					"description": "118-video-dash-cenc: a DASH CENC video",
-					"content": {
-						"serviceInput": {
-							"layout": "118-video-dash-cenc/layout.json",
-							"timeline": "118-video-dash-cenc/timeline.xml"
-						},
-						"setupComponent": {
-							"componentId": "auth-setup",
-							"config": {
-								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
-								"class": "TestUtilAuthService"
-							},
-							"parameters": {
-								"localStorageKey": "tech-sample-118-video-dash-cenc",
-								"authServiceKeyId": "59afcf3c119da300018a3b4b",
-								"username": "user@2immerse.eu"
-							}
-						}
-					}
+					"inputDocumentUrl": "118-video-dash-cen/client.json"
 				},
 				{
 					"name": "119",
@@ -320,24 +200,7 @@
 				{
 					"name": "121",
 					"description": "121-video-hls-enc: an encrypted HLS video",
-					"content": {
-						"serviceInput": {
-							"layout": "121-video-hls-enc/layout.json",
-							"timeline": "121-video-hls-enc/timeline.xml"
-						},
-						"setupComponent": {
-							"componentId": "auth-setup",
-							"config": {
-								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
-								"class": "TestUtilAuthService"
-							},
-							"parameters": {
-								"localStorageKey": "tech-sample-121-video-hls-enc",
-								"authServiceKeyId": "59afcf3c119da300018a3b4b",
-								"username": "user@2immerse.eu"
-							}
-						}
-					}
+					"inputDocumentUrl": "121-video-hls-enc/client.json"
 				},
 				{
 					"name": "122",
@@ -362,197 +225,27 @@
 				{
 					"name": "124",
 					"description": "124-update-layout: Play script in the background, video in PIP window on top. Video moves to another corner every 5 seconds",
-					"content": {
-						"serviceUrlPreset": "aws_edge",
-						"serviceUrls" : {
-							"layoutService" : "https://layout-service-v4.platform.2immerse.eu/layout/v4"
-						},
-						"appendHtmlUrl": "124-update-layout/appended.html",
-						"regions": [
-							{
-								"id": "stage",
-								"elementSelector": "#region-stage",
-								"resizable": true,
-								"width": "100%",
-								"height": "100%"
-							},
-							{
-								"id": "overlayTL",
-								"elementSelector": "#region-overlay-topleft",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							},
-							{
-								"id": "overlayTR",
-								"elementSelector": "#region-overlay-topright",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							},
-							{
-								"id": "overlayBL",
-								"elementSelector": "#region-overlay-botleft",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							},
-							{
-								"id": "overlayBR",
-								"elementSelector": "#region-overlay-botright",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							}
-						],
-						"serviceInput": {
-							"layout": "124-update-layout/layout.json",
-							"timeline": "124-update-layout/timeline.xml"
-						}
-					}
+					"inputDocumentUrl": "124-update-layout/client.json"
 				},
 				{
 					"name": "125",
 					"description": "125-battle-for-plus: a demo of the Battle For animation",
-					"content": {
-						"serviceInput": {
-							"layout": "125-battle-for-plus/layout.json",
-							"timeline": "125-battle-for-plus/timeline.xml"
-						},
-						"appendHtmlUrl": "125-battle-for-plus/appended.html",
-						"regions": [
-							{
-								"id": "tv",
-								"elementSelector": "#region-tv",
-								"resizable": true,
-								"width": "100%",
-								"height": "100%"
-							},
-							{
-								"id": "info",
-								"elementSelector": "#region-info",
-								"resizable": true,
-								"width": "20%",
-								"height": "10%"
-							},
-							{
-								"id": "leaderboard",
-								"elementSelector": "#region-leaderboard",
-								"resizable": true,
-								"width": "20%",
-								"height": "90%"
-							}
-						],
-						"setupComponent": {
-							"componentId": "auth-setup",
-							"config": {
-								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
-								"class": "TestUtilAuthService"
-							},
-							"parameters": {
-								"localStorageKey": "tech-sample-125-battle-for-plus",
-								"authServiceKeyId": "59afcf3c119da300018a3b4b",
-								"username": "user@2immerse.eu"
-							}
-						}
-					}
+					"inputDocumentUrl": "125-battle-for-plus/client.json"
 				},
 				{
 					"name": "126",
 					"description": "126-audio-dash-cenc: a DASH CENC audio stream",
-					"content": {
-						"serviceInput": {
-							"layout": "126-audio-dash-cenc/layout.json",
-							"timeline": "126-audio-dash-cenc/timeline.xml"
-						},
-						"setupComponent": {
-							"componentId": "auth-setup",
-							"config": {
-								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
-								"class": "TestUtilAuthService"
-							},
-							"parameters": {
-								"localStorageKey": "tech-sample-126-audio-dash-cenc",
-								"authServiceKeyId": "59afcf3c119da300018a3b4b",
-								"username": "user@2immerse.eu"
-							}
-						}
-					}
+					"inputDocumentUrl": "126-audio-dash-cenc/client.json"
 				},
 				{
 					"name": "127",
 					"description": "127-update-layout-hide: Update Layout Hide",
-					"content": {
-						"serviceInput": {
-							"layout": "127-update-layout-hide/layout.json",
-							"timeline": "127-update-layout-hide/timeline.xml"
-						},
-						"appendHtmlUrl": "127-update-layout-hide/appended.html",
-						"regions": [
-							{
-								"id": "stage",
-								"elementSelector": "#region-stage",
-								"resizable": true,
-								"width": "100%",
-								"height": "100%"
-							},
-							{
-								"id": "overlayTL",
-								"elementSelector": "#region-overlay-topleft",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							},
-							{
-								"id": "overlayTR",
-								"elementSelector": "#region-overlay-topright",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							},
-							{
-								"id": "overlayBL",
-								"elementSelector": "#region-overlay-botleft",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							},
-							{
-								"id": "overlayBR",
-								"elementSelector": "#region-overlay-botright",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							}
-						]
-					}
+					"inputDocumentUrl": "127-update-layout-hide/client.json"
 				},
 				{
 					"name": "128",
 					"description": "128-replay: Update Layout Hide",
-					"content": {
-						"serviceInput": {
-							"layout": "128-replay/layout.json",
-							"timeline": "128-replay/timeline.xml"
-						},
-						"appendHtmlUrl": "128-replay/appended.html",
-						"regions": [
-							{
-								"id": "stage",
-								"elementSelector": "#region-stage",
-								"resizable": true,
-								"width": "100%",
-								"height": "100%"
-							},
-							{
-								"id": "overlay",
-								"elementSelector": "#region-overlay",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							}
-						]
-					}
+					"inputDocumentUrl": "128-replay/client.json"
 				},
 				{
 					"name": "129",
@@ -597,169 +290,60 @@
 				{
 					"name": "131",
 					"description": "131-replay-transition: Replay transition",
-					"content": {
-						"serviceInput": {
-							"layout": "131-replay-transition/layout.json",
-							"timeline": "131-replay-transition/timeline.xml"
-						},
-						"appendHtmlUrl": "131-replay-transition/appended.html",
-						"regions": [
-							{
-								"id": "stage",
-								"elementSelector": "#region-stage",
-								"resizable": true,
-								"width": "100%",
-								"height": "100%"
-							},
-							{
-								"id": "overlay",
-								"elementSelector": "#region-overlay",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							}
-						],
-						"setupComponent": {
-							"componentId": "auth-setup",
-							"config": {
-								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
-								"class": "TestUtilAuthService"
-							},
-							"parameters": {
-								"localStorageKey": "tech-sample-131-replay-transition",
-								"authServiceKeyId": "59afcf3c119da300018a3b4b",
-								"username": "user@2immerse.eu"
-							}
-						}
-					}
+					"inputDocumentUrl": "131-replay-transition/client.json"
 				},
 				{
 					"name": "132",
 					"description": "132-replay-transition-MGP: Replay transition MGP",
-					"content": {
-						"serviceInput": {
-							"layout": "132-replay-transition-MGP/layout.json",
-							"timeline": "132-replay-transition-MGP/timeline.xml"
-						},
-						"appendHtmlUrl": "132-replay-transition-MGP/appended.html",
-						"regions": [
-							{
-								"id": "stage",
-								"elementSelector": "#region-stage",
-								"resizable": true,
-								"width": "100%",
-								"height": "100%"
-							},
-							{
-								"id": "overlay",
-								"elementSelector": "#region-overlay",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							}
-						],
-						"setupComponent": {
-							"componentId": "auth-setup",
-							"config": {
-								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
-								"class": "TestUtilAuthService"
-							},
-							"parameters": {
-								"localStorageKey": "tech-sample-132-replay-transition-MGP",
-								"authServiceKeyId": "59afcf3c119da300018a3b4b",
-								"username": "user@2immerse.eu"
-							}
-						}
-					}
+					"inputDocumentUrl": "132-replay-transition-MGP/client.json"
 				},
 				{
 					"name": "133",
 					"description": "133-replay-transition-graphics: Replay transition graphics",
-					"content": {
-						"serviceInput": {
-							"layout": "133-replay-transition-graphics/layout.json",
-							"timeline": "133-replay-transition-graphics/timeline.xml"
-						},
-						"appendHtmlUrl": "133-replay-transition-graphics/appended.html",
-						"regions": [
-							{
-								"id": "stage",
-								"elementSelector": "#region-video"
-							},
-							{
-								"id": "pip",
-								"elementSelector": "#region-pip",
-								"columnMode": true,
-								"adjustHeight": "floor(h / 270)"
-							},
-							{
-								"id": "leaderboard",
-								"elementSelector": "#region-leaderboard"
-							},
-							{
-								"id": "race-type-info",
-								"elementSelector": "#region-race-type-info"
-							},
-							{
-								"id": "race-laps-remaining",
-								"elementSelector": "#region-race-laps-remaining"
-							},
-							{
-								"id": "dummy",
-								"elementSelector": "#region-dummy",
-								"suppressElementlessComponentWarning": true
-							}
-						],
-						"setupComponent": {
-							"componentId": "auth-setup",
-							"config": {
-								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
-								"class": "TestUtilAuthService"
-							},
-							"parameters": {
-								"localStorageKey": "tech-sample-133-replay-transition-graphics",
-								"authServiceKeyId": "59afcf3c119da300018a3b4b",
-								"username": "user@2immerse.eu"
-							}
-						}
-					}
+					"inputDocumentUrl": "133-replay-transition-graphics/client.json"
 				},
 				{
 					"name": "134",
 					"description": "134-replay-transition-MGP-anim: Replay transition MGP with transition animation",
+					"inputDocumentUrl": "134-replay-transition-MGP-anim/client.json"
+				},
+				{
+					"name": "135",
+					"description": "135-update-layout-multi: Update layout multi",
 					"content": {
 						"serviceInput": {
-							"layout": "134-replay-transition-MGP-anim/layout.json",
-							"timeline": "134-replay-transition-MGP-anim/timeline.xml"
-						},
-						"appendHtmlUrl": "134-replay-transition-MGP-anim/appended.html",
-						"regions": [
-							{
-								"id": "stage",
-								"elementSelector": "#region-stage",
-								"resizable": true,
-								"width": "100%",
-								"height": "100%"
-							},
-							{
-								"id": "overlay",
-								"elementSelector": "#region-overlay",
-								"resizable": true,
-								"width": "25%",
-								"height": "25%"
-							}
-						],
-						"setupComponent": {
-							"componentId": "auth-setup",
-							"config": {
-								"url": "https://origin.platform.2immerse.eu/dmapp-components/test-util-auth-service/test-util-auth-service.html",
-								"class": "TestUtilAuthService"
-							},
-							"parameters": {
-								"localStorageKey": "tech-sample-134-replay-transition-MGP-anim",
-								"authServiceKeyId": "59afcf3c119da300018a3b4b",
-								"username": "user@2immerse.eu"
-							}
+							"layout": "135-update-layout-multi/layout.json",
+							"timeline": "135-update-layout-multi/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "136",
+					"description": "136-info-onboard: Info onboard",
+					"content": {
+						"serviceInput": {
+							"layout": "136-info-onboard/layout.json",
+							"timeline": "136-info-onboard/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "137",
+					"description": "137-info-rider: Info rider",
+					"content": {
+						"serviceInput": {
+							"layout": "137-info-rider/layout.json",
+							"timeline": "137-info-rider/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "138",
+					"description": "138-info-result: Info result",
+					"content": {
+						"serviceInput": {
+							"layout": "138-info-result/layout.json",
+							"timeline": "138-info-result/timeline.xml"
 						}
 					}
 				},
