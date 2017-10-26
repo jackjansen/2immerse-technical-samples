@@ -1,37 +1,19 @@
 <tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Battle for with riders and tyres">
   <tl:par>
+    <tl:ref tim:class="MotoGpSpooler"
+            xml:id="spooler"
+            tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-spooler/motogp-spooler.html"
+            tic:xmlManifestDir="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/MotoGP_GBR_RAC"
+            tic:dataOffsetMs="1503845069030"
+            title="spooler"/>
+
     <tl:sleep tl:dur="10"/>
-    <tl:ref tim:class="MotoGPBattleForMultiDMAppComponent"   
+    <tl:ref tim:class="MotoGPBattleForMultiDMAppComponent"
+            tic:spoolerComponent="spooler" 
             tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for-multi/motogp-battle-for-multi.html" 
-            tic:number="1"
-            tic:showRiders="true"
+            tic:pos="1"
+            tic:riders='["4","46","35","99"]'
             tic:showTyres="true"
-            tic:autoClose="true"
-            tic:riders='[{
-                "shortName": "Ros", 
-                "tyre1Type": 3,
-                "tyre2Type": 2,
-                "numberImage": "https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for-multi/anim/images/Numbers/46.png",
-                "colorRGB": [255,0,0]
-              },{
-                "shortName": "Dov",
-                "tyre1Type": 2,
-                "tyre2Type": 2,
-                "numberImage": "https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for-multi/anim/images/Numbers04.png",
-                "colorRGB": [0,255,0]
-              },{
-                "shortName": "Mar", 
-                "tyre1Type": 4,
-                "tyre2Type": 4,
-                "numberImage": "https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for-multi/anim/images/Numbers/93.png",
-                "colorRGB": [0,0,255]
-              },{
-                "shortName": "Lor", 
-                "tyre1Type": 1,
-                "tyre2Type": 6,
-                "numberImage": "https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for-multi/anim/images/Numbers/99.png",
-                "colorRGB": [255,155,50]
-              }]' 
             xml:id="anim" 
             title="animation"/>
   </tl:par>

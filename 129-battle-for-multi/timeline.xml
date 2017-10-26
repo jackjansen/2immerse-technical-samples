@@ -1,12 +1,19 @@
 <tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Battle for">
   <tl:par>
+    <tl:ref tim:class="MotoGpSpooler"
+            xml:id="spooler"
+            tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-spooler/motogp-spooler.html"
+            tic:xmlManifestDir="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/MotoGP_GBR_RAC"
+            tic:dataOffsetMs="1503845069030"
+            title="spooler"/>
+
     <tl:sleep tl:dur="10"/>
-    <tl:ref tim:class="MotoGPBattleForMultiDMAppComponent"   
+    <tl:ref tim:class="MotoGPBattleForMultiDMAppComponent"
+            tic:spoolerComponent="spooler"
             tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for-multi/motogp-battle-for-multi.html" 
-            tic:number="1"
-            tic:showRiders="false"
+            tic:pos="1"
+            tic:riders='[]'
             tic:showTyres="false"
-            tic:autoClose="true"
             xml:id="anim" 
             title="animation"/>
   </tl:par>
