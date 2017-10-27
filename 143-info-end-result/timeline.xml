@@ -1,0 +1,17 @@
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Info race end result">
+  <tl:par>
+    <tl:ref tim:class="MotoGpSpooler"
+            xml:id="spooler"
+            tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-spooler/motogp-spooler.html"
+            tic:xmlManifestDir="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/MotoGP_GBR_RAC"
+            tic:dataOffsetMs="1503845069030"
+            title="spooler"/>
+
+    <tl:sleep tl:dur="20"/>
+    <tl:ref tim:class="MotoGPInfoEndResultDMAppComponent"
+            tic:spoolerComponent="spooler"
+            tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-info-end-result/motogp-info-end-result.html" 
+            xml:id="anim"
+            title="animation"/>
+  </tl:par>
+</tl:document>
