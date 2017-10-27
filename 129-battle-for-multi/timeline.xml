@@ -12,7 +12,7 @@
             tic:spoolerComponent="spooler"
             tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-battle-for-multi/motogp-battle-for-multi.html" 
             tic:pos="1"
-            tic:riders='[]'
+            tic:riders=""
             tic:showTyres="false"
             xml:id="anim" 
             title="animation"/>

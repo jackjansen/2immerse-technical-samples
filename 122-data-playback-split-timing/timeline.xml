@@ -2,6 +2,9 @@
   <tl:par>
     <tl:sleep tl:dur="1200"/>
     <tl:ref tim:class="MotoGPSplitDMAppComponent"
-    tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-split/motogp-split.html" xml:id="anim" tic:rider1='{"id":"7444", "surName": "Marquez"}' tic:rider2='{"id":"158", "surName": "Rossi"}' title="animation"/>
+            tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-split/motogp-split.html"
+            xml:id="anim"
+            tic:riders="46,4"
+            title="animation"/>
   </tl:par>
 </tl:document>
