@@ -16,9 +16,9 @@
                 <tl:par tt:name="Selectable 5 second splash" xml:id="event4" tt:previewUrl="previews/splash.jpg" tt:longdesc="Shows Pow!/Wow! or Splat image for 5 seconds" tt:verb="Trigger Image">
                     <tt:parameters>
                         <tt:parameter tt:name="Type of splash" tt:parameter="tl:ref/@tic:mediaUrl" tt:type="selection" tt:required="true">
-                            <tt:option tt:label="Pow!" tt:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/fivesecondsplash.png"/>
-                            <tt:option tt:label="Wow!" tt:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/nsecondsplash.png"/>
-                            <tt:option tt:label="Paint splatter" tt:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/stoppablesplash.png"/>
+                            <au:item au:label="Pow!" au:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/fivesecondsplash.png"/>
+                            <au:item au:label="Wow!" au:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/nsecondsplash.png"/>
+                            <au:item au:label="Paint splatter" au:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/stoppablesplash.png"/>
                         </tt:parameter>
                     </tt:parameters>
                     <tl:sleep tl:dur="5" tl:prio="high" />
@@ -27,9 +27,9 @@
                 <tl:par tt:name="Double selectable 5 second splash" xml:id="event5" tt:previewUrl="previews/splash.jpg" tt:longdesc="Shows 2 Pow!/Wow! or Splat images for 5 seconds" tt:verb="Trigger Image">
                     <tt:parameters>
                         <tt:parameter tt:name="Type of splash" tt:type="selection" tt:required="true">
-                            <tt:option tt:label="Pow!" tt:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/fivesecondsplash.png"/>
-                            <tt:option tt:label="Wow!" tt:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/nsecondsplash.png"/>
-                            <tt:option tt:label="Paint splatter" tt:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/stoppablesplash.png"/>
+                            <au:item au:label="Pow!" au:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/fivesecondsplash.png"/>
+                            <au:item au:label="Wow!" au:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/nsecondsplash.png"/>
+                            <au:item au:label="Paint splatter" au:value="//origin.platform.2immerse.eu/dmapps/technical-samples/media/300-images/stoppablesplash.png"/>
                             <tt:destination tt:parameter="tl:ref/@tic:mediaUrl" tt:value="{tt:value()}" />
                             <tt:destination tt:parameter="tl:ref[2]/@tic:mediaUrl" tt:value="{tt:value()}" />
                         </tt:parameter>
