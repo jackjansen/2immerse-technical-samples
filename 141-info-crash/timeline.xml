@@ -1,4 +1,4 @@
-<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Info race result">
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Info crash">
   <tl:par>
     <tl:ref tim:class="MotoGpSpooler"
             xml:id="spooler"
@@ -11,8 +11,9 @@
     <tl:ref tim:class="MotoGPInfoCrashDMAppComponent"
             tic:spoolerComponent="spooler"
             tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-info-crash/motogp-info-crash.html" 
-            tic:num="4"
-            xml:id="anim"
+            tic:turn="4"
+            tic:rider="35" 
+            xml:id="anim" 
             title="animation"/>
   </tl:par>
 </tl:document>
