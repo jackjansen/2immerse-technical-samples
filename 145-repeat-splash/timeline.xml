@@ -15,17 +15,10 @@
               tlcheck:dur="30"
               tl:prio="high"
               title="main video"/>
-
-	  <tl:ref tim:class="PostTimelineEventButtonComponent"
-			  tim:url="/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
-			  xml:id="start_button"
-			  tic:text="Press This Button"
-			  tic:eventId="start_button_press"
-			  />
               
   	  <tl:repeat>
 		  <tl:seq>
-			<tl:wait tl:event="start_button_press"/>
+			<tl:sleep tl:dur="5"/>
 			<tl:par>
 				<tl:sleep tl:dur="5"/>
 				<tl:ref tim:class="image" 
