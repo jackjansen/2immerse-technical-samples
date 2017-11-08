@@ -11,7 +11,7 @@
               tim:dmappcid="main_video"
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="main video"/>
 
       <tl:par tl:end="master">

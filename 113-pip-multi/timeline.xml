@@ -11,25 +11,25 @@
               tim:dmappcid="main_video"
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="main video"/>
 
       <tl:ref tim:class="video"
               tim:dmappcid="pip1"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="picture-in-picture 1"/>
 
       <tl:ref tim:class="video"
               tim:dmappcid="pip2"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="picture-in-picture 2"/>
 
        <tl:ref tim:class="video"
               tim:dmappcid="pip3"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="picture-in-picture 3"/>
 
   </tl:par>

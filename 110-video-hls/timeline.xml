@@ -12,7 +12,7 @@
               xml:id="main_video"
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/hamlet-trailer.hls/hamlet-trailer.m3u8"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="main video"/>
 
   </tl:par>

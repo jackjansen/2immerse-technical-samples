@@ -12,33 +12,33 @@
               xml:id="main_video"
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="main video"/>
 
       <tl:ref tim:class="video"
               xml:id="aux_video1"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="second video"/>
       <tl:ref tim:class="video"
               xml:id="aux_video2"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="second video"/>
       <tl:ref tim:class="video"
               xml:id="aux_video3"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="second video"/>
       <tl:ref tim:class="video"
               xml:id="aux_video4"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="second video"/>
       <tl:ref tim:class="video"
               xml:id="aux_video5"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="second video"/>
 
   </tl:par>

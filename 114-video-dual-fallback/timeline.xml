@@ -13,7 +13,7 @@
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer/manifest.mpd"
               tic:auxMediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer-rotgrid.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="main video"/>
 
   </tl:par>

@@ -12,13 +12,13 @@
               xml:id="main_video"
               tic:syncMode="master"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="main video"/>
 
       <tl:ref tim:class="video"
               xml:id="aux_video"
               tic:mediaUrl="../../../media/rsc/hamlet/videos/hamlet-trailer.mp4"
-              tlcheck:dur="30"
+              tlcheck:dur="81"
               title="second video"/>
 
   </tl:par>
