@@ -348,6 +348,76 @@
 					}
 				},
 				{
+					"name": "139",
+					"description": "139-info-championship: Adobe animation component showing live championship standings",
+					"content": {
+						"serviceInput": {
+							"layout": "139-info-championship/layout.json",
+							"timeline": "139-info-championship/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "140",
+					"description": "140-lap-comparison: Lap comparison",
+					"content": {
+						"serviceInput": {
+							"layout": "140-lap-comparison/layout.json",
+							"timeline": "140-lap-comparison/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "141",
+					"description": "141-info-crash: Adobe animation component for crash graphics",
+					"content": {
+						"serviceInput": {
+							"layout": "141-info-crash/layout.json",
+							"timeline": "141-info-crash/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "142",
+					"description": "142-info-incident: Adobe animation component for race incident graphics",
+					"content": {
+						"serviceInput": {
+							"layout": "142-info-incident/layout.json",
+							"timeline": "142-info-incident/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "143",
+					"description": "143-info-end-result: Info end result",
+					"content": {
+						"serviceInput": {
+							"layout": "143-info-end-result/layout.json",
+							"timeline": "143-info-end-result/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "144",
+					"description": "144-repeat-button: A video and a button that shows an additional image for 5 seconds. The button can be used more than once.",
+					"content": {
+						"serviceInput": {
+							"layout": "144-repeat-button/layout.json",
+							"timeline": "144-repeat-button/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "145",
+					"description": "145-repeat-splash: A video and an image that shows repeatedly for 5 seconds",
+					"content": {
+						"serviceInput": {
+							"layout": "145-repeat-splash/layout.json",
+							"timeline": "145-repeat-splash/timeline.xml"
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {
