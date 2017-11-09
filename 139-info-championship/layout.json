@@ -6,27 +6,27 @@
       "constraintId": "anim",
       "personal": {
         "prefSize": {
-          "width": 400,
-          "height": 300
+          "width": 800,
+          "height": 467
         },
         "minSize": {
-          "width": 400,
-          "height": 300
+          "width": 800,
+          "height": 467
         },
-        "aspect": "400:300",
+        "aspect": "800:467",
         "priority": 0,
         "audio": true
       },
       "communal": {
         "prefSize": {
-          "width": 400,
-          "height": 300
+          "width": 800,
+          "height": 467
         },
         "minSize": {
-          "width": 400,
-          "height": 300
+          "width": 800,
+          "height": 467
         },
-        "aspect": "400:300",
+        "aspect": "800:467",
         "priority": 1,
         "audio": true
       }
