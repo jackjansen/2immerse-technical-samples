@@ -7,11 +7,18 @@
             tic:dataOffsetMs="1503845899000"
             title="spooler"/>
 
+    <tl:ref tim:class="MotoGPIoTDataFetcherDMAppComponent"
+          xml:id="fetcher"
+          tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-iot-data-fetcher/motogp-iot-data-fetcher.html"
+          tic:dataOffsetMs="1503844275696"
+          title="fetcher"/>
+
     <tl:sleep tl:dur="90"/>
     
     <tl:ref tim:class="MotoGPInfoChampionshipDMAppComponent"
             tic:spoolerComponent="spooler"
             tic:syncMode="master"
+            tic:fetcher="fetcher"
             tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-info-championship/motogp-info-championship.html" 
             tic:size="small"
             tic:dataOffsetMs="1503845899000"

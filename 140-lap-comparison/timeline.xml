@@ -1,22 +1,17 @@
-<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Lap comparison">
+<tl:document
+  xmlns:tl="http://jackjansen.nl/timelines"
+  xmlns:tim="http://jackjansen.nl/2immerse"
+  xmlns:tic="http://jackjansen.nl/2immerse/component"
+  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
+  title="Lap comparison">
+
   <tl:par>
-      <tl:wait tl:event="exitSignal"/>
+      <tl:sleep tl:dur="20"/>
       <tl:ref tim:class="MotoGPLapComparisonDMAppComponent"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-lap-comparison/motogp-lap-comparison.html"
-              xml:id="anim"
-              title="animation"/>
-      <tl:ref tim:class="DmappcHideShowControlsComponent"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/dmappc-hide-show-controls/dmappc-hide-show-controls.html"
-              tim:dmappcid="control-anim"
-              tic:dmappcId="anim"
-              tic:fixedPersonal="0"
-              tic:activeCommunal="1"
-              />
-      <tl:ref tim:class="PostTimelineEventButtonComponent"
-              tim:url="https://origin.platform.2immerse.eu/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
-              xml:id="exit"
-              tic:text="Timeline stop animation component"
-              tic:eventId="exitSignal"
-              />
+            tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-lap-comparison/motogp-lap-comparison.html" 
+            tic:riders="4,35"
+            xml:id="anim" 
+            title="animation"/>
   </tl:par>
+
 </tl:document>

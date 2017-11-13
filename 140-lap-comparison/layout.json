@@ -30,64 +30,6 @@
         "priority": 1,
         "audio": true
       }
-    },
-    {
-      "constraintId": "exit",
-      "personal": {
-        "prefSize": {
-          "width": 550,
-          "height": 400
-        },
-        "minSize": {
-          "width": 550,
-          "height": 400
-        },
-        "aspect": "550:400",
-        "priority": 0,
-        "audio": true
-      },
-      "communal": {
-        "prefSize": {
-          "width": 550,
-          "height": 400
-        },
-        "minSize": {
-          "width": 550,
-          "height": 400
-        },
-        "aspect": "550:400",
-        "priority": 3,
-        "audio": true
-      }
-    },
-    {
-      "constraintId": "control-anim",
-      "personal": {
-        "prefSize": {
-          "width": 550,
-          "height": 400
-        },
-        "minSize": {
-          "width": 550,
-          "height": 400
-        },
-        "aspect": "550:400",
-        "priority": 0,
-        "audio": true
-      },
-      "communal": {
-        "prefSize": {
-          "width": 550,
-          "height": 400
-        },
-        "minSize": {
-          "width": 550,
-          "height": 400
-        },
-        "aspect": "550:400",
-        "priority": 2,
-        "audio": true
-      }
     }
   ],
   "layoutModel": "packer"
