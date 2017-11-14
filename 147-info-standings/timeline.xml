@@ -1,33 +1,27 @@
-<tl:document
-  xmlns:tl="http://jackjansen.nl/timelines"
-  xmlns:tim="http://jackjansen.nl/2immerse"
-  xmlns:tic="http://jackjansen.nl/2immerse/component"
-  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
-  title="Multi Lap comparison">
-
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Info Championship Standing">
   <tl:par>
-      <tl:ref tim:class="MotoGpSpooler"
+    <tl:ref tim:class="MotoGpSpooler"
             xml:id="spooler"
             tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-spooler/motogp-spooler.html"
             tic:xmlManifestDir="https://origin.platform.2immerse.eu/sandbox/motogp-test-documents/test-samples/MotoGP_GBR_RAC"
-            tic:dataOffsetMs="1503845069030"
+            tic:dataOffsetMs="1503845899000"
             title="spooler"/>
 
     <tl:ref tim:class="MotoGPIoTDataFetcherDMAppComponent"
           xml:id="fetcher"
           tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-iot-data-fetcher/motogp-iot-data-fetcher.html"
-          tic:dataOffsetMs="1503845069030"
+          tic:dataOffsetMs="1503845899000"
           title="fetcher"/>
 
     <tl:sleep tl:dur="20"/>
-    <tl:ref tim:class="MotoGPMultiLapComparisonDMAppComponent"
+    
+    <tl:ref tim:class="MotoGPInfoStandingsDMAppComponent"
             tic:spoolerComponent="spooler"
             tic:fetcher="fetcher"
-            tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-multi-lap-comparison/motogp-multi-lap-comparison.html" 
-            tic:riders="4,35,93"
-            tic:laps="3"
-            xml:id="anim" 
+            tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-info-standings/motogp-info-standings.html" 
+            tic:size="small"
+            tic:dataOffsetMs="1503845899000"
+            xml:id="anim"
             title="animation"/>
   </tl:par>
-
 </tl:document>

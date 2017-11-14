@@ -1,0 +1,36 @@
+{
+  "version": 4,
+  "dmapp": "300",
+  "constraints": [
+    {
+      "constraintId": "anim",
+      "personal": {
+        "prefSize": {
+          "width": 550,
+          "height": 500
+        },
+        "minSize": {
+          "width": 550,
+          "height": 500
+        },
+        "aspect": "550:500",
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "prefSize": {
+          "width": 550,
+          "height": 500
+        },
+        "minSize": {
+          "width": 550,
+          "height": 500
+        },
+        "aspect": "550:500",
+        "priority": 1,
+        "audio": true
+      }
+    }
+  ],
+  "layoutModel": "packer"
+}
