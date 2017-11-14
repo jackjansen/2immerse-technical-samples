@@ -1,0 +1,29 @@
+<tl:document
+  xmlns:tl="http://jackjansen.nl/timelines"
+  xmlns:tim="http://jackjansen.nl/2immerse"
+  xmlns:tic="http://jackjansen.nl/2immerse/component"
+  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
+  title="Animation test 2">
+
+  <tl:par>
+      <tl:wait tl:event="exitSignal"/>
+      <tl:ref tim:class="MotoGPLeadingGroupDMAppComponent"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-leading-group/motogp-leading-group.html"
+              xml:id="anim"
+              title="animation"/>
+      <tl:ref tim:class="DmappcHideShowControlsComponent"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/dmappc-hide-show-controls/dmappc-hide-show-controls.html"
+              tim:dmappcid="control-anim"
+              tic:dmappcId="anim"
+              tic:fixedPersonal="0"
+              tic:activeCommunal="1"
+              />
+      <tl:ref tim:class="PostTimelineEventButtonComponent"
+              tim:url="https://origin.platform.2immerse.eu/dmapp-components/post-timeline-event-button/post-timeline-event-button.html"
+              xml:id="exit"
+              tic:text="Timeline stop animation component"
+              tic:eventId="exitSignal"
+              />
+  </tl:par>
+
+</tl:document>

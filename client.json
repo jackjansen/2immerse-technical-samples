@@ -418,6 +418,16 @@
 					}
 				},
 				{
+					"name": "146",
+					"description": "146-leading-group: Adobe animation component test showing Leading Group animation (including exit animation)",
+					"content": {
+						"serviceInput": {
+							"layout": "146-leading-group/layout.json",
+							"timeline": "146-leading-group/timeline.xml"
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {
