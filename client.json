@@ -189,11 +189,11 @@
 				},
 				{
 					"name": "120",
-					"description": "120-anim-2: Adobe animation component test showing Battle For animation (including exit animation)",
+					"description": "120-battle-for: Adobe animation component test showing Battle For animation (including exit animation)",
 					"content": {
 						"serviceInput": {
-							"layout": "120-anim-2/layout.json",
-							"timeline": "120-anim-2/timeline.xml"
+							"layout": "120-battle-for/layout.json",
+							"timeline": "120-battle-for/timeline.xml"
 						}
 					}
 				},
