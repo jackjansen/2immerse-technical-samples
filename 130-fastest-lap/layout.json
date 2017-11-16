@@ -7,26 +7,26 @@
       "personal": {
         "prefSize": {
           "width": 300,
-          "height": 200
+          "height": 300
         },
         "minSize": {
           "width": 300,
-          "height": 200
+          "height": 300
         },
-        "aspect": "300:200",
+        "aspect": "300:300",
         "priority": 0,
         "audio": true
       },
       "communal": {
         "prefSize": {
           "width": 300,
-          "height": 200
+          "height": 300
         },
         "minSize": {
           "width": 300,
-          "height": 200
+          "height": 300
         },
-        "aspect": "300:200",
+        "aspect": "300:300",
         "priority": 1,
         "audio": true
       }
