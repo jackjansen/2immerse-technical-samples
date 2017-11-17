@@ -10,7 +10,7 @@
     <tl:ref tim:class="MotoGPIoTDataFetcherDMAppComponent"
           xml:id="fetcher"
           tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-iot-data-fetcher/motogp-iot-data-fetcher.html"
-          tic:dataOffsetMs="1503844375696"
+          tic:dataOffsetMs="1503845069030"
           title="fetcher"/>
 
     <tl:sleep tl:dur="1200"/>
@@ -19,7 +19,7 @@
             tic:fetcher="fetcher"
             tim:url="https://origin.platform.2immerse.eu/dmapp-components/motogp-split/motogp-split.html"
             xml:id="anim"
-            tic:riders="46,4"
+            tic:riders="4,93"
             title="animation"/>
   </tl:par>
 </tl:document>
