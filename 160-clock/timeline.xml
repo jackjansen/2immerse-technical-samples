@@ -1,0 +1,14 @@
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Match Clock">
+  <tl:par>
+    <tl:sleep tl:dur="1000"/>
+    <tl:ref tim:class="PrimeDMAppComponent"
+            tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
+            tic:scene="CH_Clock2.pbx"
+            tic:timeText="45:00"
+            tic:hTeam="TOT"
+            tic:aTeam="WBA"
+            tic:score="0-0"
+            xml:id="clock"
+            title="clock"/>
+  </tl:par>
+</tl:document>
