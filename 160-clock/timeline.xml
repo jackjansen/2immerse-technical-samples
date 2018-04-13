@@ -4,6 +4,7 @@
     <tl:ref tim:class="PrimeDMAppComponent"
             tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
             tic:scene="CH_Clock2.pbx"
+            tic:action="show"
             tic:timeText="45:00"
             tic:hTeam="TOT"
             tic:aTeam="WBA"

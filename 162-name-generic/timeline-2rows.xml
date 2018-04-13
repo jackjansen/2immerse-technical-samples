@@ -1,0 +1,13 @@
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Name Generic">
+  <tl:par>
+    <tl:sleep tl:dur="20"/>
+    <tl:ref tim:class="PrimeDMAppComponent"
+            tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
+            tic:scene="nameGeneric.pbx"
+            tic:action="show2Rows"
+            tic:header="Name"
+            tic:subheader="Subheader"
+            xml:id="name"
+            title="name"/>
+  </tl:par>
+</tl:document>

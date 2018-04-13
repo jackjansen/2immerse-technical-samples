@@ -1,0 +1,15 @@
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Name Player">
+  <tl:par>
+    <tl:sleep tl:dur="20"/>
+    <tl:ref tim:class="PrimeDMAppComponent"
+            tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
+            tic:scene="namePlayer.pbx"
+            tic:action="show"
+            tic:name="Name"
+            tic:nr="44"
+            tic:team="liverpool"
+            tic:subheader="Subheader"
+            xml:id="player"
+            title="player"/>
+  </tl:par>
+</tl:document>
