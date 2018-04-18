@@ -11,5 +11,18 @@
             tic:score="0-0"
             xml:id="clock"
             title="clock"/>
+    <tl:seq>
+        <tl:sleep tl:dur="20"/>
+        <tim:update tim:target="clock" tic:score="1-0"/>
+        <tl:sleep tl:dur="10"/>
+        <tim:update tim:target="clock" tic:score="2-0"/>
+        <tl:sleep tl:dur="10"/>
+        <tim:update tim:target="clock" tic:timeText="90:00"/>
+        <tl:sleep tl:dur="10"/>
+        <tim:update tim:target="clock" tic:timeText="90:00"/>
+        <tl:sleep tl:dur="10"/>
+        <tim:update tim:target="clock" tic:hTeam="WBA"/>
+        <tim:update tim:target="clock" tic:aTeam="TOT"/>
+    </tl:seq>
   </tl:par>
 </tl:document>
