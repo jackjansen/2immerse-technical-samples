@@ -1,0 +1,15 @@
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Substitutions">
+  <tl:par>
+    <tl:sleep tl:dur="30"/>
+    <tl:ref tim:class="PrimeDMAppComponent"
+            tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
+            tic:scene="substitution.pbx"
+            tic:action="showDouble"
+            tic:in1="Name"
+            tic:out1="Name"
+            tic:in2="Name"
+            tic:out2="Name"
+            xml:id="substitutions"
+            title="substitutions"/>
+  </tl:par>
+</tl:document>

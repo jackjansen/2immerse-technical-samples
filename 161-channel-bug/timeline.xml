@@ -5,7 +5,7 @@
             tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
             tic:scene="channelBug.pbx"
             tic:action="show"
-            tic:bug="HDLive"
+            tic:channel="BTSports1HDLive.png"
             xml:id="channelBug"
             title="channelBug"/>
   </tl:par>

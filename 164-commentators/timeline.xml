@@ -1,0 +1,13 @@
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Commentators">
+  <tl:par>
+    <tl:sleep tl:dur="30"/>
+    <tl:ref tim:class="PrimeDMAppComponent"
+            tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
+            tic:scene="commentators.pbx"
+            tic:action="show"
+            tic:name1="Name Surname"
+            tic:name2="Name Surname"
+            xml:id="commentators"
+            title="commentators"/>
+  </tl:par>
+</tl:document>
