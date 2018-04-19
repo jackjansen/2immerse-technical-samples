@@ -7,6 +7,9 @@
             tic:action="show"
             tic:name1="Name Surname"
             tic:name2="Name Surname"
+            tic:name3="Name Surname"
+            tic:name4="Name Surname"
+            tic:pic="CommsPopup_Image_FACupSemi.png"
             xml:id="commentators"
             title="commentators"/>
   </tl:par>
