@@ -7,7 +7,7 @@
             tic:action="show"
             tic:name="Name"
             tic:nr="44"
-            tic:team="liverpool"
+            tic:team="CHE"
             tic:subheader="Subheader"
             xml:id="player"
             title="player"/>
