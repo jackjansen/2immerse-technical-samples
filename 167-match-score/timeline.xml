@@ -1,0 +1,15 @@
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Match Score">
+  <tl:par>
+    <tl:sleep tl:dur="30"/>
+    <tl:ref tim:class="PrimeDMAppComponent"
+            tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
+            tic:scene="matchScore.pbx"
+            tic:action="show"
+            tic:hometeam="CHE"
+            tic:awayteam="SOU"
+            tic:homeScore="0"
+            tic:awayScore="0"
+            xml:id="match-score"
+            title="match-score"/>
+  </tl:par>
+</tl:document>
