@@ -31,7 +31,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="6"/>        
+            <tl:sleep tl:dur="5"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="4" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img02" tic:mediaUrl="../media/trailer-images/img02.png"/>
@@ -39,7 +40,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="10"/>        
+            <tl:sleep tl:dur="9"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="3" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img03" tic:mediaUrl="../media/trailer-images/img03.png"/>
@@ -47,7 +49,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="13"/>        
+            <tl:sleep tl:dur="12"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="3" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img04" tic:mediaUrl="../media/trailer-images/img04.png"/>
@@ -55,7 +58,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="16"/>        
+            <tl:sleep tl:dur="15"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="6" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img05" tic:mediaUrl="../media/trailer-images/img05.png"/>
@@ -63,7 +67,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="22"/>        
+            <tl:sleep tl:dur="21"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="3" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img06" tic:mediaUrl="../media/trailer-images/img06.png"/>
@@ -71,7 +76,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="25"/>        
+            <tl:sleep tl:dur="24"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="5" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img07" tic:mediaUrl="../media/trailer-images/img07.png"/>
@@ -79,7 +85,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="30"/>        
+            <tl:sleep tl:dur="29"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="9" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img08" tic:mediaUrl="../media/trailer-images/img08.png"/>
@@ -87,7 +94,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="39"/>        
+            <tl:sleep tl:dur="38"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="3" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img09" tic:mediaUrl="../media/trailer-images/img09.png"/>
@@ -95,7 +103,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="42"/>        
+            <tl:sleep tl:dur="41"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="2" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img10" tic:mediaUrl="../media/trailer-images/img10.png"/>
@@ -103,7 +112,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="44"/>        
+            <tl:sleep tl:dur="43"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="5" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img11" tic:mediaUrl="../media/trailer-images/img11.png"/>
@@ -111,7 +121,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="49"/>        
+            <tl:sleep tl:dur="48"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="2" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img12" tic:mediaUrl="../media/trailer-images/img12.png"/>
@@ -119,7 +130,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="51"/>        
+            <tl:sleep tl:dur="50"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="2" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img13" tic:mediaUrl="../media/trailer-images/img13.png"/>
@@ -127,7 +139,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="53"/>        
+            <tl:sleep tl:dur="52"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="2" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img14" tic:mediaUrl="../media/trailer-images/img14.png"/>
@@ -135,7 +148,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="55"/>        
+            <tl:sleep tl:dur="54"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="3" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img15" tic:mediaUrl="../media/trailer-images/img15.png"/>
@@ -143,7 +157,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="58"/>        
+            <tl:sleep tl:dur="57"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="3" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img16" tic:mediaUrl="../media/trailer-images/img16.png"/>
@@ -151,7 +166,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="61"/>        
+            <tl:sleep tl:dur="60"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="6" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img17" tic:mediaUrl="../media/trailer-images/img17.png"/>
@@ -159,15 +175,17 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="67"/>        
+            <tl:sleep tl:dur="66"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
-                <tl:sleep tl:dur="4" tl:prio="high"/>
+                <tl:sleep tl:dur="3" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img18" tic:mediaUrl="../media/trailer-images/img18.png"/>
             </tl:par>
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="71"/>        
+            <tl:sleep tl:dur="69"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="3" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img19" tic:mediaUrl="../media/trailer-images/img19.png"/>
@@ -175,7 +193,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="74"/>        
+            <tl:sleep tl:dur="72"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="3" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img20" tic:mediaUrl="../media/trailer-images/img20.png"/>
@@ -183,7 +202,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="77"/>        
+            <tl:sleep tl:dur="75"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="4" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img21" tic:mediaUrl="../media/trailer-images/img21.png"/>
@@ -191,7 +211,8 @@
         </tl:seq>
 
         <tl:seq>
-            <tl:sleep tl:dur="81"/>        
+            <tl:sleep tl:dur="79"/>        
+            <tl:sleep tl:dur="1"/>        
             <tl:par tl:end="master">
                 <tl:sleep tl:dur="1" tl:prio="high"/>
                 <tl:ref tim:class="image" tim:url="/dmapp-components/image/image.html" xml:id="img22" tic:mediaUrl="../media/trailer-images/img22.png"/>
