@@ -33,6 +33,16 @@
 					}
 				},
 				{
+					"name": "100#t=60s",
+					"description": "100-video-mp4: a simple MP4 video, seek to t=60",
+					"content": {
+						"serviceInput": {
+							"layout": "100-video-mp4/layout.json",
+							"timeline": "100-video-mp4/timeline.xml#t=60"
+						}
+					}
+				},
+				{
 					"name": "101",
 					"description": "101-video-dash: a dash video (from rdmedia.bbc.co.uk)",
 					"content": {
@@ -109,6 +119,16 @@
 						"serviceInput": {
 							"layout": "108-video-description-images/layout.json",
 							"timeline": "108-video-description-images/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "108#t=60",
+					"description": "108-video-description-images: Video (mp4), plus screen shots (timed), plus a scrolling text description. Start at t=60",
+					"content": {
+						"serviceInput": {
+							"layout": "108-video-description-images/layout.json",
+							"timeline": "108-video-description-images/timeline.xml#t=60"
 						}
 					}
 				},
@@ -495,6 +515,26 @@
 			"type": "optional",
 			"content": {
 				"serviceUrlPreset": "aws_test"
+			}
+		},
+		{
+			"name": "test-jack",
+			"description": "Use flauwte services instead of edge (for Jack)",
+			"type": "optional",
+			"content": {
+				"serviceUrls": {
+					"layoutService": "http://flauwte.dis.cwi.nl:8000/layout/v4",
+					"websocketService" : "http://flauwte.dis.cwi.nl:3000/",
+					"timelineService" : "http://flauwte.dis.cwi.nl:8080/timeline/v1",
+					"sharedStateService" : "http://flauwte.dis.cwi.nl:8081/",
+					"loggingService" : "http://flauwte.dis.cwi.nl:3001/",
+					"wallclockService" : "wss://wallclock-service.edge.platform.2immerse.eu",
+					"authService" : "https://auth-service.platform.2immerse.eu",
+					"bandwidthOrchestrationService" : "http://flauwte.dis.cwi.nl:4000/",
+					"layoutServiceFromTimelineService" : "",
+					"dataPlaybackRestService" : "https://provider.edge.platform.2immerse.eu",
+					"dataPlaybackAwsService" : "eu-west-1:bf6c1b81-fc96-43e9-9bb3-0be0e94fc148"
+				}
 			}
 		},
 		{
