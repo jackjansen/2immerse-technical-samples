@@ -1,15 +1,15 @@
-<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Stat Numeric">
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Stat Bars">
   <tl:par>
     <tl:sleep tl:dur="30"/>
     <tl:ref tim:class="PrimeDMAppComponent"
             tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
-            tic:scene="statNumeric.pbx"
+            tic:scene="statBars.pbx"
             tic:action="show"
             tic:hometeam="CHE"
             tic:awayteam="SOU"
             tic:homeStat="5,3,1,6,43%"
             tic:awayStat="12,7,4,3,57%"
-            xml:id="stat-numeric"
-            title="stat-numeric"/>
+            xml:id="stat-bars"
+            title="stat-bars"/>
   </tl:par>
 </tl:document>

@@ -1,0 +1,36 @@
+{
+  "version": 4,
+  "dmapp": "300",
+  "constraints": [
+    {
+      "constraintId": "stat-numeric",
+      "personal": {
+        "prefSize": {
+          "width": 1920,
+          "height": 1080
+        },
+        "minSize": {
+          "width": 1920,
+          "height": 1080
+        },
+        "aspect": "1920:1080",
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "prefSize": {
+          "width": 1920,
+          "height": 1080
+        },
+        "minSize": {
+          "width": 1920,
+          "height": 1080
+        },
+        "aspect": "1920:1080",
+        "priority": 1,
+        "audio": true
+      }
+    }
+  ],
+  "layoutModel": "packer"
+}
