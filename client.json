@@ -448,6 +448,16 @@
 					}
 				},
 				{
+					"name": "169",
+					"description": "169-webcam-video-input: Video component webcam input",
+					"content": {
+						"serviceInput": {
+							"layout": "169-webcam-video-input/layout.json",
+							"timeline": "169-webcam-video-input/timeline.xml"
+						}
+					}
+				},
+				{
 					"name": "202",
 					"description": "202-2video-mp4: the same mp4 video twice, in parallel, once on TV and once on the handheld",
 					"content": {

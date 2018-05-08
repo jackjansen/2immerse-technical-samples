@@ -1,0 +1,26 @@
+{
+  "version": 4,
+  "dmapp": "200",
+  "constraints": [
+    {
+      "constraintId": "main_video",
+      "personal": {
+        "minSize": {
+          "width": 640,
+          "height": 360
+        },
+        "priority": 0,
+        "audio": true
+      },
+      "communal": {
+        "minSize": {
+          "width": 640,
+          "height": 360
+        },
+        "priority": 1,
+        "audio": true
+      }
+    }
+  ],
+  "layoutModel": "packer"
+}

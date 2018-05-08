@@ -1,0 +1,19 @@
+<tl:document
+  xmlns:tl="http://jackjansen.nl/timelines"
+  xmlns:tim="http://jackjansen.nl/2immerse"
+  xmlns:tic="http://jackjansen.nl/2immerse/component"
+  xmlns:tlcheck="http://jackjansen.nl/timelines/check"
+  title="Test video component webcam input">
+
+  <tl:par>
+
+
+      <tl:ref tim:class="video"
+              xml:id="main_video"
+              tic:syncMode="master"
+              tic:mediaUrl="webcam://"
+              title="main video"/>
+
+  </tl:par>
+
+</tl:document>
