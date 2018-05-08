@@ -5,24 +5,31 @@
             tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
             tic:scene="CH_Clock.pbx"
             tic:action="show"
-            tic:time="01:15"
+            tic:time="00:00"
+            tic:startedRefTime="10"
+            tic:timeState="stopped"
             tic:hometeam="CHE"
-            tic:awayteam="SOU"
-            tic:homeScore="0"
-            tic:awayScore="1"
+            tic:awayteam="MUN"
             tic:homeGradient="HOME"
-            tic:awayGradient="EXTRA"
+            tic:awayGradient="HOME"
+            tic:homeScore="0"
+            tic:awayScore="0"
             xml:id="clock"
             title="clock"/>
     <tl:seq>
         <tl:sleep tl:dur="10"/>
-        <tim:update tim:target="clock" tic:action="start"/>
+        <tim:update tim:target="clock" tic:timeState="running"/>
         <tl:sleep tl:dur="20"/>
         <tim:update tim:target="clock" tic:homeScore="1"/>
         <tl:sleep tl:dur="10"/>
         <tim:update tim:target="clock" tic:homeScore="2"/>
         <tl:sleep tl:dur="10"/>
-        <tim:update tim:target="clock" tic:awayScore="2"/>
+        <tim:update tim:target="clock" tic:timeState="stopped"/>
+        <tim:update tim:target="clock" tic:time="HT"/>
+        <tl:sleep tl:dur="10"/>
+        <tim:update tim:target="clock" tic:startedRefTime="30"/>
+        <tim:update tim:target="clock" tic:time="45:00"/>
+        <tim:update tim:target="clock" tic:timeState="running"/>
         <tl:sleep tl:dur="10"/>
         <tim:update tim:target="clock" tic:awayRedCards="1"/>
         <tl:sleep tl:dur="10"/>
@@ -30,10 +37,9 @@
         <tl:sleep tl:dur="10"/>
         <tim:update tim:target="clock" tic:additionalTime="3"/>
         <tl:sleep tl:dur="10"/>
+        <tim:update tim:target="clock" tic:timeState="stopped"/>
         <tim:update tim:target="clock" tic:time="FT"/>
         <tl:sleep tl:dur="10"/>
-        <tim:update tim:target="clock" tic:hometeam="ARS"/>
-        <tim:update tim:target="clock" tic:awayteam="BUR"/>
     </tl:seq>
   </tl:par>
 </tl:document>
