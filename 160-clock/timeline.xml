@@ -4,21 +4,21 @@
     <tl:ref tim:class="PrimeDMAppComponent"
             tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
             tic:scene="CH_Clock.pbx"
-            tic:action="show"
             tic:time="00:00"
-            tic:startedRefTime="10"
-            tic:timeState="stopped"
+            tic:startedRefTime="0"
+            tic:timeState="running"
             tic:hometeam="CHE"
             tic:awayteam="MUN"
             tic:homeGradient="HOME"
             tic:awayGradient="HOME"
             tic:homeScore="0"
             tic:awayScore="0"
+            tic:additionalTime="0"
             xml:id="clock"
             title="clock"/>
     <tl:seq>
-        <tl:sleep tl:dur="10"/>
-        <tim:update tim:target="clock" tic:timeState="running"/>
+        <tl:sleep tl:dur="5"/>
+        <tim:update tim:target="clock" tic:action="show"/>
         <tl:sleep tl:dur="20"/>
         <tim:update tim:target="clock" tic:homeScore="1"/>
         <tl:sleep tl:dur="10"/>
@@ -27,18 +27,24 @@
         <tim:update tim:target="clock" tic:timeState="stopped"/>
         <tim:update tim:target="clock" tic:time="HT"/>
         <tl:sleep tl:dur="10"/>
-        <tim:update tim:target="clock" tic:startedRefTime="30"/>
+        <tim:update tim:target="clock" tic:action="hide"/>
+        <tl:sleep tl:dur="5"/>
+        <tim:update tim:target="clock" tic:startedRefTime="20"/>
         <tim:update tim:target="clock" tic:time="45:00"/>
         <tim:update tim:target="clock" tic:timeState="running"/>
+        <tim:update tim:target="clock" tic:action="show"/>
         <tl:sleep tl:dur="10"/>
         <tim:update tim:target="clock" tic:awayRedCards="1"/>
         <tl:sleep tl:dur="10"/>
-        <tim:update tim:target="clock" tic:time="90:00"/>
+        <tim:update tim:target="clock" tic:time="89:50"/>
+        <tim:update tim:target="clock" tic:homeRedCards="3"/>
         <tl:sleep tl:dur="10"/>
         <tim:update tim:target="clock" tic:additionalTime="3"/>
+        <tim:update tim:target="clock" tic:awayScore="1"/>
         <tl:sleep tl:dur="10"/>
         <tim:update tim:target="clock" tic:timeState="stopped"/>
         <tim:update tim:target="clock" tic:time="FT"/>
+        <tim:update tim:target="clock" tic:additionalTime="0"/>
         <tl:sleep tl:dur="10"/>
     </tl:seq>
   </tl:par>
