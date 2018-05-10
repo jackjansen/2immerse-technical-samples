@@ -11,7 +11,7 @@
       <tl:ref tim:class="video"
               xml:id="main_video"
               tic:syncMode="master"
-              tic:mediaUrl="webcam://"
+              tic:mediaUrl="webcam://?aspectRatioIdeal=1.7777777777&amp;heightIdeal=1080&amp;widthIdeal=1920"
               title="main video"/>
 
   </tl:par>
