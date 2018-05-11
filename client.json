@@ -448,6 +448,26 @@
 					}
 				},
 				{
+					"name": "160",
+					"description": "160-clock: football match clock",
+					"content": {
+						"serviceInput": {
+							"layout": "160-clock/layout.json",
+							"timeline": "160-clock/timeline.xml"
+						}
+					}
+				},
+				{
+					"name": "160#t=45",
+					"description": "160-clock#t=45: football match clock starting at 45 seconds",
+					"content": {
+						"serviceInput": {
+							"layout": "160-clock/layout.json",
+							"timeline": "160-clock/timeline.xml#t=45"
+						}
+					}
+				},
+				{
 					"name": "169",
 					"description": "169-webcam-video-input: Video component webcam input",
 					"content": {
@@ -541,6 +561,26 @@
 					"wallclockService" : "wss://wallclock-service.edge.platform.2immerse.eu",
 					"authService" : "https://auth-service.platform.2immerse.eu",
 					"bandwidthOrchestrationService" : "http://flauwte.dis.cwi.nl:4000/",
+					"layoutServiceFromTimelineService" : "",
+					"dataPlaybackRestService" : "https://provider.edge.platform.2immerse.eu",
+					"dataPlaybackAwsService" : "eu-west-1:bf6c1b81-fc96-43e9-9bb3-0be0e94fc148"
+				}
+			}
+		},
+		{
+			"name": "test-jack-2",
+			"description": "Use boom services instead of edge (for Jack)",
+			"type": "optional",
+			"content": {
+				"serviceUrls": {
+					"layoutService": "http://192.168.1.10:8000/layout/v4",
+					"websocketService" : "http://192.168.1.10:3000/",
+					"timelineService" : "http://192.168.1.10:8080/timeline/v1",
+					"sharedStateService" : "http://192.168.1.10:8081/",
+					"loggingService" : "http://192.168.1.10:3001/",
+					"wallclockService" : "wss://wallclock-service.edge.platform.2immerse.eu",
+					"authService" : "https://auth-service.platform.2immerse.eu",
+					"bandwidthOrchestrationService" : "http://192.168.1.10:4000/",
 					"layoutServiceFromTimelineService" : "",
 					"dataPlaybackRestService" : "https://provider.edge.platform.2immerse.eu",
 					"dataPlaybackAwsService" : "eu-west-1:bf6c1b81-fc96-43e9-9bb3-0be0e94fc148"
