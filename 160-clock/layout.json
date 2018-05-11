@@ -5,17 +5,7 @@
     {
       "constraintId": "clock",
       "personal": {
-        "prefSize": {
-          "width": 1920,
-          "height": 1080
-        },
-        "minSize": {
-          "width": 1920,
-          "height": 1080
-        },
-        "aspect": "1920:1080",
-        "priority": 0,
-        "audio": true
+        "priority": 0
       },
       "communal": {
         "prefSize": {
@@ -23,8 +13,27 @@
           "height": 1080
         },
         "minSize": {
+          "width": 192,
+          "height": 108
+        },
+        "aspect": "1920:1080",
+        "priority": 1,
+        "audio": true
+      }
+    },
+	{
+      "constraintId": "video",
+      "personal": {
+        "priority": 0
+      },
+      "communal": {
+        "prefSize": {
           "width": 1920,
           "height": 1080
+        },
+        "minSize": {
+          "width": 192,
+          "height": 108
         },
         "aspect": "1920:1080",
         "priority": 1,
