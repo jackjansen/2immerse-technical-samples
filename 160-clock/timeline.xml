@@ -6,7 +6,7 @@
             tic:scene="CH_Clock.pbx"
             tic:time="00:00"
             tic:startedRefTime="0"
-            tic:timeState="running"
+            tic:timeState="stopped"
             tic:hometeam="CHE"
             tic:awayteam="MUN"
             tic:homeGradient="HOME"
@@ -14,6 +14,8 @@
             tic:homeScore="0"
             tic:awayScore="0"
             tic:additionalTime="0"
+            tic:homeRedCards="0"
+            tic:awayRedCards="0"
             xml:id="clock"
             title="clock"/>
     <tl:seq>
@@ -21,6 +23,7 @@
         <tim:update tim:target="clock" tic:action="show"/>
         <tl:sleep tl:dur="20"/>
         <tim:update tim:target="clock" tic:homeScore="1"/>
+        <tim:update tim:target="clock" tic:timeState="running"/>
         <tl:sleep tl:dur="10"/>
         <tim:update tim:target="clock" tic:homeScore="2"/>
         <tl:sleep tl:dur="10"/>
