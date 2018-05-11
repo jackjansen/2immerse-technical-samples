@@ -1,0 +1,60 @@
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Match Clock">
+  <tl:par>
+    <tl:sleep tl:dur="1000"/>
+    <tl:ref tim:class="PrimeDMAppComponent"
+            tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
+            tic:scene="CH_Clock.pbx"
+            tic:time="00:00"
+            tic:startedRefTime="0"
+            tic:timeState="running"
+            tic:hometeam="CHE"
+            tic:awayteam="MUN"
+            tic:homeGradient="HOME"
+            tic:awayGradient="HOME"
+            tic:homeScore="0"
+            tic:awayScore="0"
+            tic:additionalTime="0"
+            xml:id="clock"
+            title="clock"/>
+	<tl:seq>
+		<tl:sleep tl:dur="5"/>
+		<tim:update tim:target="clock" tic:action="show"/>
+	</tl:seq>
+	<tl:seq>
+		<tl:sleep tl:dur="25"/>
+		<tim:update tim:target="clock" tic:homeScore="1"/>
+	</tl:seq>
+	<tl:seq>
+		<tl:sleep tl:dur="35"/>
+		<tim:update tim:target="clock" tic:homeScore="2"/>
+	</tl:seq>
+	<tl:seq>
+		<tl:sleep tl:dur="45"/>
+		<tim:update tim:target="clock" tic:timeState="stopped" tic:time="HT"/>
+	</tl:seq>
+	<tl:seq>
+		<tl:sleep tl:dur="55"/>
+		<tim:update tim:target="clock" tic:action="hide"/>
+	</tl:seq>
+	<tl:seq>
+		<tl:sleep tl:dur="60"/>
+		<tim:update tim:target="clock" tic:startedRefTime="20" tic:time="45:00" tic:timeState="running" tic:action="show"/>
+	</tl:seq>
+	<tl:seq>
+		<tl:sleep tl:dur="70"/>
+		<tim:update tim:target="clock" tic:awayRedCards="1"/>
+	</tl:seq>
+	<tl:seq>
+		<tl:sleep tl:dur="80"/>
+		<tim:update tim:target="clock" tic:time="89:50" tic:homeRedCards="3"/>
+	</tl:seq>
+	<tl:seq>
+		<tl:sleep tl:dur="90"/>
+		<tim:update tim:target="clock" tic:additionalTime="3" tic:awayScore="1"/>
+	</tl:seq>
+	<tl:seq>
+		<tl:sleep tl:dur="100"/>
+		<tim:update tim:target="clock" tic:timeState="stopped" tic:time="FT" tic:additionalTime="0"/>
+	</tl:seq>
+  </tl:par>
+</tl:document>

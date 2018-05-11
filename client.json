@@ -458,12 +458,32 @@
 					}
 				},
 				{
+					"name": "160par",
+					"description": "160-clock-par: football match clock, par implementation",
+					"content": {
+						"serviceInput": {
+							"layout": "160-clock/layout.json",
+							"timeline": "160-clock/timeline-par.xml"
+						}
+					}
+				},
+				{
 					"name": "160#t=45",
 					"description": "160-clock#t=45: football match clock starting at 45 seconds",
 					"content": {
 						"serviceInput": {
 							"layout": "160-clock/layout.json",
 							"timeline": "160-clock/timeline.xml#t=45"
+						}
+					}
+				},
+				{
+					"name": "160par#t=45",
+					"description": "160-clock-par#t=45: football match clock starting at 45 seconds, par implementation",
+					"content": {
+						"serviceInput": {
+							"layout": "160-clock/layout.json",
+							"timeline": "160-clock/timeline-par.xml#t=45"
 						}
 					}
 				},
