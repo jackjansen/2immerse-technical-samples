@@ -1,10 +1,11 @@
 <tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Match Score">
   <tl:par>
     <tl:sleep tl:dur="300"/>
+    <!-- available actions: show, showScorers, showToast, showScorersToast -->
     <tl:ref tim:class="PrimeDMAppComponent"
             tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
             tic:scene="matchScore.pbx"
-            tic:action="show"
+            tic:action="show" 
             tic:hometeam="CHE"
             tic:awayteam="MNU"
             tic:score="v"
@@ -23,6 +24,7 @@
         <tl:sleep tl:dur="5"/>
         <tim:update tim:target="match-score" tic:score="2 - 0" tic:header="FT" tic:action="showToast"/>
         <tl:sleep tl:dur="5"/>
+        <!-- Many scorers will be squeezed -->
         <tim:update tim:target="match-score" tic:score="8 - 0" tic:homeGoals="J Jansen, J Walker, I Kegel, M Lomas, J Rennison, L Pilgrim, T Röggla, M Trimby" tic:header="" tic:action="showScorers"/>
     </tl:seq>                    
   </tl:par>
