@@ -1,10 +1,12 @@
 <tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="Match Clock">
   <tl:par>
     <tl:sleep tl:dur="1000"/>
+    <!-- available actions are: show, hide -->
     <tl:ref tim:class="PrimeDMAppComponent"
             tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
             tic:scene="CH_Clock.pbx"
             tic:time="00:00"
+            tic:period="1"
             tic:startedRefTime="0"
             tic:timeState="stopped"
             tic:hometeam="CHE"
@@ -20,31 +22,53 @@
             title="clock"/>
     <tl:seq>
         <tl:sleep tl:dur="5"/>
+        <!-- start the clock 'now' without putting it on air, it will start at 00:00 1st half -->
+        <!-- it should start 5 seconds in document time  -->
+        <tim:update tim:target="clock" tic:startedRefTime="5" tic:action="" tic:timeState="running"/>
+        <tl:sleep tl:dur="5"/>
+        <!-- put it on air after 10 seconds, match clock should now have progressed 5 seconds -->
         <tim:update tim:target="clock" tic:action="show"/>
-        <tl:sleep tl:dur="20"/>
+        <!-- put it on air -->        
+        <tl:sleep tl:dur="5"/>
+        <!-- add scores -->
         <tim:update tim:target="clock" tic:homeScore="1"/>
-        <tim:update tim:target="clock" tic:timeState="running"/>
-        <tl:sleep tl:dur="10"/>
+        <tl:sleep tl:dur="5"/>
         <tim:update tim:target="clock" tic:homeScore="2"/>
+        <tl:sleep tl:dur="5"/>
+        <!-- change time to near overtime, after 45 min 1st half (period 1) time should turn red -->
+        <!-- time should be continue at 44:50 (timeline progressed 20 sec since startedRefTime -->
+        <tim:update tim:target="clock" tic:time="44:30"/>      
+        <tl:sleep tl:dur="15"/>
+        <!-- add 3 minutes additional time -->
+        <tim:update tim:target="clock" tic:additionalTime="3"/>
+        <tl:sleep tl:dur="5"/>
+        <!-- stop clock show half time, remove additional time-->
+        <tim:update tim:target="clock" tic:timeState="stopped" tic:time="HT" tic:additionalTime=""/>
         <tl:sleep tl:dur="10"/>
-        <tim:update tim:target="clock" tic:timeState="stopped"/>
-        <tim:update tim:target="clock" tic:time="HT"/>
-        <tl:sleep tl:dur="10"/>
+        <!-- hide clock -->
         <tim:update tim:target="clock" tic:action="hide"/>
         <tl:sleep tl:dur="5"/>
-        <tim:update tim:target="clock" tic:startedRefTime="20"/>
-        <tim:update tim:target="clock" tic:time="45:00"/>
+        <!-- prepare and start next half -->
+        <tim:update tim:target="clock" tic:startedRefTime="55" tic:period="2" tic:time="45:00" tic:action=""/>
         <tim:update tim:target="clock" tic:timeState="running"/>
+        <tl:sleep tl:dur="5"/>
+        <!-- show clock after its started -->
         <tim:update tim:target="clock" tic:action="show"/>
-        <tl:sleep tl:dur="10"/>
+        <tl:sleep tl:dur="5"/>
+        <!-- add some red cards -->
         <tim:update tim:target="clock" tic:awayRedCards="1"/>
-        <tl:sleep tl:dur="10"/>
-        <tim:update tim:target="clock" tic:time="89:50"/>
-        <tim:update tim:target="clock" tic:homeRedCards="3"/>
-        <tl:sleep tl:dur="10"/>
+        <tl:sleep tl:dur="5"/>
+        <tim:update tim:target="clock" tic:homeRedCards="1"/>
+        <tl:sleep tl:dur="5"/>
+        <tim:update tim:target="clock" tic:homeRedCards="2" tic:awayRedCards="2"/>
+        <tl:sleep tl:dur="5"/>
+        <tim:update tim:target="clock" tic:homeRedCards="3" tic:awayRedCards="3"/>
+        <!-- prepare for end of game -->
+        <tim:update tim:target="clock" tic:time="89:25"/>
         <tim:update tim:target="clock" tic:additionalTime="3"/>
-        <tim:update tim:target="clock" tic:awayScore="1"/>
-        <tl:sleep tl:dur="10"/>
+        <tl:sleep tl:dur="15"/>
+        <!-- add additional time -->
+        <tl:sleep tl:dur="5"/>
         <tim:update tim:target="clock" tic:timeState="stopped"/>
         <tim:update tim:target="clock" tic:time="FT"/>
         <tim:update tim:target="clock" tic:additionalTime="0"/>
