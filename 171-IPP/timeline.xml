@@ -1,0 +1,11 @@
+<tl:document xmlns:tl="http://jackjansen.nl/timelines" xmlns:tim="http://jackjansen.nl/2immerse" xmlns:tic="http://jackjansen.nl/2immerse/component" xmlns:tlcheck="http://jackjansen.nl/timelines/check" title="IPP">
+  <tl:par>
+    <tl:sleep tl:dur="30"/>
+    <tl:ref tim:class="PrimeDMAppComponent"
+            tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
+            tic:scene="IPP.pbx"
+            tic:action="show"
+            xml:id="ipp"
+            title="ipp"/>
+  </tl:par>
+</tl:document>
