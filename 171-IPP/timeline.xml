@@ -5,6 +5,7 @@
             tim:url="https://origin.platform.2immerse.eu/deployment/edge/dmapp-components/prime/prime.html"
             tic:scene="IPP.pbx"
             tic:action="show"
+            tic:filename="4K_promo.png"
             xml:id="ipp"
             title="ipp"/>
   </tl:par>
