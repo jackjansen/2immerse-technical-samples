@@ -1,3 +1,7 @@
+# Important note
+
+This repository is mainly of historical interest. It contains sample documents from the time the 2Immerse project was still actively being developed. Therefore, some (or all) of these samples may or may not work with the open source 2-Immerse repositories from <https://github.com/2-IMMERSE>. You have been warned.
+
 # Technical Samples
 
 This repository contains sample 2immerse experiences.
